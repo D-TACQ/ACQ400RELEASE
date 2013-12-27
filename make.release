@@ -1,0 +1,80 @@
+#!/bin/bash
+
+DC=$(date +%Y%m%d%H%M%S)
+
+if [ -e .version ]; then
+   let VER=$(cat .version)
+let VER=$VER+1
+else
+   let VER=1
+fi
+
+echo $VER >.version
+
+if [ -e  ../linux-xlnx/arch/arm/boot/uImage ]; then
+   cp ../linux-xlnx/arch/arm/boot/uImage SRC/IMAGES
+fi
+if [ -e ../ROOTFS/uramdisk.image.gz ]; then
+   cp ../ROOTFS/uramdisk.image.gz SRC/IMAGES
+fi
+
+if [ -d ../PACKAGES ]; then
+   rm SRC/PACKAGES/* 
+   cp ../PACKAGES/* SRC/PACKAGES
+fi
+if [ -d ../PACKAGES.OPT ]; then
+   rm SRC/PACKAGES.OPT/*
+   cp ../PACKAGES.OPT/* SRC/PACKAGES.OPT
+fi
+
+echo package fix-up
+rm SRC/MACH/ACQ1001/PACKAGES/*
+mv SRC/PACKAGES/05-acq1001* SRC/MACH/ACQ1001/PACKAGES/
+rm SRC/MACH/ACQ2006/PACKAGES/*
+mv SRC/PACKAGES/05-acq2006* SRC/MACH/ACQ2006/PACKAGES/
+rm SRC/MACH/ZB/PACKAGES/*
+mv SRC/PACKAGES/05-zed* SRC/MACH/ZB/PACKAGES/
+
+mv SRC/PACKAGES/66-ao421* SRC/PACKAGES.OPT
+mv SRC/PACKAGES/98-awg*   SRC/PACKAGES.OPT
+
+
+echo generating version $VER-$DC
+
+rm -Rf PROD/*
+for MACH in SRC/MACH/*
+do
+	mach=$(basename $MACH)
+	RELNAME=acq400-$mach-$VER-$DC
+	echo creating $mach
+	mkdir PROD/$mach
+	cp -a $MACH/fpga.d $MACH/BOOT.bin $MACH/boot.d $MACH/*.dtb PROD/$mach
+	if [ -e $MACH/FPGA.bit ]; then
+	     	echo copy $MACH/FPGA.bit
+		cp -a $MACH/FPGA.bit PROD/$mach
+	else
+		echo WARNING: no default FPGA.bit
+	fi
+	
+	cp -a SRC/IMAGES/* PROD/$mach/
+	mkdir PROD/$mach/packages
+	cp -a SRC/PACKAGES/* PROD/$mach/packages
+	cp -a $MACH/PACKAGES/* PROD/$mach/packages
+	mkdir PROD/$mach/packages.opt
+	cp -a SRC/PACKAGES.OPT/* PROD/$mach/packages.opt
+
+	(cd PROD/$mach/; find . -type f -exec md5sum {} \; >/tmp/$mach.sums)
+	cat - >PROD/$mach/VERSION <<EOF
+RELEASE $RELNAME
+$(whoami)@$(hostname)
+EOF
+	sort -k 2 /tmp/$mach.sums  >> PROD/$mach/VERSION
+
+	tar cvzf REL/$RELNAME.tgz -C PROD/$mach .
+	ls -l REL/$RELNAME.tgz
+	if [ "$mach" = "ACQ2006" ]; then
+		ACQ2006=$RELNAME
+	fi
+done
+
+echo  scp REL/$ACQ2006.tgz dt100@eigg:/home/dt100/PROJECTS/ACQ400/RELEASE/REL	
