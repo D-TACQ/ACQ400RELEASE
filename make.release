@@ -2,6 +2,16 @@
 
 DC=$(date +%Y%m%d%H%M%S)
 
+zipall() {
+(	cd $1
+	for file in *.bit
+	do
+		if [ -e $file ]; then
+			gzip $file
+		fi
+	done)
+}
+
 if [ -e .version ]; then
    let VER=$(cat .version)
 let VER=$VER+1
@@ -28,6 +38,9 @@ if [ -d ../PACKAGES.OPT ]; then
 fi
 
 echo package fix-up
+rm -f SRC/MACH/acq4xx/PACKAGES/*
+cp SRC/PACKAGES/05* SRC/MACH/acq4xx/PACKAGES
+zipall SRC/MACH/acq4xx/fpga.d
 rm SRC/MACH/ACQ1001/PACKAGES/*
 mv SRC/PACKAGES/05-acq1001* SRC/MACH/ACQ1001/PACKAGES/
 rm SRC/MACH/ACQ2006/PACKAGES/*
@@ -35,17 +48,22 @@ mv SRC/PACKAGES/05-acq2006* SRC/MACH/ACQ2006/PACKAGES/
 rm SRC/MACH/ZB/PACKAGES/*
 mv SRC/PACKAGES/05-zed* SRC/MACH/ZB/PACKAGES/
 
-mv SRC/PACKAGES/66-ao421* SRC/PACKAGES.OPT
-mv SRC/PACKAGES/98-awg*   SRC/PACKAGES.OPT
+mv SRC/PACKAGES/33-ao421* SRC/PACKAGES.OPT
+mv SRC/PACKAGES/98-*      SRC/PACKAGES.OPT
+mv SRC/PACKAGES/99-auto*  SRC/PACKAGES
 
 
 echo generating version $VER-$DC
 
 rm -Rf PROD/*
-for MACH in SRC/MACH/*
+for MACH in SRC/MACH/acq4xx
 do
 	mach=$(basename $MACH)
-	RELNAME=acq400-$mach-$VER-$DC
+	if [ "$mach" = "acq4xx" ]; then
+		RELNAME=$mach-$VER-$DC
+	else
+		RELNAME=acq400-$mach-$VER-$DC
+	fi
 	echo creating $mach
 	mkdir PROD/$mach
 	cp -a $MACH/fpga.d $MACH/BOOT.bin $MACH/boot.d $MACH/*.dtb PROD/$mach
@@ -77,4 +95,4 @@ EOF
 	fi
 done
 
-echo  scp REL/$ACQ2006.tgz dt100@eigg:/home/dt100/PROJECTS/ACQ400/RELEASE/REL	
+echo  scp REL/$RELNAME.tgz dt100@eigg:/home/dt100/PROJECTS/ACQ400/RELEASE/REL	
