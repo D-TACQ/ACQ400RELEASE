@@ -49,8 +49,10 @@ rm SRC/MACH/ZB/PACKAGES/*
 mv SRC/PACKAGES/05-zed* SRC/MACH/ZB/PACKAGES/
 
 mv SRC/PACKAGES/33-ao421* SRC/PACKAGES.OPT
+mv SRC/PACKAGES/70-mdsshell* SRC/PACKAGES.OPT
 mv SRC/PACKAGES/98-*      SRC/PACKAGES.OPT
-mv SRC/PACKAGES/99-auto*  SRC/PACKAGES
+mv SRC/PACKAGES/??-custom* SRC/PACKAGES.OPT
+mv SRC/PACKAGES/99-auto*  SRC/PACKAGES.OPT
 
 
 echo generating version $VER-$DC
@@ -66,7 +68,7 @@ do
 	fi
 	echo creating $mach
 	mkdir PROD/$mach
-	cp -a $MACH/fpga.d $MACH/BOOT.bin $MACH/boot.d $MACH/*.dtb PROD/$mach
+	cp -a $MACH/fpga.d $MACH/BOOT.bin $MACH/boot.d $MACH/dtb.d $MACH/*.dtb PROD/$mach
 	if [ -e $MACH/FPGA.bit ]; then
 	     	echo copy $MACH/FPGA.bit
 		cp -a $MACH/FPGA.bit PROD/$mach
@@ -95,4 +97,7 @@ EOF
 	fi
 done
 
-echo  scp REL/$RELNAME.tgz dt100@eigg:/home/dt100/PROJECTS/ACQ400/RELEASE/REL	
+(cd REL;rm -f acq4xx-current; ln -s $RELNAME.tgz acq4xx-current)
+echo scp REL/$RELNAME.tgz dt100@eigg:/home/dt100/PROJECTS/ACQ400/RELEASE/REL	
+echo ssh dt100@eigg /home/dt100/bin/set.acq4xx.current $RELNAME.tgz
+
