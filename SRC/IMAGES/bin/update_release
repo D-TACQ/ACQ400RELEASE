@@ -46,8 +46,10 @@ if [ $? -eq 0 ]; then
 	rm /mnt/packages/*
 	rm /mnt/packages.opt/*
 	remove_patches /mnt/local/acq420fmc.ko /mnt/local/acq400_stream
-#	tar xvzf $REL -C /mnt
-	cp -r $TDIR /mnt/
+	echo '*/fpga.d/*' >/tmp/exclude
+	tar xvzf $REL -X /tmp/exclude -C /mnt
+	mkdir -p /mnt/fpga.d; rm /mnt/fpga.d/*
+	cp $TDIR/fpga.d/* /mnt/fpga.d
 	echo post-copy version check:
 	/mnt/bin/check_version
 	if [ $? -eq 0 ]; then
