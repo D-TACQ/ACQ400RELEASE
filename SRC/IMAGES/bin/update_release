@@ -1,0 +1,61 @@
+#/bin/sh
+
+REL=$1
+
+RELNAME=${REL%*.tgz}
+RELNAME=$(basename $RELNAME)
+TDIR=/tmp/$RELNAME
+
+remove_patches() 
+{
+	for file in $* 
+	do
+		if [ -e $file ]; then
+			echo removing patchfile $file
+			rm $file
+		fi
+	done
+}
+
+echo processing release $RELNAME
+
+mkdir $TDIR
+
+tar xvzf $REL -C $TDIR
+
+$TDIR/bin/check_version
+if [ $? -ne 0 ]; then
+	echo "WARNING: you have a patched image."
+	echo "Are you sure you want to continue \?"
+	yn="x"
+	while [ "x$yn" != "xy" -a "x$yn" != "xn" ]; do
+		echo -n "enter y/n:"
+		read yn
+#		echo "got yn as :$yn:"
+	done
+	if [ "x$yn" = "xn" ]; then
+		echo "Quit on user request, please check/backup and try again."
+		exit 1;
+	fi
+fi
+	
+$TDIR/bin/check_version $TDIR
+
+if [ $? -eq 0 ]; then
+	echo OK to proceed:
+	rm /mnt/packages/*
+	rm /mnt/packages.opt/*
+	remove_patches /mnt/local/acq420fmc.ko /mnt/local/acq400_stream
+#	tar xvzf $REL -C /mnt
+	cp -r $TDIR /mnt/
+	echo post-copy version check:
+	/mnt/bin/check_version
+	if [ $? -eq 0 ]; then
+		echo ALL GOOD;
+		echo "sync;sync;reboot"
+	else
+		echo "your system is patched please review and proceed with caution"	
+		echo "sync;sync;reboot"
+	fi
+fi
+

@@ -84,7 +84,7 @@ do
 	mkdir PROD/$mach/packages.opt
 	cp -a SRC/PACKAGES.OPT/* PROD/$mach/packages.opt
 
-	(cd PROD/$mach/; find . -type f -exec md5sum {} \; >/tmp/$mach.sums)
+	(cd PROD/$mach/; find -L . -type f -exec md5sum {} \; >/tmp/$mach.sums)
 	cat - >PROD/$mach/VERSION <<EOF
 RELEASE $RELNAME
 $(whoami)@$(hostname)
