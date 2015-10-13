@@ -69,7 +69,12 @@ do
 	fi
 	echo creating $mach
 	mkdir PROD/$mach
-	cp -a $MACH/fpga.d $MACH/BOOT.bin $MACH/boot.d $MACH/dtb.d $MACH/*.dtb PROD/$mach
+	cp -a $MACH/fpga.d $MACH/BOOT.bin $MACH/boot.d $MACH/dtb.d PROD/$mach
+	# put original model dtb's at top level to match old u-boots
+	cp $MACH/dtb.d/acq1001.dtb PROD/$mach
+	cp $MACH/dtb.d/acq1002.dtb PROD/$mach
+	cp $MACH/dtb.d/acq2006.dtb PROD/$mach
+
 	if [ -e $MACH/FPGA.bit ]; then
 	     	echo copy $MACH/FPGA.bit
 		cp -a $MACH/FPGA.bit PROD/$mach
@@ -85,6 +90,11 @@ do
 	cp -a SRC/PACKAGES.OPT/* PROD/$mach/packages.opt
 
 	(cd PROD/$mach/; find -L . -type f -exec md5sum {} \; >/tmp/$mach.sums)
+	mv RELEASENOTES RELEASENOTES.bak
+	echo "-- RELEASE $RELNAME --" > RELEASENOTES
+	cat RELEASENOTES.bak >> RELEASENOTES
+	cp RELEASENOTES PROD/$mach
+
 	cat - >PROD/$mach/VERSION <<EOF
 RELEASE $RELNAME
 $(whoami)@$(hostname)
