@@ -70,10 +70,6 @@ do
 	echo creating $mach
 	mkdir PROD/$mach
 	cp -a $MACH/fpga.d $MACH/BOOT.bin $MACH/boot.d $MACH/dtb.d PROD/$mach
-	# put original model dtb's at top level to match old u-boots
-	cp $MACH/dtb.d/acq1001.dtb PROD/$mach
-	cp $MACH/dtb.d/acq1002.dtb PROD/$mach
-	cp $MACH/dtb.d/acq2006.dtb PROD/$mach
 
 	if [ -e $MACH/FPGA.bit ]; then
 	     	echo copy $MACH/FPGA.bit
