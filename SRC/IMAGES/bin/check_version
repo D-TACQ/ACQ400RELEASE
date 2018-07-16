@@ -7,7 +7,7 @@ grep '^[0-9a-f]\{32\}  ./' $TOP/VERSION >/tmp/release.md5
 (
 	cd $TOP
 	md5sum ./bin/* 
-	md5sum ./boot.d/* ./dtb.d/* ./fpga.d/*
+	md5sum ./boot.d/* ./dtb.d/* ./fpga.d/* ./fpga.d/*/*
 	md5sum ./packages/* 
 	md5sum ./packages.opt/* 
 	md5sum ./uImage ./uramdisk.image.gz

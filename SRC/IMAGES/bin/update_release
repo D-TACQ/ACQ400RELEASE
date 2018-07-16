@@ -49,7 +49,7 @@ if [ $? -eq 0 ]; then
 	echo '*/fpga.d/*' >/tmp/exclude
 	tar xvzf $REL -X /tmp/exclude -C /mnt
 	mkdir -p /mnt/fpga.d; rm /mnt/fpga.d/*
-	cp $TDIR/fpga.d/* /mnt/fpga.d
+	cp -r $TDIR/fpga.d/* /mnt/fpga.d
 	echo post-copy version check:
 	/mnt/bin/check_version
 	if [ $? -eq 0 ]; then
