@@ -20,6 +20,9 @@ else
 fi
 
 echo $VER >.version
+echo Enter comment for version $VER
+sleep 1
+git commit .version
 
 if [ -e  ../linux-xlnx/arch/arm/boot/uImage ]; then
    cp ../linux-xlnx/arch/arm/boot/uImage SRC/IMAGES
@@ -90,6 +93,7 @@ do
 	echo "-- RELEASE $RELNAME --" > RELEASENOTES
 	cat RELEASENOTES.bak >> RELEASENOTES
 	cp RELEASENOTES PROD/$mach
+	git commit -m $VER RELEASENOTES
 
 	cat - >PROD/$mach/VERSION <<EOF
 RELEASE $RELNAME
@@ -102,7 +106,11 @@ EOF
 	if [ "$mach" = "ACQ2006" ]; then
 		ACQ2006=$RELNAME
 	fi
+	tar tvzf REL/$RELNAME.tgz >$mach.manifest
+	git commit -m $VER $mach.manifest
 done
+
+git tag V$VER
 
 (cd REL;rm -f acq4xx-current; ln -s $RELNAME.tgz acq4xx-current)
 echo scp REL/$RELNAME.tgz dt100@eigg:/home/dt100/PROJECTS/ACQ400/RELEASE/REL	
