@@ -1,3 +1,18 @@
+-- RELEASE acq4xx-653-20180930150615 --
+Fix to /etc/network/default-networkrc to support $ntpsrv variable from DHCP server
+
+Defer entire /mnt/local/rc.user until AFTER IOC_READY:
+.. this means all rc.user scripts can be written in regular linear fashion with no complex deferment
+eg
+(wait_ioc_ready; do the thing) &
+
+replaced by
+
+do the thing
+
+PLAN button works again for ACQ2106 Si5325 MBCLK control.
+Setting a plan clears the MB_CLK:SET formula so it doesn't clash
+
 -- RELEASE acq4xx-651-20180930140156 --
 -- RELEASE acq4xx-650-20180927101323 --
 -- RELEASE acq4xx-649-20180926212640 --
