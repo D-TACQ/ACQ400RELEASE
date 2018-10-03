@@ -1,3 +1,11 @@
+Fix to reserve buffers correctly during combined XO, XI
+It's sufficient to set this reservation, now acq400_stream holds it during the shot:
+set.sys /sys/module/acq420fmc/parameters/distributor_first_buffer 256
+
+New FPGAs
+
+Correct complex Spectra for DDC
+
 -- RELEASE acq4xx-653-20180930150615 --
 Fix to /etc/network/default-networkrc to support $ntpsrv variable from DHCP server
 
