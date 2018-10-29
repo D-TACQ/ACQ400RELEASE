@@ -22,7 +22,7 @@ fi
 echo $VER >.version
 echo Enter comment for version $VER
 sleep 1
-git commit .version
+git commit -m $VER .version RELEASENOTES
 
 if [ -e  ../linux-xlnx/arch/arm/boot/uImage ]; then
    cp ../linux-xlnx/arch/arm/boot/uImage SRC/IMAGES
@@ -93,7 +93,6 @@ do
 	echo "-- RELEASE $RELNAME --" > RELEASENOTES
 	cat RELEASENOTES.bak >> RELEASENOTES
 	cp RELEASENOTES PROD/$mach
-	git commit -m $VER RELEASENOTES
 
 	cat - >PROD/$mach/VERSION <<EOF
 RELEASE $RELNAME
@@ -115,4 +114,7 @@ git tag V$VER
 (cd REL;rm -f acq4xx-current; ln -s $RELNAME.tgz acq4xx-current)
 echo scp REL/$RELNAME.tgz dt100@eigg:/home/dt100/PROJECTS/ACQ400/RELEASE/REL	
 echo ssh dt100@eigg /home/dt100/bin/set.acq4xx.current $RELNAME.tgz
+echo publish
+(cd REL; sha1sum $RELNAME.tgz )
+echo scp REL/$RELNAME.tgz dtacq@margum.pair.com:public_html/swrel
 
