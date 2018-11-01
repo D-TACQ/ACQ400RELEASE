@@ -1,3 +1,4 @@
+-- RELEASE acq4xx-656-20181029175457 --
 -- RELEASE acq4xx-655-20181003231809 --
 Fix to reserve buffers correctly during combined XO, XI
 It's sufficient to set this reservation, now acq400_stream holds it during the shot:
