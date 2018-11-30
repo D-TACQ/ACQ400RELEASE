@@ -1,5 +1,7 @@
+match to new-style fpga naming, second attempt
+-- RELEASE acq4xx-668-20181130144538 --
 supports STACK and STACK-STAGGER fpga
-supports new-style fpga nameing s-s-s-s-[d]-c
+supports new-style fpga naming s-s-s-s-[d]-c
 -- RELEASE acq4xx-665-20181130144313 --
 -- RELEASE acq4xx-664-20181126084340 --
 -- RELEASE acq4xx-663-20181122165509 --
