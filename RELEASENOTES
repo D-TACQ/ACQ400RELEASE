@@ -1,3 +1,6 @@
+change stream start to look at transient.SOFT_TRIGGER for auto-trigger cue
+add stack_480 global PV
+-- RELEASE acq4xx-669-20181130184053 --
 match to new-style fpga naming, second attempt
 -- RELEASE acq4xx-668-20181130144538 --
 supports STACK and STACK-STAGGER fpga
