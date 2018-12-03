@@ -1,3 +1,5 @@
+CA knobs constrained to localhost to survice hostile network env
+-- RELEASE acq4xx-672-20181203153839 --
 fix autosoft trigger again
 -- RELEASE acq4xx-671-20181201143425 --
 fixes for 670
