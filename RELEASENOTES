@@ -1,3 +1,5 @@
+fix autosoft trigger again
+-- RELEASE acq4xx-671-20181201143425 --
 fixes for 670
 -- RELEASE acq4xx-670-20181201081206 --
 change stream start to look at transient.SOFT_TRIGGER for auto-trigger cue
