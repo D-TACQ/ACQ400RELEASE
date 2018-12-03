@@ -1,3 +1,5 @@
+COMPLETED_SHOT, SHOT_IN_PROGRESS knobs, AI and AO
+-- RELEASE acq4xx-673-20181203195909 --
 CA knobs constrained to localhost to survice hostile network env
 -- RELEASE acq4xx-672-20181203153839 --
 fix autosoft trigger again
