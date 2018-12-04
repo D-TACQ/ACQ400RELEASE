@@ -1,3 +1,8 @@
+fix errors related to autosoft trig
+concurrent AWG supported
+INT01M clock source replaces INT33M for CLK.d0 OUT
+capture now handles trigger with 1kHz reptrigger, no hang, correct master/slave behaviour
+-- RELEASE acq4xx-674-20181203214350 --
 COMPLETED_SHOT, SHOT_IN_PROGRESS knobs, AI and AO
 -- RELEASE acq4xx-673-20181203195909 --
 CA knobs constrained to localhost to survice hostile network env
