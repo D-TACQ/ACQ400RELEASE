@@ -1,3 +1,5 @@
+AWG loops. Stack/Stagger indicator.
+-- RELEASE acq4xx-675-20181204223917 --
 fix errors related to autosoft trig
 concurrent AWG supported
 INT01M clock source replaces INT33M for CLK.d0 OUT
