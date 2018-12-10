@@ -1,3 +1,6 @@
+includes all STACK/STAGGER and CLK01M images. 
+fixes fix-leds
+-- RELEASE acq4xx-676-20181207182140 --
 AWG loops. Stack/Stagger indicator.
 -- RELEASE acq4xx-675-20181204223917 --
 fix errors related to autosoft trig
