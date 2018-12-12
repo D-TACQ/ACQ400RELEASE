@@ -1,3 +1,5 @@
+include updated ACQ2106+ACQ480 FPGA images
+-- RELEASE acq4xx-677-20181210195752 --
 includes all STACK/STAGGER and CLK01M images. 
 fixes fix-leds
 -- RELEASE acq4xx-676-20181207182140 --
