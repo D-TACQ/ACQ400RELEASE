@@ -1,3 +1,6 @@
+BF: fixes rejection of _95 image in _90 system
+eliminates requirement for transient .. statement in transient.init
+-- RELEASE acq4xx-678-20181212160010 --
 include updated ACQ2106+ACQ480 FPGA images
 -- RELEASE acq4xx-677-20181210195752 --
 includes all STACK/STAGGER and CLK01M images. 
