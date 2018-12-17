@@ -1,3 +1,5 @@
+BF: AWG to 512MB, debug diags for ACQ424_CLK_MIN_MAX
+-- RELEASE acq4xx-679-20181213175731 --
 BF: fixes rejection of _95 image in _90 system
 eliminates requirement for transient .. statement in transient.init
 -- RELEASE acq4xx-678-20181212160010 --
