@@ -1,3 +1,5 @@
+BB_LOAD_THRESHOLD, CLOCK_MONITOR vars. includes CTF FPGA
+-- RELEASE acq4xx-680-20181217105624 --
 BF: AWG to 512MB, debug diags for ACQ424_CLK_MIN_MAX
 -- RELEASE acq4xx-679-20181213175731 --
 BF: fixes rejection of _95 image in _90 system
