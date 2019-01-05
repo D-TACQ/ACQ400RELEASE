@@ -1,3 +1,5 @@
+-- RELEASE acq400-014-20190105190931 --
+include AI_MONITOR, allow ssh root with passwd access
 -- RELEASE acq400-013-20190105182319 --
 restore UMON in busybox, adds transient
 -- RELEASE acq400-012-20190105163433 --
