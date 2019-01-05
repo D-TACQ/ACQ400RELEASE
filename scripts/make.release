@@ -2,11 +2,18 @@
 
 DC=$(date +%Y%m%d%H%M%S)
 
+# buildroot images
 BROI=../../buildroot/output/images/
-
+# linux kernel images
+ARB=../linux-xlnx/arch/arm/boot
 
 CP="cp -v"
 GIT=${GIT:-y}
+
+# subdirectories on target
+MNTDIRS="bin boot.d dtb.d fpga.d local packages packages.opt ko"
+# list of .dtb names to include
+ARCHDTB="acq1001"
 
 die() {
 	echo ERROR $*
@@ -29,10 +36,9 @@ cpwarn() {
 
 pull_sources() 
 {
-
 rm -Rf MNT
-for dir in bin boot.d dtb.d fpga.d local packages packages.opt ko; do mkdir -p MNT/$dir; done
-cpwarn ../linux-xlnx/arch/arm/boot/uImage 	MNT
+for dir in $MNTDIRS; do mkdir -p MNT/$dir; done
+cpwarn $ARB/uImage 				MNT
 cpwarn $BROI/uramdisk.image.gz 			MNT
 cpwarn $BROI/rootfs.ext2.gz			MNT
 
@@ -43,6 +49,7 @@ $CP ../PACKAGES/* MNT/packages
 $CP ../PACKAGES.OPT/* MNT/packages.opt
 $CP tgt_scripts/* MNT/bin
 $CP boot.d/* MNT/boot.d
+for arch in $ARCHDTB; do cpwarn $ARB/dts/$arch.dtb MNT/dtb.d; done
 }
 
 
@@ -69,13 +76,14 @@ if [ "$GIT" = "y" ]; then
        git commit -m $VER .version RELEASENOTES
 fi
 
+(cd MNT; find -L . -type f -exec md5sum {} \; ) >acq400.sums
+
 cat - >MNT/VERSION <<EOF
 RELEASE $RELNAME
-$(whoami)@$(hostname)
+RELHOST $(whoami)@$(hostname)
+$(sort -k 2 acq400.sums)
 EOF
 
-(cd MNT; find -L . -type f -exec md5sum {} \; ) >acq400.sums
-sort -k 2 acq400.sums >>MNT/version
 mkdir -p REL
 tar cvzf REL/$RELNAME.tgz -C MNT .
 tar tvzf REL/$RELNAME.tgz > acq400.manifest
