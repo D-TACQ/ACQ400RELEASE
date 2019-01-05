@@ -1,0 +1,5 @@
+#!/bin/sh
+IDENT="$(hostname)-$(date +%y%m%d%H%M%S)"
+tar cvf /tmp/sd-${IDENT}.tar -C /mnt .
+ls -l /tmp/sd-${IDENT}.tar
+

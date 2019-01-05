@@ -1,0 +1,92 @@
+#!/bin/bash
+
+DC=$(date +%Y%m%d%H%M%S)
+
+BROI=../../buildroot/output/images/
+
+
+CP="cp -v"
+GIT=${GIT:-y}
+
+die() {
+	echo ERROR $*
+	exit 1
+}
+
+cpwarn() {
+	src=$1 dst=$2
+	if [ -e $src ]; then
+		$CP $src $dst
+	else
+		if [ -e $dst/$(basename $src) ]; then
+			echo "WARNING $src did not exist, using old version:"
+		else
+			echo "ERROR: we cannot live without $src"
+			exit 1
+		fi
+	fi
+}
+
+pull_sources() 
+{
+
+rm -Rf MNT
+for dir in bin boot.d dtb.d fpga.d local packages packages.opt ko; do mkdir -p MNT/$dir; done
+cpwarn ../linux-xlnx/arch/arm/boot/uImage 	MNT
+cpwarn $BROI/uramdisk.image.gz 			MNT
+cpwarn $BROI/rootfs.ext2.gz			MNT
+
+
+cpwarn ../ACQ420FMC/packageko*img		MNT/ko
+
+$CP ../PACKAGES/* MNT/packages
+$CP ../PACKAGES.OPT/* MNT/packages.opt
+$CP tgt_scripts/* MNT/bin
+$CP boot.d/* MNT/boot.d
+}
+
+
+
+pull_sources
+./scripts/copy-fpga-from-git >/dev/null
+
+VER=1
+[ -e .version ] && VER=$(($(cat .version)+1))
+echo $VER >.version
+VER=$(printf %03d $VER)
+
+echo Enter comment for version $VER
+sleep 1
+vi RELEASENOTES
+mv RELEASENOTES RELEASENOTES.bak
+
+RELNAME=acq400-$VER-$DC
+
+echo "-- RELEASE $RELNAME --" > RELEASENOTES
+cat RELEASENOTES.bak >> RELEASENOTES
+rm RELEASENOTES.bak
+if [ "$GIT" = "y" ]; then
+       git commit -m $VER .version RELEASENOTES
+fi
+
+cat - >MNT/VERSION <<EOF
+RELEASE $RELNAME
+$(whoami)@$(hostname)
+EOF
+
+(cd MNT; find -L . -type f -exec md5sum {} \; ) >acq400.sums
+sort -k 2 acq400.sums >>MNT/version
+mkdir -p REL
+tar cvzf REL/$RELNAME.tgz -C MNT .
+tar tvzf REL/$RELNAME.tgz > acq400.manifest
+
+git commit -m $VER acq400.manifest
+[ "$GIT" = "y" ] && git tag V$VER
+
+(cd REL;rm -f acq4xx-current; ln -s $RELNAME.tgz acq4xx-current)
+echo scp REL/$RELNAME.tgz dt100@eigg:/home/dt100/PROJECTS/ACQ400/RELEASE/REL
+echo ssh dt100@eigg /home/dt100/bin/set.acq4xx.current $RELNAME.tgz
+echo publish
+(cd REL; sha1sum $RELNAME.tgz )
+echo scp REL/$RELNAME.tgz dtacq@margum.pair.com:public_html/swrel
+

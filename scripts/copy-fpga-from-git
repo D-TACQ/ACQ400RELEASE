@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+(cd ACQ400_FPGA; git pull origin master)
+echo Hello
+rsync -ir --update ACQ400_FPGA/*TOP* MNT/fpga.d/
+

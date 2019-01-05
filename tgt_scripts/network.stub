@@ -1,0 +1,6 @@
+#!/bin/sh
+# /mnt/network: example static network config
+
+ifconfig eth0 192.168.0.37 up
+
+
