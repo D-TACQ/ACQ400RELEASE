@@ -1,3 +1,6 @@
+-- RELEASE acq400-011-20190105161452 --
+check_version MUST be OK or no install.
+That's as it should be.
 -- RELEASE acq400-010-20190105160323 --
 and include missing items in VERSION list
 EXCLUDE VERSION itself ..
