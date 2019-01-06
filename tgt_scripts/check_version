@@ -7,11 +7,12 @@ grep '^[0-9a-f]\{32\}  ./' $TOP/VERSION >/tmp/release.md5
 (
 	cd $TOP
 	md5sum ./bin/* 
-	md5sum ./boot.d/* ./dtb.d/* ./fpga.d/* ./fpga.d/*/*
+	md5sum ./boot.d/* ./dtb.d/* ./fpga.d/* 
 	md5sum ./ko/*
 	md5sum ./packages/* 
 	md5sum ./packages.opt/* 
-	md5sum ./uImage ./uramdisk.image.gz ./rootfs.ext2.gz
+	md5sum ./uImage ./uramdisk.image.gz 
+	[ -e ./rootfs.ext2.gz ] && md5sum ./rootfs.ext2.gz
 ) | sort -k 2 -f -d >/tmp/current.md5
 
 echo RELEASE : /tmp/release.md5
