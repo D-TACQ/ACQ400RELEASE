@@ -1,3 +1,5 @@
+-- RELEASE acq400-016-20190106164301 --
+select correct console on acq2106 boot
 -- RELEASE acq400-015-20190106161053 --
 add in acq2106dtbs, dtbs are now structured.
 -- RELEASE acq400-014-20190105190931 --
