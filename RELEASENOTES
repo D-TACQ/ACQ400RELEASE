@@ -1,3 +1,5 @@
+-- RELEASE acq400-015-20190106161053 --
+add in acq2106dtbs, dtbs are now structured.
 -- RELEASE acq400-014-20190105190931 --
 include AI_MONITOR, allow ssh root with passwd access
 -- RELEASE acq400-013-20190105182319 --
