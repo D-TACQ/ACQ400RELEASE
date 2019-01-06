@@ -1,3 +1,5 @@
+-- RELEASE acq400-017-20190106190511 --
+now with clean kernel build, all acq1001,2,2106 dtbs
 -- RELEASE acq400-016-20190106164301 --
 select correct console on acq2106 boot
 -- RELEASE acq400-015-20190106161053 --
