@@ -1,3 +1,5 @@
+-- RELEASE acq400-020-20190114125236 --
+attempt clean release with all *.dtb, working spi, working PRI AWG
 -- RELEASE acq400-019-20190107152537 --
 include all new *.dtb
 -- RELEASE acq400-018-20190107082939 --
