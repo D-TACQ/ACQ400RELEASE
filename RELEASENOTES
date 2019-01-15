@@ -1,3 +1,5 @@
+-- RELEASE acq400-022-20190115113004 --
+handle correct spi number for all ACQ48x
 -- RELEASE acq400-021-20190114182410 --
 include all *dtb
 -- RELEASE acq400-020-20190114125236 --
