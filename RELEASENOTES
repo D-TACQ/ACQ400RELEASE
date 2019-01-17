@@ -1,3 +1,6 @@
+-- RELEASE acq400-025-20190117121441 --
+spi fix for multiple ACQ480
+mb_clk fix for slow change
 -- RELEASE acq400-024-20190116184541 --
 updated ACQ400COMMON to fix BZ82
 -- RELEASE acq400-023-20190116152044 --
