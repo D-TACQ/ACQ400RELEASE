@@ -1,3 +1,5 @@
+-- RELEASE acq400-027-20190121110030 --
+add in some optional packages
 -- RELEASE acq400-026-20190121091532 --
 split sites for mfd ELF, recovers 414 interrupts
 -- RELEASE acq400-025-20190117121441 --
