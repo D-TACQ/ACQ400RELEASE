@@ -13,7 +13,7 @@ GIT=${GIT:-y}
 # subdirectories on target
 MNTDIRS="bin boot.d dtb.d fpga.d local packages packages.opt ko"
 # list of .dtb names to include
-ARCHDTB="acq1001 acq1002 acq1002p acq1002r acq2106d37 acq2106 acq2106sfp \
+ARCHDTB="acq1001 acq1002 acq1002p acq1002r acq2106d37 acq2106 acq2106sfp acq210612 \
 	acq1014 kmcu kmcuz30 kmcuz30_bpe acq2006 acq2006b acq2006bEU"
 
 
