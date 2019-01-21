@@ -1,3 +1,5 @@
+-- RELEASE acq400-026-20190121091532 --
+split sites for mfd ELF, recovers 414 interrupts
 -- RELEASE acq400-025-20190117121441 --
 spi fix for multiple ACQ480
 mb_clk fix for slow change
