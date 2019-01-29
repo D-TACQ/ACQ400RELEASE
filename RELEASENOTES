@@ -1,3 +1,5 @@
+-- RELEASE acq400-033-20190129173859 --
+now with USB, CV value in IOC stats, RADCELF fixes
 -- RELEASE acq400-032-20190126172931 --
 ACQ436 support .. clean boot, include "cal", mux mon
 -- RELEASE acq400-030-20190126171751 --
