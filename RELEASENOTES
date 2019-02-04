@@ -1,3 +1,5 @@
+-- RELEASE acq400-034-20190204180323 --
+python imports future for HAPI. improved voltsmon for ACQ482
 -- RELEASE acq400-033-20190129173859 --
 now with USB, CV value in IOC stats, RADCELF fixes
 -- RELEASE acq400-032-20190126172931 --
