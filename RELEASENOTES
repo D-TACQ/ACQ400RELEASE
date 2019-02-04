@@ -1,3 +1,5 @@
+-- RELEASE acq400-035-20190204183554 --
+now with "clean" kernel
 -- RELEASE acq400-034-20190204180323 --
 python imports future for HAPI. improved voltsmon for ACQ482
 -- RELEASE acq400-033-20190129173859 --
