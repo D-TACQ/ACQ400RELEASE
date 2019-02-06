@@ -1,3 +1,5 @@
+-- RELEASE acq400-036-20190206095456 --
+set EPOCH 20000101 explicitly to handle systems with no ntp
 -- RELEASE acq400-035-20190204183554 --
 now with "clean" kernel
 -- RELEASE acq400-034-20190204180323 --
