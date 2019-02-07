@@ -1,3 +1,6 @@
+-- RELEASE acq400-037-20190207082340 --
+excessive ioc runtime causes MAG2 stream errors. big hammer:
+/usr/local/init/acq400ioc.init suspend
 -- RELEASE acq400-036-20190206095456 --
 set EPOCH 20000101 explicitly to handle systems with no ntp
 -- RELEASE acq400-035-20190204183554 --
