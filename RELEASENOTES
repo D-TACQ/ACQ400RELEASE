@@ -1,3 +1,5 @@
+-- RELEASE acq400-038-20190208153428 --
+pwm knobs, improved update_release memory management
 -- RELEASE acq400-037-20190207082340 --
 excessive ioc runtime causes MAG2 stream errors. big hammer:
 /usr/local/init/acq400ioc.init suspend
