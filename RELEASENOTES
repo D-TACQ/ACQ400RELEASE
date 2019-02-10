@@ -1,3 +1,5 @@
+-- RELEASE acq400-040-20190210100253 --
+improved upgrade procedure frees DRAM before upgrade
 -- RELEASE acq400-039-20190209181842 --
 fixes BZ 87
 -- RELEASE acq400-038-20190208153428 --
