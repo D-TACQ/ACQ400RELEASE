@@ -1,3 +1,5 @@
+-- RELEASE acq400-043-20190212161916 --
+restore tca6424cr from k314, cached read from gpio to save time on i2c affects acq425, acq437, acq427
 -- RELEASE acq400-042-20190210100907 --
 make that optional
 -- RELEASE acq400-041-20190210100449 --
