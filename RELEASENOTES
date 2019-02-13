@@ -1,3 +1,5 @@
+-- RELEASE acq400-047-20190213100729 --
+with updated SWE_HAPI for RADCELF
 -- RELEASE acq400-046-20190213091554 --
 tag kernel, rebuild clean
 -- RELEASE acq400-045-20190213091115 --
