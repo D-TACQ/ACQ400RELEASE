@@ -1,3 +1,5 @@
+-- RELEASE acq400-045-20190213091115 --
+rebuilt buildroot. includes flash tools eg flash_erase
 -- RELEASE acq400-044-20190212163321 --
 fix futzed build previous MUST build kernel ./make.zynq uImage
 -- RELEASE acq400-043-20190212161916 --
