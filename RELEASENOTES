@@ -1,3 +1,5 @@
+-- RELEASE acq400-050-20190214151421 --
+pull in latest kmcu dts changes for clean kmcu boot
 -- RELEASE acq400-049-20190214151410 --
 -- RELEASE acq400-048-20190214140112 --
 clean release after kmcu eth1 experiments
