@@ -1,3 +1,5 @@
+-- RELEASE acq400-048-20190214140112 --
+clean release after kmcu eth1 experiments
 -- RELEASE acq400-047-20190213100729 --
 with updated SWE_HAPI for RADCELF
 -- RELEASE acq400-046-20190213091554 --
