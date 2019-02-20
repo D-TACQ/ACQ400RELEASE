@@ -1,3 +1,5 @@
+-- RELEASE acq400-054-20190220095028 --
+explicitly include acq2106d37sfp.dtb
 -- RELEASE acq400-053-20190220092117 --
 acq2106d37sfp is a thing. revised faultmon, postshot for retries
 -- RELEASE acq400-052-20190219144343 --
