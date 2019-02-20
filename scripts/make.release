@@ -13,7 +13,8 @@ GIT=${GIT:-y}
 # subdirectories on target
 MNTDIRS="bin boot.d dtb.d fpga.d local packages packages.opt ko"
 # list of .dtb names to include
-ARCHDTB="acq1001 acq1002 acq1002p acq1002r acq2106d37 acq2106 acq2106sfp acq210612 \
+ARCHDTB="acq1001 acq1002 acq1002p acq1002r \
+	acq2106d37 acq2106 acq2106sfp acq2106d37sfp acq210612 \
 	acq1014 kmcu kmcuz30 kmcuz30_bpe acq2006 acq2006b acq2006bEU"
 
 
@@ -49,6 +50,7 @@ cpwarn ../ACQ420FMC/packageko*img		MNT/ko
 
 $CP ../PACKAGES/* MNT/packages
 $CP ../PACKAGES.OPT/* MNT/packages.opt
+mv MNT/packages/*custom* MNT/packages.opt
 $CP tgt_scripts/* MNT/bin
 $CP boot.d/* MNT/boot.d
 for arch in $ARCHDTB; do cpwarn $ARB/dts/$arch.dtb MNT/dtb.d; done
