@@ -1,3 +1,5 @@
+-- RELEASE acq400-053-20190220092117 --
+acq2106d37sfp is a thing. revised faultmon, postshot for retries
 -- RELEASE acq400-052-20190219144343 --
 increased default WDT TO to 20s. Include MAG FPGA
 -- RELEASE acq400-051-20190218131722 --
