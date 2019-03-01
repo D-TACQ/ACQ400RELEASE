@@ -1,3 +1,5 @@
+-- RELEASE acq400-056-20190301130940 --
+image includes updated FPGA, ioc to show updated routing switches
 -- RELEASE acq400-055-20190220102629 --
 improve update_release script
 -- RELEASE acq400-054-20190220095028 --
