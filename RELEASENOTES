@@ -1,3 +1,6 @@
+-- RELEASE acq400-059-20190304144949 --
+include CPSC2 base kernel. 
+Sample On Demand
 -- RELEASE acq400-058-20190304143413 --
 -- RELEASE acq400-057-20190303192444 --
 acq400-acq400ioc-1902282156.tgz: new sig_bus_x_cntrl. SOD mode works
