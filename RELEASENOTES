@@ -1,3 +1,5 @@
+-- RELEASE acq400-060-20190304150839 --
+acq400ioc change fixes BUG93
 -- RELEASE acq400-059-20190304144949 --
 include CPSC2 base kernel. 
 Sample On Demand
