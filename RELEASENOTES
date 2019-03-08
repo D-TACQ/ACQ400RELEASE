@@ -1,3 +1,5 @@
+-- RELEASE acq400-063-20190308143217 --
+remove unwanted prints from custom_dpg
 -- RELEASE acq400-062-20190308133259 --
 restore custom_dpg and custom_livetop
 -- RELEASE acq400-061-20190304164651 --
