@@ -1,3 +1,5 @@
+-- RELEASE acq400-065-20190320111351 --
+changes for DO immediate in clocked DI
 -- RELEASE acq400-064-20190311101315 --
 restores custom DPG and LIVETOP
 -- RELEASE acq400-063-20190308143217 --
