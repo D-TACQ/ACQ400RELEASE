@@ -1,3 +1,5 @@
+-- RELEASE acq400-069-20190527175609 --
+/mnt/local/rc.user is now deferred until after ioc is up.
 -- RELEASE acq400-068-20190328160827 --
 include iptables and lftp, lets see what they can do
 -- RELEASE acq400-067-20190327103555 --
