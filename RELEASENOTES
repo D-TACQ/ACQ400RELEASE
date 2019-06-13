@@ -1,3 +1,5 @@
+-- RELEASE acq400-070-20190613182151 --
+prefer $ntpd as ntp server. include snmpd
 -- RELEASE acq400-069-20190527175609 --
 /mnt/local/rc.user is now deferred until after ioc is up.
 -- RELEASE acq400-068-20190328160827 --
