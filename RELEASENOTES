@@ -1,3 +1,5 @@
+-- RELEASE acq400-077-20190628115704 --
+delay66 becomes common to all AO*, 12 bits, reg at 0x60
 -- RELEASE acq400-076-20190628114945 --
 -- RELEASE acq400-075-20190626173215 --
 now with clean packageko .. 
