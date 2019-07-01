@@ -1,3 +1,9 @@
+-- RELEASE acq400-078-20190701134500 --
+new FPGA images, ACQ427 BURST MODE, AO42x LLC improvements
+ ACQ1001_TOP_A7_40.bit.gz                  | Bin 508377 -> 504056 bytes
+ ACQ2106_TOP_04_04_04_04_40_61_9011.bit.gz | Bin 0 -> 1098598 bytes
+ ACQ2106_TOP_04_04_04_04_41_61_9011.bit.gz | Bin 1112257 -> 1110285 bytes
+
 -- RELEASE acq400-077-20190628115704 --
 delay66 becomes common to all AO*, 12 bits, reg at 0x60
 -- RELEASE acq400-076-20190628114945 --
