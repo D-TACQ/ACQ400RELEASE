@@ -1,3 +1,7 @@
+-- RELEASE acq400-079-20190702150449 --
+work on sync_role, new role rpmaster
+work on sob, buffer markers for streaming data
+BF: restore AWK math
 -- RELEASE acq400-078-20190701134500 --
 new FPGA images, ACQ427 BURST MODE, AO42x LLC improvements
  ACQ1001_TOP_A7_40.bit.gz                  | Bin 508377 -> 504056 bytes
