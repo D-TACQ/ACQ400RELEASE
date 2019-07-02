@@ -1,3 +1,5 @@
+-- RELEASE acq400-080-20190702174810 --
+with sync_role fixes, rpmaster is good
 -- RELEASE acq400-079-20190702150449 --
 work on sync_role, new role rpmaster
 work on sob, buffer markers for streaming data
