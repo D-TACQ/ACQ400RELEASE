@@ -1,3 +1,6 @@
+-- RELEASE acq400-081-20190703085204 --
+updated busybox to include math funcs
+add /mnt/local/local-etc.tgz : optional user customization of /etc
 -- RELEASE acq400-080-20190702174810 --
 with sync_role fixes, rpmaster is good
 -- RELEASE acq400-079-20190702150449 --
