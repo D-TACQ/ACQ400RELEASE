@@ -80,6 +80,8 @@ if [ "$GIT" = "y" ]; then
        git commit -m $VER .version RELEASENOTES
 fi
 
+cp RELEASENOTES MNT/RELEASENOTES
+
 (cd MNT; find -L . -type f -exec md5sum {} \; ) >acq400.sums
 
 cat - >MNT/VERSION <<EOF
