@@ -1,3 +1,5 @@
+-- RELEASE acq400-083-20190719184856 --
+includes refreshed ACQ480 images, to fix a bug in response to falling edge trigger.
 -- RELEASE acq400-082-20190719140723 --
 updated acq400ioc to fix sync_role for ACQ1014, FETCH_DELAY for LLC
 -- RELEASE acq400-081-20190703085204 --
