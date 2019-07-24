@@ -56,6 +56,7 @@ $CP boot.d/* MNT/boot.d
 for arch in $ARCHDTB; do cpwarn $ARB/dts/$arch.dtb MNT/dtb.d; done
 }
 
+[ "$(whoami)" = "root" ] && die "do not run as root"
 
 
 pull_sources
