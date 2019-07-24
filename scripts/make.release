@@ -81,14 +81,13 @@ if [ "$GIT" = "y" ]; then
 fi
 
 cp RELEASENOTES MNT/RELEASENOTES
-
-(cd MNT; find -L . -type f -exec md5sum {} \; ) >acq400.sums
-
 cat - >MNT/VERSION <<EOF
 RELEASE $RELNAME
 RELHOST $(whoami)@$(hostname)
 $(sort -k 2 acq400.sums)
 EOF
+
+(cd MNT; find -L . -type f -exec md5sum {} \; ) >acq400.sums
 
 mkdir -p REL
 tar cvzf REL/$RELNAME.tgz -C MNT .
