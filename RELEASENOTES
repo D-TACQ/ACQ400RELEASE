@@ -1,3 +1,7 @@
+-- RELEASE acq400-084-20190724142454 --
+fix RELEASE error stopping install
+new ACQ480 2D images
+LLC LATENCY measurement
 -- RELEASE acq400-083-20190719184856 --
 includes refreshed ACQ480 images, to fix a bug in response to falling edge trigger.
 -- RELEASE acq400-082-20190719140723 --
