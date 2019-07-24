@@ -6,7 +6,7 @@ grep '^[0-9a-f]\{32\}  ./' $TOP/VERSION >/tmp/release.md5
 
 (
 	cd $TOP
-	md5sum ./VERSION ./RELEASENOTES ./bin/* 
+	md5sum ./RELEASENOTES ./bin/* 
 	md5sum ./boot.d/* ./dtb.d/* ./fpga.d/* 
 	md5sum ./ko/*
 	md5sum ./packages/* 
