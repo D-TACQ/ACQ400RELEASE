@@ -1,3 +1,5 @@
+-- RELEASE acq400-086-20190724160219 --
+release procedure tighten scope
 -- RELEASE acq400-085-20190724143830 --
 -- RELEASE acq400-084-20190724142454 --
 fix RELEASE error stopping install
