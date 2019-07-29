@@ -1,3 +1,6 @@
+-- RELEASE acq400-096-20190729122419 --
+includes acq196 emulation for acq424
+includes basic snmpd
 -- RELEASE acq400-095-20190729122331 --
 -- RELEASE acq400-094-20190724204847 --
 BF streamtonowhered stop before start, remove file open warnings.
