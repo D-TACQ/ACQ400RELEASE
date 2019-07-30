@@ -1,3 +1,5 @@
+-- RELEASE acq400-097-20190730100850 --
+39-kmux is an optional package
 -- RELEASE acq400-096-20190729122419 --
 includes acq196 emulation for acq424
 includes basic snmpd
