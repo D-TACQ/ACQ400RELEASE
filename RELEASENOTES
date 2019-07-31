@@ -1,3 +1,18 @@
+-- RELEASE acq400-098-20190731133317 --
+LLC improvements: FPGA with timing instrumentation
+set.site 1 nacc=NACC[,SHIFT[,START]  : 
+   use decimation rather than clkdiv to get rate, ensures exact phase from trigger
+   use accumulation for noise reduction
+   START feature ensures exact scaling for non power-of-two NACC
+example:
+set.site 1 nacc=10 
+sets nacc=10 : decimate by 10, start=2 (accumulate 8 samples), scale>>3 : divide by 8 for scaling
+
+set.site 1 nacc=10,4,0 : decimate 10, average 10 samples, but scale>>4 : 
+	true mean over full period but data is scaled down 10/16
+
+set.site 1 nacc=10,0,9	: decimate 10, output on 10th sample NO accumulation.
+
 -- RELEASE acq400-097-20190730100850 --
 39-kmux is an optional package
 -- RELEASE acq400-096-20190729122419 --
