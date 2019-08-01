@@ -1,3 +1,6 @@
+-- RELEASE acq400-100-20190801093617 --
+initial support for DIO482 COS feature
+restore web home page links to sysconfig docs
 -- RELEASE acq400-099-20190731134625 --
 
 -- RELEASE acq400-098-20190731133317 --
