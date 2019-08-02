@@ -15,6 +15,7 @@ MNTDIRS="bin boot.d dtb.d fpga.d local packages packages.opt ko"
 # list of .dtb names to include
 ARCHDTB="acq1001 acq1002 acq1002p acq1002r \
 	acq2106d37 acq2106 acq2106sfp acq2106d37sfp acq210612 acq2106_1000X_overlay \
+	acq400dsp1_overlay acq400dsp2_overlay \
 	acq1014 kmcu kmcuz30 kmcuz30_bpe acq2006 acq2006b acq2006bEU"
 
 
