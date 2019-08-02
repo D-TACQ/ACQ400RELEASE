@@ -1,3 +1,5 @@
+-- RELEASE acq400-101-20190802095446 --
+preparing for anatrg. not for general release
 -- RELEASE acq400-100-20190801093617 --
 initial support for DIO482 COS feature
 restore web home page links to sysconfig docs
