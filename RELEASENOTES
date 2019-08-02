@@ -1,3 +1,6 @@
+-- RELEASE acq400-104-20190802232133 --
+ATD, aggregator version, ready to roll
+DIO482 COS as well..
 -- RELEASE acq400-103-20190802104943 --
 finalize dsp irq numbers
 update 04_04_04_04_41_41 image for acq196 emulation
