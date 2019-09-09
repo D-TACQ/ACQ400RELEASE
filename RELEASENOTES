@@ -1,3 +1,5 @@
+-- RELEASE acq400-112-20190909162044 --
+includes tclsh allegedly different to expect
 -- RELEASE acq400-111-20190905080848 --
 avoid haiku-like fpga web page
 -- RELEASE acq400-110-20190904200028 --
