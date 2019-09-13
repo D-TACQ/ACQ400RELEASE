@@ -1,3 +1,5 @@
+-- RELEASE acq400-114-20190913100549 --
+make default 100K points for calibfit, avoid big wait if capture in the millions
 -- RELEASE acq400-113-20190913094620 --
 BOLO8 improvements .. calibrate with 100K points for cs-studio compatible plot
 BOLO8 web diags are good again..
