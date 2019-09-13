@@ -1,3 +1,6 @@
+-- RELEASE acq400-113-20190913094620 --
+BOLO8 improvements .. calibrate with 100K points for cs-studio compatible plot
+BOLO8 web diags are good again..
 -- RELEASE acq400-112-20190909162044 --
 includes tclsh allegedly different to expect
 -- RELEASE acq400-111-20190905080848 --
