@@ -1,3 +1,5 @@
+-- RELEASE acq400-115-20190913104547 --
+updated 38-custom_hapi-1909131041
 -- RELEASE acq400-114-20190913100549 --
 make default 100K points for calibfit, avoid big wait if capture in the millions
 -- RELEASE acq400-113-20190913094620 --
