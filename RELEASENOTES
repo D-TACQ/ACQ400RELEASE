@@ -1,3 +1,6 @@
+-- RELEASE acq400-118-20190919092556 --
+uses FRU prom to calculate VAP and VAN see 
+/usr/local/CARE/choose_vap
 -- RELEASE acq400-117-20190919085306 --
 -- RELEASE acq400-116-20190916144517 --
 changes for WR_TS, WR_PPS in WR#2
