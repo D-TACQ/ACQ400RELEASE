@@ -1,3 +1,5 @@
+-- RELEASE acq400-119-20190920075458 --
+WRTD prototype
 -- RELEASE acq400-118-20190919092556 --
 uses FRU prom to calculate VAP and VAN see 
 /usr/local/CARE/choose_vap
