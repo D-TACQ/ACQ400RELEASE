@@ -1,3 +1,6 @@
+-- RELEASE acq400-120-20190926113153 --
+/var/www/d-tacq/rc-user-complete indicates system ready
+acq400_streamd also holds off until ready
 -- RELEASE acq400-119-20190920075458 --
 WRTD prototype
 -- RELEASE acq400-118-20190919092556 --
