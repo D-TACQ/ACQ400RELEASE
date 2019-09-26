@@ -1,3 +1,5 @@
+-- RELEASE acq400-121-20190926113851 --
+includes new acq420 package
 -- RELEASE acq400-120-20190926113153 --
 /var/www/d-tacq/rc-user-complete indicates system ready
 acq400_streamd also holds off until ready
