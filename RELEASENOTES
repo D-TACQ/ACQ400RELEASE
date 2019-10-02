@@ -1,3 +1,5 @@
+-- RELEASE acq400-127-20191002102619 --
+include WR release FPGA
 -- RELEASE acq400-126-20191001165137 --
 maintenance .. ensure clean kbuild
 -- RELEASE acq400-125-20190930193608 --
