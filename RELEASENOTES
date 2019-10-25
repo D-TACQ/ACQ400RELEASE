@@ -1,3 +1,5 @@
+-- RELEASE acq400-129-20191025111814 --
+99-custom_awg becomes 11-custom_awg to ensure knobs included in service
 -- RELEASE acq400-128-20191023115011 --
 hold off event0 enable in PP mode, allows free-running trigger for easier PP testing
 -- RELEASE acq400-127-20191002102619 --
