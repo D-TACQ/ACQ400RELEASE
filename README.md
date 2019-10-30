@@ -2,7 +2,11 @@
 ACQ400 firmware releases from 2019 on
 
  # INSTRUCTIONS
-  0. Note any custom packages you have activated (FIRMWARE web page)
+  0. Note any custom packages you have activated (FIRMWARE web page) 
+   0. The update won't touch any customization you have in /mnt/local/, but if you haven't already backed up /mnt/local, now would be a good time
+   
+    - scp -r root@UUT/mnt/local MYPC/UUT
+    
   1. Download the release to a PC. Use a browser, wget won't work with https://
   
     - eg The 129 release:
