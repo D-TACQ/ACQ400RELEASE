@@ -4,6 +4,9 @@ ACQ400 firmware releases from 2019 on
  # INSTRUCTIONS
   0. Note any custom packages you have activated (FIRMWARE web page)
   1. Download the release to a PC. Use a browser, wget won't work with https://
+  
+    - eg The 129 release:
+    - https://github.com/D-TACQ/ACQ400RELEASE/releases/download/v129/acq400-129-20191025111814.tgz
   2. Free memory on the UUT
   
     - ssh root@UUT 'set.sys /dev/acq400.0.knobs/jettison_buffers_from 20'  
