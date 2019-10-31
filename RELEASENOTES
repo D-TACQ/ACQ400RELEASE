@@ -1,3 +1,6 @@
+-- RELEASE acq400-130-20191031113750 --
+harden up response for case "NO FPGA". 10-420, 35-bolo DSP quit early
+absense of /etc/sites -> NO FPGA
 -- RELEASE acq400-129-20191025111814 --
 99-custom_awg becomes 11-custom_awg to ensure knobs included in service
 -- RELEASE acq400-128-20191023115011 --
