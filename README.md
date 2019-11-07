@@ -33,7 +33,7 @@ ACQ400 firmware releases from 2019 on
   2. restore the "local" subdirectory from backup.
 
  
-    # Initialization files in /mnt/local
+   # Initialization files in /mnt/local
   
   1. sysconfig. 
   
@@ -49,8 +49,14 @@ If you are missing a calibration file, please ask D-TACQ for a replacement copy.
   
 We try to avoid patch files on shipment, but sometimes it's necessary. in particular
 
-     /mnt/local/acq420fmc.ko is a patch driver and must/will be blown away by the release
-     /mnt/local/ACQxxx_TOP_aa_bb*.bit.gz is a patch FPGA image. if one is fitted to your system, please contact D-TACQ for update advice.
+     # /mnt/local/acq420fmc.ko 
+     
+     is a patch driver and must/will be blown away by the release
+     
+     # /mnt/local/ACQxxx_TOP_aa_bb*.bit.gz 
+     
+     is a patch FPGA image. if one is fitted to your system, please contact D-TACQ for update advice.
+     
   4. all other files in /mnt/local
   
 All other files in /mnt/local "belong to the user" and are untouched by upgrade.
