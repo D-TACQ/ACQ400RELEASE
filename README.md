@@ -2,13 +2,13 @@
 ACQ400 firmware releases from 2019 on
 
  # INSTRUCTIONS
-  # Backup!
+   # Backup!
   0. Note any custom packages you have activated (FIRMWARE web page) 
   - The update won't touch any customization you have in /mnt/local/, but if you haven't already backed up /mnt/local, now would be a good time
    
     - scp -r root@UUT/mnt/local MYPC/UUT
     
-  # Online method: recommended
+   # Online method: recommended
   1. Download the release to a PC. Use a browser, wget won't work with https://
   
     - eg The 129 release:
@@ -24,7 +24,7 @@ ACQ400 firmware releases from 2019 on
     - ssh root@UUT '/mnt/bin/update_release /tmp/acq400*tgz'
   5. restore any custom packages that were previously  activated from the current stock.
   
-  # For a fresh SD card
+   # For a fresh SD card
 
   0. Make sure the SD card is completely blank. DO NOT write on top of an existing SD image.
   
@@ -33,7 +33,7 @@ ACQ400 firmware releases from 2019 on
   2. restore the "local" subdirectory from backup.
 
  
-   # Initialization files in /mnt/local
+    # Initialization files in /mnt/local
   
   1. sysconfig. 
   
