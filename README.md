@@ -36,18 +36,23 @@ ACQ400 firmware releases from 2019 on
    # Initialization files in /mnt/local
   
   1. sysconfig. 
+  
 These are defaults for the current payload. If the payload changes, or perhaps the sysconfig is simply out of date, you can re-generate the current factory defaults from here:
    https://github.com/D-TACQ/acq400_sysconfig
 
   2. Calibration
+  
 Calibration files are held in /mnt/local/cal/Exxxxx.xml where xxxx is the serial number of the module.
 If you are missing a calibration file, please ask D-TACQ for a replacement copy.
 
   3. Patch files
+  
 We try to avoid patch files on shipment, but sometimes it's necessary. in particular
-   # /mnt/local/acq420fmc.ko is a patch driver and must/will be blown away by the release
-   # /mnt/local/ACQxxx_TOP_aa_bb*.bit.gz is a patch FPGA image. if one is fitted to your system, please contact D-TACQ for update advice.
+
+     /mnt/local/acq420fmc.ko is a patch driver and must/will be blown away by the release
+     /mnt/local/ACQxxx_TOP_aa_bb*.bit.gz is a patch FPGA image. if one is fitted to your system, please contact D-TACQ for update advice.
   4. all other files in /mnt/local
+  
 All other files in /mnt/local "belong to the user" and are untouched by upgrade.
 
 
