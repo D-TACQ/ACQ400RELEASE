@@ -1,3 +1,6 @@
+-- RELEASE acq400-131-20191107115916 --
+CLOCKMONITOR=0 is default .. clock monitor could be firing spuriously
+
 -- RELEASE acq400-130-20191031113750 --
 harden up response for case "NO FPGA". 10-420, 35-bolo DSP quit early
 absense of /etc/sites -> NO FPGA
