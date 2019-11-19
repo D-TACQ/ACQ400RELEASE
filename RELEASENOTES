@@ -1,3 +1,5 @@
+-- RELEASE acq400-132-20191119141501 --
+awg robustness: new awg  cancels old awg tee-up even if it has not triggered
 -- RELEASE acq400-131-20191107115916 --
 CLOCKMONITOR=0 is default .. clock monitor could be firing spuriously
 
