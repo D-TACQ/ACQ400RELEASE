@@ -1,3 +1,5 @@
+-- RELEASE acq400-133-20191121165917 --
+ACQ430 FP LEMO TRG input control: fmc_lemo_role_trg=1
 -- RELEASE acq400-132-20191119141501 --
 awg robustness: new awg  cancels old awg tee-up even if it has not triggered
 -- RELEASE acq400-131-20191107115916 --
