@@ -1,3 +1,5 @@
+-- RELEASE acq400-134-20191202095150 --
+default buffer allocation 128x4MB to comp unbounded pl330 int handling
 -- RELEASE acq400-133-20191121165917 --
 ACQ430 FP LEMO TRG input control: fmc_lemo_role_trg=1
 -- RELEASE acq400-132-20191119141501 --
