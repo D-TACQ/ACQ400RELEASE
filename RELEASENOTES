@@ -1,3 +1,5 @@
+-- RELEASE acq400-137-20191205212523 --
+rootfs now includes netkit-ftp client, more monitoring (atop)
 -- RELEASE acq400-136-20191203132455 --
 updated with final FB9816
 -- RELEASE acq400-135-20191202172407 --
