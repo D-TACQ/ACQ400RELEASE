@@ -1,3 +1,6 @@
+-- RELEASE acq400-138-20191210132709 --
+fix for mgtdram_hostpull first block error
+raw2stl option not to fill block.
 -- RELEASE acq400-137-20191205212523 --
 rootfs now includes netkit-ftp client, more monitoring (atop)
 -- RELEASE acq400-136-20191203132455 --
