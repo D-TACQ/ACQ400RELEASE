@@ -2,7 +2,7 @@
 
 TOP=${1:-/mnt}
 
-grep '^[0-9a-f]\{32\}  ./' $TOP/VERSION >/tmp/release.md5
+grep '^[0-9a-f]\{32\}  ./' $TOP/VERSION | grep -v rootfs.ext2 >/tmp/release.md5
 
 (
 	cd $TOP
@@ -13,7 +13,7 @@ grep '^[0-9a-f]\{32\}  ./' $TOP/VERSION >/tmp/release.md5
 	md5sum ./packages.opt/* 
 	md5sum ./uImage ./uramdisk.image.gz 
 	[ -e ./rootfs.ext2.gz ] && md5sum ./rootfs.ext2.gz
-) | sort -k 2 -f -d >/tmp/current.md5
+) | sort -k 2 -f -d | grep -v rootfs.ext2 >/tmp/current.md5
 
 echo RELEASE : /tmp/release.md5
 echo CURRENT : /tmp/current.md5
