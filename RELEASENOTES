@@ -1,3 +1,5 @@
+-- RELEASE acq400-139-20191212064911 --
+picks up new acq423 personalities, tries to avoid false PATCH indication
 -- RELEASE acq400-138-20191210132709 --
 fix for mgtdram_hostpull first block error
 raw2stl option not to fill block.
