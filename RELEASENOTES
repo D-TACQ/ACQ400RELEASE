@@ -1,3 +1,6 @@
+-- RELEASE acq400-140-20191213150510 --
+ACQ2106_TOP_6D_6D_6D_6D_ff_40 now with AXI DMA
+WRPG works
 -- RELEASE acq400-139-20191212064911 --
 picks up new acq423 personalities, tries to avoid false PATCH indication
 -- RELEASE acq400-138-20191210132709 --
