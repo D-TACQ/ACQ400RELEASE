@@ -1,3 +1,5 @@
+-- RELEASE acq400-142-20191213204703 --
+WRPG is go. see github.com/D-TACQ/acq400_hapi/user_apps/acq2106/load_wrpg_stl.py
 -- RELEASE acq400-141-20191213152224 --
 WRPG compatible FPGA included: ACQ2106_TOP_09_09_09_09_09_6B_9011_WR
 -- RELEASE acq400-140-20191213150510 --
