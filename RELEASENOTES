@@ -1,3 +1,7 @@
+-- RELEASE acq400-144-20200111174523 --
+allow all options to /mnt/local/sysconfig/wr.sh
+fix clockmon
+restore umon to bb
 -- RELEASE acq400-143-20200106193549 --
 BF: restore correct ACQ480 training, upper 16 bits COS
 -- RELEASE acq400-142-20191213204703 --
