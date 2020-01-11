@@ -1,3 +1,5 @@
+-- RELEASE acq400-145-20200111183647 --
+correct bb build from 144
 -- RELEASE acq400-144-20200111174523 --
 allow all options to /mnt/local/sysconfig/wr.sh
 fix clockmon
