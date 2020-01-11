@@ -1,3 +1,6 @@
+-- RELEASE acq400-146-20200111201723 --
+change readback for acq425 gains to read after set, no async poll
+increase all i2c to 400kHz
 -- RELEASE acq400-145-20200111183647 --
 correct bb build from 144
 -- RELEASE acq400-144-20200111174523 --
