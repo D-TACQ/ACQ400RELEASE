@@ -24,6 +24,14 @@ ACQ400 firmware releases from 2019 on
     - ssh root@UUT '/mnt/bin/update_release /tmp/acq400*tgz'
   5. restore any custom packages that were previously  activated from the current stock.
   
+  eg
+  
+    - ssh root@UUT 'mv /mnt/packages.opt/35-custom_multievent-1909021107.tgz /mnt/packages'
+  
+  6. reboot  # sync ensures that data is flushed to SD.
+  
+    - ssh root@UUT 'sync;sync;reboot'
+  
    # For a fresh SD card
 
   0. Make sure the SD card is completely blank. DO NOT write on top of an existing SD image.
