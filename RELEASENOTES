@@ -1,3 +1,6 @@
+-- RELEASE acq400-147-20200113185524 --
+bolo boot updates
+wrtd_tx
 -- RELEASE acq400-146-20200111201723 --
 change readback for acq425 gains to read after set, no async poll
 increase all i2c to 400kHz
