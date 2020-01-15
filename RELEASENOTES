@@ -1,3 +1,7 @@
+-- RELEASE acq400-149-20200115104338 --
+boot time network options:
+/mnt/local/network:/etc/network/default-networkrc eth1 [STATIC|custom_file]
+... waits for eth1 to come up and does the right thing..
 -- RELEASE acq400-148-20200113185659 --
 clean packageko
 -- RELEASE acq400-147-20200113185524 --
