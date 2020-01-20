@@ -1,3 +1,7 @@
+-- RELEASE acq400-150-20200120145534 --
+FLARE EMC final -  Si5326_tune_phase with web report
+BF: 1997 shot limit for AXI DMA fixed
+BF: RADCELF operation restored
 -- RELEASE acq400-149-20200115104338 --
 boot time network options:
 /mnt/local/network:/etc/network/default-networkrc eth1 [STATIC|custom_file]
