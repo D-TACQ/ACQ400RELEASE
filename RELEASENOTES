@@ -1,3 +1,6 @@
+-- RELEASE acq400-153-20200127214534 --
+wrtd_tx presented as a knob with options
+set.site 0 xdt provides base xdt for mdsshell
 -- RELEASE acq400-152-20200120151953 --
 Includes release WR FPGA
 -- RELEASE acq400-150-20200120145534 --
