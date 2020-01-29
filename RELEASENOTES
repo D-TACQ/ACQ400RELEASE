@@ -1,3 +1,6 @@
+-- RELEASE acq400-154-20200129083257 --
+    ACQ2106_04_04_04_04_41_61_9011 - Adding DI snoop. 
+    ACQ1001_03_69 - First ACQ430+RAD-CELF
 -- RELEASE acq400-153-20200127214534 --
 wrtd_tx presented as a knob with options
 set.site 0 xdt provides base xdt for mdsshell
