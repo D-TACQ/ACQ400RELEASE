@@ -1,3 +1,5 @@
+-- RELEASE acq400-157-20200215170005 --
+remove CONFIG_PM_SLEEP .. not wanted..
 -- RELEASE acq400-156-20200215154016 --
 change kernel tick strategy to "Periodic, 250Hz", previous dynticks assumed to result in HIGH twd rates, especially on CPU1, 
 also possible RT failure due to low power states
