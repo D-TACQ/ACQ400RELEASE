@@ -1,3 +1,7 @@
+-- RELEASE acq400-156-20200215154016 --
+change kernel tick strategy to "Periodic, 250Hz", previous dynticks assumed to result in HIGH twd rates, especially on CPU1, 
+also possible RT failure due to low power states
+on ACQ400, we care more about RT than low power!
 -- RELEASE acq400-155-20200129151531 --
 restore ACQ424 ACQ196 emulation
 -- RELEASE acq400-154-20200129083257 --
