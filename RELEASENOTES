@@ -1,3 +1,5 @@
+-- RELEASE acq400-161-20200226115100 --
+uses killswitch to stop uart
 -- RELEASE acq400-160-20200226085848 --
 make uImage works better
 -- RELEASE acq400-159-20200226083627 --
