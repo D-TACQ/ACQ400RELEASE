@@ -1,3 +1,5 @@
+-- RELEASE acq400-164-20200305103219 --
+fix WR memory leak and ACQ482 channel control mapping
 -- RELEASE acq400-163-20200304105037 --
 revised wrtd
 -- RELEASE acq400-162-20200226120256 --
