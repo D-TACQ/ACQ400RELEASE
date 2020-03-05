@@ -1,3 +1,6 @@
+-- RELEASE acq400-165-20200305221027 --
+work on wrtd defaults .. non default rx is same non-default id for tx_immediate
+wrtd goes RT .. maybe crack the 50msec barrier..
 -- RELEASE acq400-164-20200305103219 --
 fix WR memory leak and ACQ482 channel control mapping
 -- RELEASE acq400-163-20200304105037 --
