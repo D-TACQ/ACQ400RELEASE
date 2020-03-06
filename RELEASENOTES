@@ -1,3 +1,5 @@
+-- RELEASE acq400-166-20200306104841 --
+live stream at higher priority .. more responsive update
 -- RELEASE acq400-165-20200305221027 --
 work on wrtd defaults .. non default rx is same non-default id for tx_immediate
 wrtd goes RT .. maybe crack the 50msec barrier..
