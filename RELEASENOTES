@@ -1,3 +1,6 @@
+-- RELEASE acq400-167-20200320104117 --
+WRPG fix to work from LAN and VPN
+ATD enhancements
 -- RELEASE acq400-166-20200306104841 --
 live stream at higher priority .. more responsive update
 -- RELEASE acq400-165-20200305221027 --
