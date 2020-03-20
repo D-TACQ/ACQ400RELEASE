@@ -1,3 +1,5 @@
+-- RELEASE acq400-168-20200320214723 --
+experimental pm control to stub i2c
 -- RELEASE acq400-167-20200320104117 --
 WRPG fix to work from LAN and VPN
 ATD enhancements
