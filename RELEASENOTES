@@ -1,3 +1,5 @@
+-- RELEASE acq400-169-20200325193645 --
+anatrg with group_mask
 -- RELEASE acq400-168-20200320214723 --
 experimental pm control to stub i2c
 -- RELEASE acq400-167-20200320104117 --
