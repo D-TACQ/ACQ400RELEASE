@@ -71,8 +71,9 @@ if [ $? -eq 0 ]; then
 	grep -q fpga.d /proc/mounts && umount /mnt/fpga.d
 	rm /mnt/ko/*
 	cleanup_old_stragglers
+	touch /tmp/exclude
 	tar xvzf $REL -X /tmp/exclude -C /mnt
-	mkdir -p /mnt/fpga.d; rm /mnt/fpga.d/*
+	mkdir -p /mnt/fpga.d; rm -Rf /mnt/fpga.d/*
 	echo post-copy version check:
 	/mnt/bin/check_version
 	if [ $? -eq 0 ]; then
