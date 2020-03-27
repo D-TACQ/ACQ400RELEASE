@@ -38,7 +38,7 @@ cpwarn() {
 	fi
 }
 
-pull_sources() 
+pull_sources()
 {
 rm -Rf MNT
 for dir in $MNTDIRS; do mkdir -p MNT/$dir; done
@@ -82,6 +82,11 @@ if [ "$GIT" = "y" ]; then
        git commit -m $VER .version RELEASENOTES
 fi
 
+./scripts/make_compatible_fpga_links.py >make_links
+chmod a+rx make_links
+./make_links
+mksquashfs MNT/fpga.d/* MNT/ko/fpga-$VER-$DC.img 2>&1 >squashfs.log
+
 cp RELEASENOTES MNT/RELEASENOTES
 (cd MNT; find -L . -type f -exec md5sum {} \; ) >acq400.sums
 cat - >MNT/VERSION <<EOF
@@ -92,7 +97,7 @@ EOF
 
 
 mkdir -p REL
-tar cvzf REL/$RELNAME.tgz -C MNT .
+tar cvzf REL/$RELNAME.tgz -C MNT --exclude=*.bit.gz .
 tar tvzf REL/$RELNAME.tgz > acq400.manifest
 
 git commit -m $VER acq400.manifest
@@ -104,4 +109,3 @@ echo ssh dt100@eigg /home/dt100/bin/set.acq4xx.current $RELNAME.tgz
 echo publish
 (cd REL; sha1sum $RELNAME.tgz )
 echo scp REL/$RELNAME.tgz dtacq@margum.pair.com:public_html/swrel
-
