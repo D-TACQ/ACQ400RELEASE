@@ -2,7 +2,7 @@
 
 TOP=${1:-/mnt}
 
-grep '^[0-9a-f]\{32\}  ./' $TOP/VERSION | grep -v rootfs.ext2 >/tmp/release.md5
+grep '^[0-9a-f]\{32\}  ./' $TOP/VERSION | grep -v rootfs.ext2 | grep -v fpga.d >/tmp/release.md5
 
 (
 	cd $TOP
