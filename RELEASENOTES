@@ -1,3 +1,5 @@
+-- RELEASE acq400-179-20200328114257 --
+fmc-scan final, loads shortest match first
 -- RELEASE acq400-178-20200327212353 --
 fmc-scan optimisations, faster, more accurate
 -- RELEASE acq400-177-20200327194309 --
