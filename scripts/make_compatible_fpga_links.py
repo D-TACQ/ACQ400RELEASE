@@ -63,4 +63,4 @@ for name in files:
             fields2 = fields.copy()
             for ff in range(id,SITE1+1+ndup):
                 fields2[ff] = 'ff'
-            print("ln -s {} {}".format(name, '_'.join(fields2)))
+            print("ln -s {} {}.bit.gz".format(name, '_'.join(fields2)))
