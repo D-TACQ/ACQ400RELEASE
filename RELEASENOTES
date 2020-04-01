@@ -1,3 +1,5 @@
+-- RELEASE acq400-182-20200401111224 --
+BF: make sure ACQ1001_TOP_09_09 loads, both pref and stock
 -- RELEASE acq400-181-20200401074254 --
 includes AWG:MODE:ABO, restored anatrg regs page
 -- RELEASE acq400-180-20200401073516 --
