@@ -1,85 +1,255 @@
-drwxrwxr-x pgm/pgm           0 2020-04-01 07:43 ./
--rw-r--r-- pgm/pgm     2814073 2020-04-01 07:42 ./uramdisk.image.gz
-drwxrwxr-x pgm/pgm           0 2020-04-01 07:43 ./ko/
--rw-r--r-- pgm/pgm    79429632 2020-04-01 07:43 ./ko/fpga-181-20200401074254.img
--rw-r--r-- pgm/pgm     5554176 2020-04-01 07:42 ./ko/packageko-4.14.0-acq400-xilinx-dirty-200329191246.img
-drwxrwxr-x pgm/pgm           0 2020-04-01 07:42 ./local/
-drwxrwxr-x pgm/pgm           0 2020-04-01 07:42 ./boot.d/
--rw-rw-r-- pgm/pgm      373404 2020-04-01 07:42 ./boot.d/BOOT_EE.bin
--rwxr-xr-x pgm/pgm      373404 2020-04-01 07:42 ./boot.d/BOOT_KMCUAZ30.bin
--rw-rw-r-- pgm/pgm      373404 2020-04-01 07:42 ./boot.d/BOOT_E0.bin
--rwxr-xr-x pgm/pgm      373404 2020-04-01 07:42 ./boot.d/BOOT_1001.bin
--rw-rw-r-- pgm/pgm      441028 2020-04-01 07:42 ./boot.d/BOOT_ZC706.bin
--rwxr-xr-x pgm/pgm      373404 2020-04-01 07:42 ./boot.d/BOOT_KMCUAZ30_ACQ480.bin
--rwxr-xr-x pgm/pgm      373404 2020-04-01 07:42 ./boot.d/BOOT_kmcu.bin
--rwxr-xr-x pgm/pgm      373404 2020-04-01 07:42 ./boot.d/BOOT_2106.bin
--rw-rw-r-- pgm/pgm      373404 2020-04-01 07:42 ./boot.d/BOOT_1001_acq480.bin
--rw-rw-r-- pgm/pgm      370132 2020-04-01 07:42 ./boot.d/BOOT_EU.bin
--rw-rw-r-- pgm/pgm       26060 2020-04-01 07:43 ./VERSION
-drwxrwxr-x pgm/pgm           0 2020-04-01 07:42 ./packages.opt/
--rw-r--r-- pgm/pgm         452 2020-04-01 07:42 ./packages.opt/90-custom_ftp-1912052153.tgz
--rw-rw-r-- pgm/pgm        6153 2020-04-01 07:42 ./packages.opt/35-radcelf-1901291423.tgz
--rw-rw-r-- pgm/pgm       87801 2020-04-01 07:42 ./packages.opt/38-custom_hapi-1909131041.tgz
--rw-r--r-- pgm/pgm      194820 2020-04-01 07:42 ./packages.opt/70-mdsshell-2001251936.tgz
--rw-r--r-- pgm/pgm        4120 2020-04-01 07:42 ./packages.opt/35-custom_fb9816-1912031303.tgz
--rw-r--r-- pgm/pgm         523 2020-04-01 07:42 ./packages.opt/99-custom_livetop-1903081328.tgz
--rw-r--r-- pgm/pgm         478 2020-04-01 07:42 ./packages.opt/04-custom_pmod-1901211015.tgz
--rw-r--r-- pgm/pgm        7846 2020-04-01 07:42 ./packages.opt/35-custom_gpg-1912181454.tgz
--rw-r--r-- pgm/pgm        3856 2020-04-01 07:42 ./packages.opt/39-kmux-1907301001.tgz
--rw-r--r-- pgm/pgm        4394 2020-04-01 07:42 ./packages.opt/32-custom_acq1014-1910011944.tgz
--rw-r--r-- pgm/pgm       39239 2020-04-01 07:42 ./packages.opt/11-custom_awg-1910251105.tgz
--rw-rw-r-- pgm/pgm       41361 2020-04-01 07:42 ./packages.opt/35-bolodsp-2001131727.tgz
--rw-r--r-- pgm/pgm        6118 2020-04-01 07:42 ./packages.opt/99-custom_dpg-1912092101.tgz
--rw-rw-r-- pgm/pgm        1706 2020-04-01 07:42 ./packages.opt/35-custom_multievent-1909021107.tgz
--rw-r--r-- pgm/pgm        6487 2020-04-01 07:42 ./packages.opt/99-custom_wrpg-2003181944.tgz
--rw-r--r-- pgm/pgm        1112 2020-04-01 07:42 ./packages.opt/15-custom_sshkeys-1901211015.tgz
--rw-rw-r-- pgm/pgm      441779 2020-04-01 07:42 ./packages.opt/95-ttytools-2002121053.tgz
--rw-r--r-- pgm/pgm        2595 2020-04-01 07:42 ./packages.opt/90-custom_acq480fir-1901211020.tgz
-drwxrwxr-x pgm/pgm           0 2020-04-01 07:43 ./fpga.d/
--rw-r--r-- pgm/pgm    59012629 2020-04-01 07:42 ./rootfs.ext2.gz
--rw-rw-r-- pgm/pgm       28361 2020-04-01 07:43 ./RELEASENOTES
-drwxrwxr-x pgm/pgm           0 2020-04-01 07:42 ./packages/
--rw-r--r-- pgm/pgm       19493 2020-04-01 07:42 ./packages/03-acq400_common-200328112043.tgz
--rw-rw-r-- pgm/pgm        1279 2020-04-01 07:42 ./packages/30-ai_monitor-1901051908.tgz
--rw-r--r-- pgm/pgm       10320 2020-04-01 07:42 ./packages/05-acq1002-180725085727.tgz
--rw-r--r-- pgm/pgm      206264 2020-04-01 07:42 ./packages/20-httpd-2003271521.tgz
--rw-r--r-- pgm/pgm        1345 2020-04-01 07:42 ./packages/05-acq2006b-190917152340.tgz
--rw-rw-r-- pgm/pgm     4661560 2020-04-01 07:42 ./packages/40-acq400ioc-2004010742.tgz
--rw-r--r-- pgm/pgm        4352 2020-04-01 07:42 ./packages/39-transient-2001251936.tgz
--rw-r--r-- pgm/pgm        1088 2020-04-01 07:42 ./packages/05-acq1001-190106190253.tgz
--rwxr-xr-x pgm/pgm         267 2020-04-01 07:42 ./packages/05-zedboard-130910174646.tgz
--rw-r--r-- pgm/pgm        3193 2020-04-01 07:42 ./packages/05-zc706-160225154520.tgz
--rw-rw-r-- pgm/pgm      336369 2020-04-01 07:42 ./packages/10-acq420-200329191246.tgz
--rw-r--r-- pgm/pgm        1447 2020-04-01 07:42 ./packages/05-acq2006-190917152340.tgz
--rw-rw-r-- pgm/pgm        1126 2020-04-01 07:42 ./packages/05-kmcu-160613171216.tgz
--rw-r--r-- pgm/pgm        2127 2020-04-01 07:42 ./packages/05-acq1014-170504214159.tgz
--rw-r--r-- pgm/pgm       14570 2020-04-01 07:42 ./packages/05-acq2106-190917152340.tgz
--rw-rw-r-- pgm/pgm       68982 2020-04-01 07:42 ./packages/33-libute-190104121044.tgz
--rw-rw-r-- pgm/pgm        1135 2020-04-01 07:42 ./packages/05-kmcuz30-160613171216.tgz
-drwxrwxr-x pgm/pgm           0 2020-04-01 07:42 ./bin/
--rwxrwxr-x pgm/pgm        1745 2020-04-01 07:42 ./bin/update_release_acq400
--rwxr-xr-x pgm/pgm          89 2020-04-01 07:42 ./bin/network.stub
--rwxrwxr-x pgm/pgm        1769 2020-04-01 07:42 ./bin/update_release
--rwxrwxr-x pgm/pgm         885 2020-04-01 07:42 ./bin/check_version
--rwxrwxr-x pgm/pgm         119 2020-04-01 07:42 ./bin/backup_sd
-drwxrwxr-x pgm/pgm           0 2020-04-01 07:42 ./dtb.d/
--rw-rw-r-- pgm/pgm       15798 2020-04-01 07:42 ./dtb.d/acq1001.dtb
--rw-rw-r-- pgm/pgm       21058 2020-04-01 07:42 ./dtb.d/acq2106d37.dtb
--rw-rw-r-- pgm/pgm       16680 2020-04-01 07:42 ./dtb.d/acq1002r.dtb
--rw-rw-r-- pgm/pgm         223 2020-04-01 07:42 ./dtb.d/acq400dsp1_overlay.dtb
--rw-rw-r-- pgm/pgm       16864 2020-04-01 07:42 ./dtb.d/acq2006.dtb
--rw-rw-r-- pgm/pgm       21978 2020-04-01 07:42 ./dtb.d/acq2106d37sfp.dtb
--rw-rw-r-- pgm/pgm         223 2020-04-01 07:42 ./dtb.d/acq400dsp2_overlay.dtb
--rw-rw-r-- pgm/pgm       16800 2020-04-01 07:42 ./dtb.d/acq1002.dtb
--rw-rw-r-- pgm/pgm       21050 2020-04-01 07:42 ./dtb.d/acq2106.dtb
--rw-rw-r-- pgm/pgm       16864 2020-04-01 07:42 ./dtb.d/acq2006bEU.dtb
--rw-rw-r-- pgm/pgm       22006 2020-04-01 07:42 ./dtb.d/acq2106sfp.dtb
--rw-rw-r-- pgm/pgm       21364 2020-04-01 07:42 ./dtb.d/acq210612.dtb
--rw-rw-r-- pgm/pgm       16812 2020-04-01 07:42 ./dtb.d/acq1014.dtb
--rw-rw-r-- pgm/pgm       17407 2020-04-01 07:42 ./dtb.d/kmcu.dtb
--rw-rw-r-- pgm/pgm         223 2020-04-01 07:42 ./dtb.d/acq2106_1000X_overlay.dtb
--rw-rw-r-- pgm/pgm       16864 2020-04-01 07:42 ./dtb.d/acq2006b.dtb
--rw-rw-r-- pgm/pgm       16986 2020-04-01 07:42 ./dtb.d/acq1002p.dtb
--rw-rw-r-- pgm/pgm       17375 2020-04-01 07:42 ./dtb.d/kmcuz30.dtb
--rw-rw-r-- pgm/pgm       17699 2020-04-01 07:42 ./dtb.d/kmcuz30_bpe.dtb
--rw-rw-r-- pgm/pgm     3471640 2020-04-01 07:42 ./uImage
+drwxrwxr-x pgm/pgm           0 2020-04-01 11:13 ./
+-rw-r--r-- pgm/pgm     2814073 2020-04-01 11:12 ./uramdisk.image.gz
+drwxrwxr-x pgm/pgm           0 2020-04-01 11:13 ./ko/
+-rw-r--r-- pgm/pgm     5554176 2020-04-01 11:12 ./ko/packageko-4.14.0-acq400-xilinx-dirty-200401103018.img
+-rw-r--r-- pgm/pgm    79429632 2020-04-01 11:13 ./ko/fpga-182-20200401111224.img
+drwxrwxr-x pgm/pgm           0 2020-04-01 11:12 ./local/
+drwxrwxr-x pgm/pgm           0 2020-04-01 11:12 ./boot.d/
+-rw-rw-r-- pgm/pgm      373404 2020-04-01 11:12 ./boot.d/BOOT_EE.bin
+-rwxr-xr-x pgm/pgm      373404 2020-04-01 11:12 ./boot.d/BOOT_KMCUAZ30.bin
+-rw-rw-r-- pgm/pgm      373404 2020-04-01 11:12 ./boot.d/BOOT_E0.bin
+-rwxr-xr-x pgm/pgm      373404 2020-04-01 11:12 ./boot.d/BOOT_1001.bin
+-rw-rw-r-- pgm/pgm      441028 2020-04-01 11:12 ./boot.d/BOOT_ZC706.bin
+-rwxr-xr-x pgm/pgm      373404 2020-04-01 11:12 ./boot.d/BOOT_KMCUAZ30_ACQ480.bin
+-rwxr-xr-x pgm/pgm      373404 2020-04-01 11:12 ./boot.d/BOOT_kmcu.bin
+-rwxr-xr-x pgm/pgm      373404 2020-04-01 11:12 ./boot.d/BOOT_2106.bin
+-rw-rw-r-- pgm/pgm      373404 2020-04-01 11:12 ./boot.d/BOOT_1001_acq480.bin
+-rw-rw-r-- pgm/pgm      370132 2020-04-01 11:12 ./boot.d/BOOT_EU.bin
+-rw-rw-r-- pgm/pgm       25766 2020-04-01 11:13 ./VERSION
+drwxrwxr-x pgm/pgm           0 2020-04-01 11:12 ./packages.opt/
+-rw-r--r-- pgm/pgm         452 2020-04-01 11:12 ./packages.opt/90-custom_ftp-1912052153.tgz
+-rw-rw-r-- pgm/pgm        6153 2020-04-01 11:12 ./packages.opt/35-radcelf-1901291423.tgz
+-rw-rw-r-- pgm/pgm       87801 2020-04-01 11:12 ./packages.opt/38-custom_hapi-1909131041.tgz
+-rw-r--r-- pgm/pgm      194820 2020-04-01 11:12 ./packages.opt/70-mdsshell-2001251936.tgz
+-rw-r--r-- pgm/pgm        4120 2020-04-01 11:12 ./packages.opt/35-custom_fb9816-1912031303.tgz
+-rw-r--r-- pgm/pgm         523 2020-04-01 11:12 ./packages.opt/99-custom_livetop-1903081328.tgz
+-rw-r--r-- pgm/pgm         478 2020-04-01 11:12 ./packages.opt/04-custom_pmod-1901211015.tgz
+-rw-r--r-- pgm/pgm        7846 2020-04-01 11:12 ./packages.opt/35-custom_gpg-1912181454.tgz
+-rw-r--r-- pgm/pgm        3856 2020-04-01 11:12 ./packages.opt/39-kmux-1907301001.tgz
+-rw-r--r-- pgm/pgm        4394 2020-04-01 11:12 ./packages.opt/32-custom_acq1014-1910011944.tgz
+-rw-r--r-- pgm/pgm       39239 2020-04-01 11:12 ./packages.opt/11-custom_awg-1910251105.tgz
+-rw-rw-r-- pgm/pgm       41361 2020-04-01 11:12 ./packages.opt/35-bolodsp-2001131727.tgz
+-rw-r--r-- pgm/pgm        6118 2020-04-01 11:12 ./packages.opt/99-custom_dpg-1912092101.tgz
+-rw-rw-r-- pgm/pgm        1706 2020-04-01 11:12 ./packages.opt/35-custom_multievent-1909021107.tgz
+-rw-r--r-- pgm/pgm        6487 2020-04-01 11:12 ./packages.opt/99-custom_wrpg-2003181944.tgz
+-rw-r--r-- pgm/pgm        1112 2020-04-01 11:12 ./packages.opt/15-custom_sshkeys-1901211015.tgz
+-rw-rw-r-- pgm/pgm      441779 2020-04-01 11:12 ./packages.opt/95-ttytools-2002121053.tgz
+-rw-r--r-- pgm/pgm        2595 2020-04-01 11:12 ./packages.opt/90-custom_acq480fir-1901211020.tgz
+drwxrwxr-x pgm/pgm           0 2020-04-01 11:13 ./fpga.d/
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_41_ff_ff_ff_61_61_9011 -> ACQ2106_TOP_41_41_41_41_61_61_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_ff_ff_ff_ff_ff_9511_64B -> ACQ2106_TOP_08_08_08_08_08_08_9511_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_ff_ff_ff_ff_ff_9011_64B-DEC10 -> ACQ2106_TOP_08_08_08_08_08_08_9011_64B-DEC10.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_08_ff_ff_9511_64B-DEC4 -> ACQ2106_TOP_08_08_08_08_08_08_9511_64B-DEC4.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_ff_ff_ff_9011_64B-DEC10 -> ACQ2106_TOP_08_08_08_08_08_08_9011_64B-DEC10.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_ff_ff_ff_40_61_9011 -> ACQ2106_TOP_04_04_04_04_40_61_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_A5_A5_A5_ff_ff_ff_9511_64B -> ACQ2106_TOP_A5_A5_A5_A5_A5_A5_9511_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_08_ff_ff_9011_64B-DEC4 -> ACQ2106_TOP_08_08_08_08_08_08_9011_64B-DEC4.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_04_04_ff_ff_61_9011 -> ACQ2106_TOP_04_04_04_04_04_61_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_09_09_09_09_09_ff -> ACQ2106_TOP_09_09_09_09_09_09.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_ff_ff_ff_ff_6B_9011_64B-PWM -> ACQ2106_TOP_08_08_ff_ff_ff_6B_9011_64B-PWM.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ1001_TOP_05_ff -> ACQ1001_TOP_05_05.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_ff_ff_ff_ff_9000_64B -> ACQ2106_TOP_08_08_08_08_08_08_9000_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_ff_ff_ff_ff_ff_9511_64B-DEC10 -> ACQ2106_TOP_08_08_08_08_08_08_9511_64B-DEC10.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_09_ff_ff_ff_ff_ff_9011_WR -> ACQ2106_TOP_09_09_09_09_09_09_9011_WR.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_A5_A5_A5_A5_A5_ff_9000 -> ACQ2106_TOP_A5_A5_A5_A5_A5_A5_9000.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_41_41_41_ff_61_61_9011 -> ACQ2106_TOP_41_41_41_41_61_61_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_ff_ff_ff_9511_64B-DEC10 -> ACQ2106_TOP_08_08_08_08_08_08_9511_64B-DEC10.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_A5_ff_ff_ff_ff_ff_9511_64B -> ACQ2106_TOP_A5_A5_A5_A5_A5_A5_9511_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_ff_ff_ff_ff_9011_64B-DEC4 -> ACQ2106_TOP_08_08_08_08_08_08_9011_64B-DEC4.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ1001_TOP_FE_ff -> ACQ1001_TOP_FE_FE.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_04_04_ff_ff_ff_9011 -> ACQ2106_TOP_04_04_04_04_04_04_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_A5_ff_ff_ff_ff_ff_9011_64B -> ACQ2106_TOP_A5_A5_A5_A5_A5_A5_9011_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_02_ff_ff_ff_41_61_9011 -> ACQ2106_TOP_02_02_02_02_41_61_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_ff_ff_ff_ff_9511_64B -> ACQ2106_TOP_08_08_08_08_08_08_9511_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_05_05_05_05_ff_ff_9011 -> ACQ2106_TOP_05_05_05_05_05_05_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_64_ff_ff_ff_ff_ff_9815_9011 -> ACQ2106_TOP_64_64_64_64_64_64_9815_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ1001_TOP_03_ff -> ACQ1001_TOP_03_03.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_ff_ff_ff_ff_ff_9011_64B_2DMA -> ACQ2106_TOP_08_08_08_08_08_08_9011_64B_2DMA.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_64_ff_ff_ff_ff_ff_9815_9011-9V -> ACQ2106_TOP_64_64_64_64_64_64_9815_9011-9V.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_08_08_ff_9011_64B_2DMA -> ACQ2106_TOP_08_08_08_08_08_08_9011_64B_2DMA.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_A5_A5_A5_A5_ff_ff_9000 -> ACQ2106_TOP_A5_A5_A5_A5_A5_A5_9000.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_04_04_04_04_ff_9511_64B -> ACQ2106_TOP_04_04_04_04_04_04_9511_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_09_09_09_09_ff_ff_9011 -> ACQ2106_TOP_09_09_09_09_09_09_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_ff_ff_ff_ff_9011_64B_2DMA -> ACQ2106_TOP_08_08_08_08_08_08_9011_64B_2DMA.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_ff_ff_ff_ff_ff_9011 -> ACQ2106_TOP_04_04_04_04_04_04_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ1001_TOP_A1_ff -> ACQ1001_TOP_A1_A1.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_09_09_09_ff_ff_ff_9011_WR -> ACQ2106_TOP_09_09_09_09_09_09_9011_WR.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_08_ff_ff_9011_64B -> ACQ2106_TOP_08_08_08_08_08_08_9011_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_09_09_09_09_ff_ff -> ACQ2106_TOP_09_09_09_09_09_09.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_04_04_04_ff_ff_9011 -> ACQ2106_TOP_04_04_04_04_04_04_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_04_ff_ff_ff_61_9011 -> ACQ2106_TOP_04_04_04_04_04_61_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_09_09_09_09_09_ff_9011_WR -> ACQ2106_TOP_09_09_09_09_09_09_9011_WR.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_08_08_ff_9511_64B -> ACQ2106_TOP_08_08_08_08_08_08_9511_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_A5_A5_A5_A5_A5_ff_9511_64B -> ACQ2106_TOP_A5_A5_A5_A5_A5_A5_9511_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_ff_ff_ff_9011_64B_2DMA -> ACQ2106_TOP_08_08_08_08_08_08_9011_64B_2DMA.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ1001_TOP_04_ff -> ACQ1001_TOP_04_04.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_FE_FE_ff_ff_ff_ff_9000 -> ACQ2106_TOP_FE_FE_FE_FE_FE_FE_9000.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_09_09_ff_ff_ff_6B_9011_WR -> ACQ2106_TOP_09_09_09_09_09_6B_9011_WR.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_A5_A5_A5_A5_ff_ff_9511_64B -> ACQ2106_TOP_A5_A5_A5_A5_A5_A5_9511_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_08_08_ff_9511_64B-DEC4 -> ACQ2106_TOP_08_08_08_08_08_08_9511_64B-DEC4.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_A5_A5_A5_A5_ff_ff_9011_64B -> ACQ2106_TOP_A5_A5_A5_A5_A5_A5_9011_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_02_02_02_ff_41_61_9011 -> ACQ2106_TOP_02_02_02_02_41_61_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_04_04_ff_40_61_9011 -> ACQ2106_TOP_04_04_04_04_40_61_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_61_61_61_61_ff_ff_9011 -> ACQ2106_TOP_61_61_61_61_61_61_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_ff_ff_ff_9511_64B -> ACQ2106_TOP_08_08_08_08_08_08_9511_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_05_05_05_05_05_ff_9011 -> ACQ2106_TOP_05_05_05_05_05_05_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/KMCUZ30_TOP_FE_ff_9400 -> KMCUZ30_TOP_FE_FE_9400.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_61_ff_ff_ff_ff_ff_9011 -> ACQ2106_TOP_61_61_61_61_61_61_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_ff_ff_ff_ff_6B_9011_64B -> ACQ2106_TOP_08_08_ff_ff_ff_6B_9011_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_A5_A5_A5_ff_ff_ff_9000 -> ACQ2106_TOP_A5_A5_A5_A5_A5_A5_9000.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_6b_6b_6b_ff_ff_ff_9011 -> ACQ2106_TOP_6b_6b_6b_6b_6b_6b_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_04_04_ff_ff_ff_9011_64B -> ACQ2106_TOP_04_04_04_04_04_04_9011_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_ff_ff_ff_ff_ff_9011_64B -> ACQ2106_TOP_08_08_08_08_08_08_9011_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_08_08_ff_9511_64B-DEC10 -> ACQ2106_TOP_08_08_08_08_08_08_9511_64B-DEC10.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_04_04_04_ff_ff_9011_64B -> ACQ2106_TOP_04_04_04_04_04_04_9011_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_08_08_ff_9011_64B-DEC10 -> ACQ2106_TOP_08_08_08_08_08_08_9011_64B-DEC10.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_41_ff_ff_ff_ff_ff_9011 -> ACQ2106_TOP_41_41_ff_ff_ff_ff_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_61_61_61_61_61_ff_9011 -> ACQ2106_TOP_61_61_61_61_61_61_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_09_09_09_09_ff_ff_9011_WR -> ACQ2106_TOP_09_09_09_09_09_09_9011_WR.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_6b_6b_6b_6b_ff_ff_9011 -> ACQ2106_TOP_6b_6b_6b_6b_6b_6b_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_08_08_ff_9011_64B-DEC4 -> ACQ2106_TOP_08_08_08_08_08_08_9011_64B-DEC4.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_09_09_ff_ff_ff_ff_9011 -> ACQ2106_TOP_09_09_09_09_09_09_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_08_ff_ff_9011_64B_2DMA -> ACQ2106_TOP_08_08_08_08_08_08_9011_64B_2DMA.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_FE_FE_FE_FE_FE_ff_9000 -> ACQ2106_TOP_FE_FE_FE_FE_FE_FE_9000.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_09_09_09_ff_ff_ff_9011 -> ACQ2106_TOP_09_09_09_09_09_09_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_02_02_ff_ff_ff_ff_9011 -> ACQ2106_TOP_02_02_02_02_02_02_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_41_41_41_ff_61_6B_9011-PWM -> ACQ2106_TOP_41_41_41_41_61_6B_9011-PWM.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_64_64_64_64_ff_ff_9815_9011 -> ACQ2106_TOP_64_64_64_64_64_64_9815_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_ff_ff_ff_9511_64B-DEC4 -> ACQ2106_TOP_08_08_08_08_08_08_9511_64B-DEC4.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_04_ff_ff_ff_ff_9011 -> ACQ2106_TOP_04_04_04_04_04_04_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_ff_ff_ff_ff_61_9011 -> ACQ2106_TOP_04_04_04_04_04_61_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_ff_ff_ff_ff_ff_9011_64B-DEC4 -> ACQ2106_TOP_08_08_08_08_08_08_9011_64B-DEC4.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ1001_TOP_09_ff -> ACQ1001_TOP_09_09.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_ff_ff_ff_ff_9511_64B-DEC10 -> ACQ2106_TOP_08_08_08_08_08_08_9511_64B-DEC10.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_02_02_02_02_ff_ff_9011 -> ACQ2106_TOP_02_02_02_02_02_02_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_02_02_02_02_02_ff_9011 -> ACQ2106_TOP_02_02_02_02_02_02_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ1001_TOP_A5_ff -> ACQ1001_TOP_A5_A5.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_6b_6b_ff_ff_ff_ff_9011 -> ACQ2106_TOP_6b_6b_6b_6b_6b_6b_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/KMCUZ30_TOP_04_ff_9400 -> KMCUZ30_TOP_04_04_9400.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_64_64_ff_ff_ff_ff_9815_9011-9V -> ACQ2106_TOP_64_64_64_64_64_64_9815_9011-9V.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ1001_TOP_61_ff -> ACQ1001_TOP_61_61.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_04_04_ff_41_41_9011 -> ACQ2106_TOP_04_04_04_04_41_41_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_08_ff_ff_9511_64B -> ACQ2106_TOP_08_08_08_08_08_08_9511_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_04_04_ff_ff_ff_9511_64B -> ACQ2106_TOP_04_04_04_04_04_04_9511_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_6b_6b_6b_6b_6b_ff_9011 -> ACQ2106_TOP_6b_6b_6b_6b_6b_6b_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_FE_ff_ff_ff_ff_ff_9000 -> ACQ2106_TOP_FE_FE_FE_FE_FE_FE_9000.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_ff_ff_ff_ff_6B_9011_64B_WR -> ACQ2106_TOP_08_08_ff_ff_ff_6B_9011_64B_WR.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_6D_ff_ff_ff_ff_40 -> ACQ2106_TOP_6D_6D_6D_6D_ff_40.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_ff_ff_ff_9000_64B -> ACQ2106_TOP_08_08_08_08_08_08_9000_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_41_41_ff_ff_61_6B_9011-PWM -> ACQ2106_TOP_41_41_41_41_61_6B_9011-PWM.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_09_ff_ff_ff_ff_ff_9011 -> ACQ2106_TOP_09_09_09_09_09_09_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_6D_6D_6D_ff_ff_40 -> ACQ2106_TOP_6D_6D_6D_6D_ff_40.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_04_04_04_ff_61_9011 -> ACQ2106_TOP_04_04_04_04_04_61_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_09_09_09_09_09_ff_9011 -> ACQ2106_TOP_09_09_09_09_09_09_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ1001_TOP_41_ff -> ACQ1001_TOP_41_41.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_05_ff_ff_ff_ff_ff_9011 -> ACQ2106_TOP_05_05_05_05_05_05_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_ff_ff_ff_ff_ff_9511_64B -> ACQ2106_TOP_04_04_04_04_04_04_9511_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_64_64_ff_ff_ff_ff_9815_9011 -> ACQ2106_TOP_64_64_64_64_64_64_9815_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_64_64_64_64_64_ff_9815_9011 -> ACQ2106_TOP_64_64_64_64_64_64_9815_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_A5_A5_ff_ff_ff_ff_9011_64B -> ACQ2106_TOP_A5_A5_A5_A5_A5_A5_9011_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_09_09_09_ff_ff_ff -> ACQ2106_TOP_09_09_09_09_09_09.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_04_04_ff_41_61_9011 -> ACQ2106_TOP_04_04_04_04_41_61_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_08_ff_ff_9511_64B-DEC10 -> ACQ2106_TOP_08_08_08_08_08_08_9511_64B-DEC10.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_04_04_04_04_ff_9011 -> ACQ2106_TOP_04_04_04_04_04_04_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_ff_ff_ff_ff_9011_64B-DEC10 -> ACQ2106_TOP_08_08_08_08_08_08_9011_64B-DEC10.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_A5_A5_ff_ff_ff_ff_9000 -> ACQ2106_TOP_A5_A5_A5_A5_A5_A5_9000.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_09_ff_ff_ff_ff_6B_9011_WR -> ACQ2106_TOP_09_09_09_09_09_6B_9011_WR.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_09_ff_ff_ff_ff_ff -> ACQ2106_TOP_09_09_09_09_09_09.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_08_ff_ff_9000_64B -> ACQ2106_TOP_08_08_08_08_08_08_9000_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_61_61_61_ff_ff_ff_9011 -> ACQ2106_TOP_61_61_61_61_61_61_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_64_64_64_64_ff_ff_9815_9011-9V -> ACQ2106_TOP_64_64_64_64_64_64_9815_9011-9V.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ1001_TOP_02_ff -> ACQ1001_TOP_02_02.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_09_09_09_09_ff_6B_9011_WR -> ACQ2106_TOP_09_09_09_09_09_6B_9011_WR.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_ff_ff_ff_ff_ff_9511_64B-DEC4 -> ACQ2106_TOP_08_08_08_08_08_08_9511_64B-DEC4.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_05_05_05_ff_ff_ff_9011 -> ACQ2106_TOP_05_05_05_05_05_05_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_61_61_ff_ff_ff_ff_9011 -> ACQ2106_TOP_61_61_61_61_61_61_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/KMCUZ30_TOP_08_ff_9400_64B -> KMCUZ30_TOP_08_08_9400_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_A5_A5_A5_A5_A5_ff_9011_64B -> ACQ2106_TOP_A5_A5_A5_A5_A5_A5_9011_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_09_09_ff_ff_ff_ff_9011_WR -> ACQ2106_TOP_09_09_09_09_09_09_9011_WR.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_04_ff_ff_41_41_9011 -> ACQ2106_TOP_04_04_04_04_41_41_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_04_ff_ff_40_61_9011 -> ACQ2106_TOP_04_04_04_04_40_61_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_08_08_ff_9000_64B -> ACQ2106_TOP_08_08_08_08_08_08_9000_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_A5_A5_ff_ff_ff_ff_9511_64B -> ACQ2106_TOP_A5_A5_A5_A5_A5_A5_9511_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_41_41_ff_ff_61_61_9011 -> ACQ2106_TOP_41_41_41_41_61_61_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_04_04_04_ff_ff_9511_64B -> ACQ2106_TOP_04_04_04_04_04_04_9511_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_41_ff_ff_ff_61_6B_9011-PWM -> ACQ2106_TOP_41_41_41_41_61_6B_9011-PWM.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_02_02_ff_ff_41_61_9011 -> ACQ2106_TOP_02_02_02_02_41_61_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_ff_ff_ff_ff_ff_9000_64B -> ACQ2106_TOP_08_08_08_08_08_08_9000_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_A5_A5_A5_ff_ff_ff_9011_64B -> ACQ2106_TOP_A5_A5_A5_A5_A5_A5_9011_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ1001_TOP_05_ff_9813 -> ACQ1001_TOP_05_05_9813.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_ff_ff_ff_ff_ff_9011_64B -> ACQ2106_TOP_04_04_04_04_04_04_9011_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_04_04_04_04_ff_9011_64B -> ACQ2106_TOP_04_04_04_04_04_04_9011_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_09_09_ff_ff_ff_ff -> ACQ2106_TOP_09_09_09_09_09_09.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ1001_TOP_06_ff -> ACQ1001_TOP_06_06.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_64_64_64_64_64_ff_9815_9011-9V -> ACQ2106_TOP_64_64_64_64_64_64_9815_9011-9V.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_A5_ff_ff_ff_ff_ff_9000 -> ACQ2106_TOP_A5_A5_A5_A5_A5_A5_9000.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_ff_ff_ff_41_41_9011 -> ACQ2106_TOP_04_04_04_04_41_41_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_08_ff_ff_9011_64B-DEC10 -> ACQ2106_TOP_08_08_08_08_08_08_9011_64B-DEC10.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_08_08_ff_9011_64B -> ACQ2106_TOP_08_08_08_08_08_08_9011_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_64_64_64_ff_ff_ff_9815_9011 -> ACQ2106_TOP_64_64_64_64_64_64_9815_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_05_05_ff_ff_ff_ff_9011 -> ACQ2106_TOP_05_05_05_05_05_05_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_6D_6D_ff_ff_ff_40 -> ACQ2106_TOP_6D_6D_6D_6D_ff_40.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_ff_ff_ff_9011_64B -> ACQ2106_TOP_08_08_08_08_08_08_9011_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_04_ff_ff_ff_ff_9511_64B -> ACQ2106_TOP_04_04_04_04_04_04_9511_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_ff_ff_ff_41_61_9011 -> ACQ2106_TOP_04_04_04_04_41_61_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_ff_ff_ff_ff_9511_64B-DEC4 -> ACQ2106_TOP_08_08_08_08_08_08_9511_64B-DEC4.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_04_ff_ff_41_61_9011 -> ACQ2106_TOP_04_04_04_04_41_61_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_02_02_02_ff_ff_ff_9011 -> ACQ2106_TOP_02_02_02_02_02_02_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_09_09_09_ff_ff_6B_9011_WR -> ACQ2106_TOP_09_09_09_09_09_6B_9011_WR.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_02_ff_ff_ff_ff_ff_9011 -> ACQ2106_TOP_02_02_02_02_02_02_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_ff_ff_ff_ff_6B_9011_64B-PWMPROG -> ACQ2106_TOP_08_08_ff_ff_ff_6B_9011_64B-PWMPROG.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_6b_ff_ff_ff_ff_ff_9011 -> ACQ2106_TOP_6b_6b_6b_6b_6b_6b_9011.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_08_ff_ff_ff_9011_64B-DEC4 -> ACQ2106_TOP_08_08_08_08_08_08_9011_64B-DEC4.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ1001_TOP_01_ff -> ACQ1001_TOP_01_01.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_08_08_ff_ff_ff_ff_9011_64B -> ACQ2106_TOP_08_08_08_08_08_08_9011_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_FE_FE_FE_FE_ff_ff_9000 -> ACQ2106_TOP_FE_FE_FE_FE_FE_FE_9000.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_64_64_64_ff_ff_ff_9815_9011-9V -> ACQ2106_TOP_64_64_64_64_64_64_9815_9011-9V.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_04_04_ff_ff_ff_ff_9011_64B -> ACQ2106_TOP_04_04_04_04_04_04_9011_64B.bit.gz
+lrwxrwxrwx pgm/pgm           0 2020-04-01 11:13 ./fpga.d/ACQ2106_TOP_FE_FE_FE_ff_ff_ff_9000 -> ACQ2106_TOP_FE_FE_FE_FE_FE_FE_9000.bit.gz
+-rw-r--r-- pgm/pgm    59012629 2020-04-01 11:12 ./rootfs.ext2.gz
+-rw-rw-r-- pgm/pgm       28460 2020-04-01 11:13 ./RELEASENOTES
+drwxrwxr-x pgm/pgm           0 2020-04-01 11:12 ./packages/
+-rw-rw-r-- pgm/pgm        1279 2020-04-01 11:12 ./packages/30-ai_monitor-1901051908.tgz
+-rw-r--r-- pgm/pgm       10320 2020-04-01 11:12 ./packages/05-acq1002-180725085727.tgz
+-rw-r--r-- pgm/pgm      206264 2020-04-01 11:12 ./packages/20-httpd-2003271521.tgz
+-rw-r--r-- pgm/pgm       14580 2020-04-01 11:12 ./packages/05-acq2106-200401094944.tgz
+-rw-rw-r-- pgm/pgm      336391 2020-04-01 11:12 ./packages/10-acq420-200401103018.tgz
+-rw-rw-r-- pgm/pgm     4661560 2020-04-01 11:12 ./packages/40-acq400ioc-2004010742.tgz
+-rw-r--r-- pgm/pgm        4352 2020-04-01 11:12 ./packages/39-transient-2001251936.tgz
+-rw-r--r-- pgm/pgm        1088 2020-04-01 11:12 ./packages/05-acq1001-190106190253.tgz
+-rwxr-xr-x pgm/pgm         267 2020-04-01 11:12 ./packages/05-zedboard-130910174646.tgz
+-rw-r--r-- pgm/pgm        3193 2020-04-01 11:12 ./packages/05-zc706-160225154520.tgz
+-rw-rw-r-- pgm/pgm        1126 2020-04-01 11:12 ./packages/05-kmcu-160613171216.tgz
+-rw-r--r-- pgm/pgm        1345 2020-04-01 11:12 ./packages/05-acq2006b-200401094944.tgz
+-rw-r--r-- pgm/pgm        2127 2020-04-01 11:12 ./packages/05-acq1014-170504214159.tgz
+-rw-rw-r-- pgm/pgm       68982 2020-04-01 11:12 ./packages/33-libute-190104121044.tgz
+-rw-rw-r-- pgm/pgm        1135 2020-04-01 11:12 ./packages/05-kmcuz30-160613171216.tgz
+-rw-r--r-- pgm/pgm       19522 2020-04-01 11:12 ./packages/03-acq400_common-200401110427.tgz
+-rw-r--r-- pgm/pgm        1444 2020-04-01 11:12 ./packages/05-acq2006-200401094944.tgz
+drwxrwxr-x pgm/pgm           0 2020-04-01 11:12 ./bin/
+-rwxrwxr-x pgm/pgm        1745 2020-04-01 11:12 ./bin/update_release_acq400
+-rwxr-xr-x pgm/pgm          89 2020-04-01 11:12 ./bin/network.stub
+-rwxrwxr-x pgm/pgm        1769 2020-04-01 11:12 ./bin/update_release
+-rwxrwxr-x pgm/pgm         885 2020-04-01 11:12 ./bin/check_version
+-rwxrwxr-x pgm/pgm         119 2020-04-01 11:12 ./bin/backup_sd
+drwxrwxr-x pgm/pgm           0 2020-04-01 11:12 ./dtb.d/
+-rw-rw-r-- pgm/pgm       15798 2020-04-01 11:12 ./dtb.d/acq1001.dtb
+-rw-rw-r-- pgm/pgm       21058 2020-04-01 11:12 ./dtb.d/acq2106d37.dtb
+-rw-rw-r-- pgm/pgm       16680 2020-04-01 11:12 ./dtb.d/acq1002r.dtb
+-rw-rw-r-- pgm/pgm         223 2020-04-01 11:12 ./dtb.d/acq400dsp1_overlay.dtb
+-rw-rw-r-- pgm/pgm       16864 2020-04-01 11:12 ./dtb.d/acq2006.dtb
+-rw-rw-r-- pgm/pgm       21978 2020-04-01 11:12 ./dtb.d/acq2106d37sfp.dtb
+-rw-rw-r-- pgm/pgm         223 2020-04-01 11:12 ./dtb.d/acq400dsp2_overlay.dtb
+-rw-rw-r-- pgm/pgm       16800 2020-04-01 11:12 ./dtb.d/acq1002.dtb
+-rw-rw-r-- pgm/pgm       21050 2020-04-01 11:12 ./dtb.d/acq2106.dtb
+-rw-rw-r-- pgm/pgm       16864 2020-04-01 11:12 ./dtb.d/acq2006bEU.dtb
+-rw-rw-r-- pgm/pgm       22006 2020-04-01 11:12 ./dtb.d/acq2106sfp.dtb
+-rw-rw-r-- pgm/pgm       21364 2020-04-01 11:12 ./dtb.d/acq210612.dtb
+-rw-rw-r-- pgm/pgm       16812 2020-04-01 11:12 ./dtb.d/acq1014.dtb
+-rw-rw-r-- pgm/pgm       17407 2020-04-01 11:12 ./dtb.d/kmcu.dtb
+-rw-rw-r-- pgm/pgm         223 2020-04-01 11:12 ./dtb.d/acq2106_1000X_overlay.dtb
+-rw-rw-r-- pgm/pgm       16864 2020-04-01 11:12 ./dtb.d/acq2006b.dtb
+-rw-rw-r-- pgm/pgm       16986 2020-04-01 11:12 ./dtb.d/acq1002p.dtb
+-rw-rw-r-- pgm/pgm       17375 2020-04-01 11:12 ./dtb.d/kmcuz30.dtb
+-rw-rw-r-- pgm/pgm       17699 2020-04-01 11:12 ./dtb.d/kmcuz30_bpe.dtb
+-rw-rw-r-- pgm/pgm     3471640 2020-04-01 11:12 ./uImage
