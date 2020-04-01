@@ -32,6 +32,7 @@ def get_nsites(fields):
         return -1
 
 verbose = False
+#verbose = True
 
 files = os.listdir(FPGAD)
 
@@ -39,19 +40,24 @@ print("#!/bin/bash")
 print("cd {}".format(FPGAD))
 
 for name in files:
-    #print(name)
-    fields = name.split('_')
+    if verbose:
+        print(name)
+    fields = name.split('.')[0].split('_')
     nsites = get_nsites(fields)
     if nsites > 0:
         m1 = fields[SITE1]
         ndup = 0
         for f in fields[SITE1+1:]:
             if verbose:
-                print("{} {} {}".format(fields[0], m1, f))
+                print("ndup {} f0:{} m1:{} f:{}".format(ndup, fields[0], m1, f))
             if f == m1:
                 ndup += 1
             else:
                 break
+
+        if verbose:
+            print("ndup={} f0:{} range({}, {})".format(ndup, fields[0], SITE1+1,SITE1+1+ndup) )
+            print("ndup={} f0:{} range {}".format(ndup, fields[0], range(SITE1+1,SITE1+1+ndup) ))
 
         for id in range(SITE1+1,SITE1+1+ndup):
             fields2 = fields.copy()
