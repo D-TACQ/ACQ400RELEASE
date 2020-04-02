@@ -1,3 +1,5 @@
+-- RELEASE acq400-184-20200402051151 --
+improve sync_role reliability when setting trg, clk
 -- RELEASE acq400-183-20200401112932 --
 -- RELEASE acq400-182-20200401111224 --
 BF: make sure ACQ1001_TOP_09_09 loads, both pref and stock
