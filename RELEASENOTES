@@ -1,3 +1,5 @@
+-- RELEASE acq400-185-20200408095925 --
+changes for ANATRG
 -- RELEASE acq400-184-20200402051151 --
 improve sync_role reliability when setting trg, clk
 -- RELEASE acq400-183-20200401112932 --
