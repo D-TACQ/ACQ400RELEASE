@@ -1,3 +1,5 @@
+-- RELEASE acq400-188-20200415113523 --
+
 -- RELEASE acq400-187-20200415110812 --
 restore umon in buildroot, support .img, ovl packages
 -- RELEASE acq400-186-20200414140033 --
