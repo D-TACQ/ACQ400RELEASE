@@ -1,4 +1,7 @@
+-- RELEASE acq400-191-20200415200402 --
+/sbin/load.packages will handle .img, .ovl
 -- RELEASE acq400-190-20200415193701 --
+
 improved fp LEDS. better WRPG
 -- RELEASE acq400-189-20200415155017 --
 -- RELEASE acq400-188-20200415113523 --
