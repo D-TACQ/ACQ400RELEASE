@@ -1,3 +1,6 @@
+-- RELEASE acq400-192-20200416153454 --
+correct channel map for 6xACQ480 STACK
+i2c set to 100kHz
 -- RELEASE acq400-191-20200415200402 --
 /sbin/load.packages will handle .img, .ovl
 -- RELEASE acq400-190-20200415193701 --
