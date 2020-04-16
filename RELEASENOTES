@@ -1,3 +1,5 @@
+-- RELEASE acq400-193-20200416210039 --
+updated ntpd, 6x480 STACK long shots, gps-pps
 -- RELEASE acq400-192-20200416153454 --
 correct channel map for 6xACQ480 STACK
 i2c set to 100kHz
