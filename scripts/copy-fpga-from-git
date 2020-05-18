@@ -1,5 +1,6 @@
 #!/usr/bin/bash
 (cd ACQ400_FPGA; git pull origin master)
-echo Hello
-rsync -ir --update ACQ400_FPGA/*TOP* MNT/fpga.d/
+echo Hello .. clearing target to be sure
+rm -Rf MNT/fpga.d/*
+rsync -ir --delete --update ACQ400_FPGA/*TOP* MNT/fpga.d/
 
