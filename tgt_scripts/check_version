@@ -19,6 +19,18 @@ echo RELEASE : /tmp/release.md5
 echo CURRENT : /tmp/current.md5
 
 
+if [ -e /etc/acq400_version ]; then
+	echo "Base file system /etc/acq400_version:"
+	cat /etc/acq400_version
+	diff -uU 0 /etc/acq400_version /mnt2/etc/acq400_version  >/dev/null
+	OK=$?
+	if [ $OK -ne 0 ]; then
+		echo "WARNING: rootfs build is different:"
+		cat /mnt2/etc/acq400_version
+	fi
+fi
+
+	
 diff -uU 0 /tmp/release.md5 /tmp/current.md5 | grep -v @@
 diff -uU 0 /tmp/release.md5 /tmp/current.md5 >/dev/null
 OK=$?
@@ -42,5 +54,3 @@ else
 	fi
 fi
 
-
-	
