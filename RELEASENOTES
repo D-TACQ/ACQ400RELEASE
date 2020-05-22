@@ -1,3 +1,5 @@
+-- RELEASE acq400-203-20200522070804 --
+correct build to use new buildroot staffa3
 -- RELEASE acq400-202-20200521225445 --
 FLARE with E4 offload emulation
 -- RELEASE acq400-201-20200521185542 --
