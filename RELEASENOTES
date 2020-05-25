@@ -1,3 +1,5 @@
+-- RELEASE acq400-204-20200525173233 --
+updated buildroot with BOOST, BOOSTPYTHON prep pyPva
 -- RELEASE acq400-203-20200522070804 --
 correct build to use new buildroot staffa3
 -- RELEASE acq400-202-20200521225445 --
