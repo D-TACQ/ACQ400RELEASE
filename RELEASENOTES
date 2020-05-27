@@ -1,3 +1,5 @@
+-- RELEASE acq400-206-20200527133829 --
+LFNS is good! .. ACQ480 global LFNS control ${UUT}:1:ACQ480:LFNS:ALL
 -- RELEASE acq400-205-20200527132833 --
 LFNS is good! .. ACQ480 global LFNS control ${UUT}:1:ACQ480:LFNS:ALL
 site 11 WRTD knobs implemented
