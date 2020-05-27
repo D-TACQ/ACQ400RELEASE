@@ -1,3 +1,7 @@
+-- RELEASE acq400-205-20200527132833 --
+LFNS is good! .. ACQ480 global LFNS control ${UUT}:1:ACQ480:LFNS:ALL
+site 11 WRTD knobs implemented
+FLARE, FILD candidate GW in release
 -- RELEASE acq400-204-20200525173233 --
 updated buildroot with BOOST, BOOSTPYTHON prep pyPva
 -- RELEASE acq400-203-20200522070804 --
