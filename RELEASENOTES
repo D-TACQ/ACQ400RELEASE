@@ -1,3 +1,8 @@
+-- RELEASE acq400-211-20200529110713 --
+kernel with iptables support
+ACQ480:GAIN:ALL
+wrtd tx, txi, tx_immediate all using dynamic prams 
+-- RELEASE acq400-210-20200529110417 --
 -- RELEASE acq400-209-20200528212448 --
 Bugfixes for 207.
 -- RELEASE acq400-208-20200527163248 --
