@@ -1,3 +1,6 @@
+-- RELEASE acq400-214-20200602171753 --
+PPPL with remote tune control.
+production leds test
 -- RELEASE acq400-213-20200601120922 --
 restores CELF NO LEDS boot, all cases
 -- RELEASE acq400-212-20200529204016 --
