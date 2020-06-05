@@ -1,3 +1,6 @@
+-- RELEASE acq400-218-20200605095138 --
+wrtd tidy ups (see wrtd.sh web page)
+cleaner overlay package loads
 -- RELEASE acq400-217-20200604194242 --
 fix sync_role to clear sync when master
 -- RELEASE acq400-216-20200602182739 --
