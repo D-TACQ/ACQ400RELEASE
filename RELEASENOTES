@@ -1,3 +1,5 @@
+-- RELEASE acq400-220-20200613160024 --
+prep for TFMC supports AD5675R
 -- RELEASE acq400-219-20200613155611 --
 correct support for eth1 (E1000X)
 support for DIO482-PG
