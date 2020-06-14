@@ -1,3 +1,6 @@
+-- RELEASE acq400-221-20200614170639 --
+handles WR with no 9011 correctly
+full WR knobs
 -- RELEASE acq400-220-20200613160024 --
 prep for TFMC supports AD5675R
 -- RELEASE acq400-219-20200613155611 --
