@@ -1,3 +1,5 @@
+-- RELEASE acq400-222-20200619135133 --
+WRTD optimisation. Good at 20msec
 -- RELEASE acq400-221-20200614170639 --
 handles WR with no 9011 correctly
 full WR knobs
