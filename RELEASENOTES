@@ -1,3 +1,6 @@
+-- RELEASE acq400-223-20200622093134 --
+new rootfs fixes profile path override fault
+get-ip-address
 -- RELEASE acq400-222-20200619135133 --
 WRTD optimisation. Good at 20msec
 -- RELEASE acq400-221-20200614170639 --
