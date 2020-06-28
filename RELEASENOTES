@@ -1,3 +1,5 @@
+-- RELEASE acq400-229-20200628214751 --
+extended rootfs with ntp, gpsd tools
 -- RELEASE acq400-228-20200625141955 --
 /sbin/mount-overlay-extension
 bolo8 production test included
