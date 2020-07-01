@@ -1,14 +1,15 @@
 #!/bin/bash
 
-echo Running local release. scripts/make.release.staffa3 preferred.
-echo Are you sure \?
-read yn
-[ "x$yn" != 'xy' ] && [ "x$yn" != "xY" ] && exit 1
-
 DC=$(date +%Y%m%d%H%M%S)
 
 # buildroot images
-BROI=../../buildroot/output/images/
+echo BROI $BROI
+BROI=/mnt/staffa3/home/pgm/PROJECTS/acq400_buildroot/output/images
+
+if [ ! -d $BROI ]; then
+	echo "ERROR: NFS MOUNT not found $BROI"
+	exit 1
+fi
 # linux kernel images
 ARB=../linux-xlnx/arch/arm/boot
 
