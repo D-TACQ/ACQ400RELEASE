@@ -1,3 +1,9 @@
+-- RELEASE acq400-230-20200701164539 --
+updated ntp, let's hope we have SHM this time
+also updated support for 
+53667 is the acq400_stream --spy=1
+hb0_no_ratelimit improvement.
+revert 5b265432, 1MB buffer default
 -- RELEASE acq400-229-20200628214751 --
 extended rootfs with ntp, gpsd tools
 -- RELEASE acq400-228-20200625141955 --
