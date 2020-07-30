@@ -1,5 +1,5 @@
 # ACQ400RELEASE
-ACQ400 firmware releases from 2019 on
+ACQ400 firmware releases from 2019 on. If your starting release predates March 1, 2019 do not go ahead, please contact D-TACQ first for additional instructions.
 
  # INSTRUCTIONS
    # Backup!
