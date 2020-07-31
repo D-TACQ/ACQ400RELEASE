@@ -1,3 +1,6 @@
+-- RELEASE acq400-238-20200731211937 --
+link up timeout less intrusive
+restores temp web pages
 -- RELEASE acq400-237-20200727211942 --
 TIGA rev2
 Fixes BOLO (BZ135)
