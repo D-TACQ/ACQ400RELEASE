@@ -1,3 +1,5 @@
+-- RELEASE acq400-239-20200804125259 --
+TIGA: gpg monitors ON, LEDS in correct 4-1 order
 -- RELEASE acq400-238-20200731211937 --
 link up timeout less intrusive
 restores temp web pages
