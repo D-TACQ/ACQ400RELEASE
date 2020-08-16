@@ -1,3 +1,5 @@
+-- RELEASE acq400-245-20200816100625 --
+FLARE updates. EPICS controls the WR clocking from /etc/epics.d
 -- RELEASE acq400-244-20200813160219 --
 new base image with cleaner background wake link up
 -- RELEASE acq400-243-20200811122546 --
