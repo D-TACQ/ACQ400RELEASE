@@ -1,3 +1,5 @@
+-- RELEASE acq400-246-20200818194301 --
+better init for string in PV's should have reliable SITELIST
 -- RELEASE acq400-245-20200816100625 --
 FLARE updates. EPICS controls the WR clocking from /etc/epics.d
 -- RELEASE acq400-244-20200813160219 --
