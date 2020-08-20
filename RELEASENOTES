@@ -1,3 +1,6 @@
+-- RELEASE acq400-247-20200820153800 --
+all ADC modules get es_enable
+BF: ACQ435 full rate
 -- RELEASE acq400-246-20200818194301 --
 better init for string in PV's should have reliable SITELIST
 -- RELEASE acq400-245-20200816100625 --
