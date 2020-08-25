@@ -1,3 +1,10 @@
+-- RELEASE acq400-248-20200825151402 --
+better default support for FLARE+eth1
+
+commit d92d9683f141cb2308b8b1481fa687f29cb09002 (HEAD -> k414, tag: r200825151328, origin/k414)
+Author: Peter Milne <peter.milne@d-tacq.com>
+Date:   Sat Aug 22 11:16:22 2020 +0100
+    R3502 only possible to set byte_is_output if DIO in mode IDLE (0)
 -- RELEASE acq400-247-20200820153800 --
 all ADC modules get es_enable
 BF: ACQ435 full rate
