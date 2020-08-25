@@ -1,3 +1,5 @@
+-- RELEASE acq400-249-20200825162700 --
+close hole where eth1 can come up with an uninitialised (bad) MAC
 -- RELEASE acq400-248-20200825151402 --
 better default support for FLARE+eth1
 
