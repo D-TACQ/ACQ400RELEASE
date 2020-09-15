@@ -1,3 +1,6 @@
+-- RELEASE acq400-252-20200915220241 --
+ACQ400.sh AWG_RESIDENT_SERVER=y  :: faster start to AWG load
+DIO482PG runs
 -- RELEASE acq400-251-20200915073821 --
 sync_role.wr
 spad1_us_clk_d1
