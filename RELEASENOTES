@@ -1,3 +1,7 @@
+-- RELEASE acq400-251-20200915073821 --
+sync_role.wr
+spad1_us_clk_d1
+bb --port=66666 : run as a server on port 6666 : bb stays resident and starts faster
 -- RELEASE acq400-250-20200825172219 --
 -- RELEASE acq400-249-20200825162700 --
 close hole where eth1 can come up with an uninitialised (bad) MAC
