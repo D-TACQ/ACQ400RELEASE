@@ -1,3 +1,5 @@
+-- RELEASE acq400-261-20200928212633 --
+radcelf py refactor, radcelf_init included in radcelf_chirp_init.py
 -- RELEASE acq400-260-20200928184329 --
 gpsd updated. rad gps improvements
 -- RELEASE acq400-259-20200923150250 --
