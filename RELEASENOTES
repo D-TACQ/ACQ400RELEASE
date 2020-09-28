@@ -1,3 +1,5 @@
+-- RELEASE acq400-260-20200928184329 --
+gpsd updated. rad gps improvements
 -- RELEASE acq400-259-20200923150250 --
 hot fix for broken sync role. MUST replace #248 up
 -- RELEASE acq400-258-20200922100325 --
