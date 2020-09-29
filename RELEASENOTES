@@ -1,3 +1,5 @@
+-- RELEASE acq400-263-20200929121600 --
+keep on with gps_sync
 -- RELEASE acq400-262-20200929111550 --
 gps_sync per dds unit as per doxygen
 -- RELEASE acq400-261-20200928212633 --
