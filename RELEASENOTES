@@ -1,3 +1,5 @@
+-- RELEASE acq400-262-20200929111550 --
+gps_sync per dds unit as per doxygen
 -- RELEASE acq400-261-20200928212633 --
 radcelf py refactor, radcelf_init included in radcelf_chirp_init.py
 -- RELEASE acq400-260-20200928184329 --
