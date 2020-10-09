@@ -1,3 +1,5 @@
+-- RELEASE acq400-267-20201009142430 --
+support AO424 burst, module_variant, pyyaml
 -- RELEASE acq400-266-20200930164230 --
 acq400_stream_spy no garbage chat
 -- RELEASE acq400-265-20200930163956 --
