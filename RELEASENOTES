@@ -1,3 +1,5 @@
+-- RELEASE acq400-268-20201012082516 --
+acq1001+radcelf AI clocking from DDS
 -- RELEASE acq400-267-20201009142430 --
 support AO424 burst, module_variant, pyyaml
 -- RELEASE acq400-266-20200930164230 --
