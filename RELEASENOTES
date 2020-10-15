@@ -1,3 +1,5 @@
+-- RELEASE acq400-272-20201015080848 --
+special case ACQ481 gets 6V
 -- RELEASE acq400-271-20201014155243 --
 really include the overlay this time, also acq2106_sc validation
 -- RELEASE acq400-270-20201014141054 --
