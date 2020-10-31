@@ -1,3 +1,5 @@
+-- RELEASE acq400-292-20201031182938 --
+update_release automation prep
 -- RELEASE acq400-291-20201030135425 --
 includes new AWG_ABORT FPGAs.
 -- RELEASE acq400-290-20201029185742 --
