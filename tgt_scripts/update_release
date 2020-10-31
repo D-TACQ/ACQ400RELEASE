@@ -1,5 +1,12 @@
 #/bin/sh
 
+if [ "x$1" = "-y" ]; then
+	yn="y"
+	shift
+else
+	yn="x"
+fi
+
 REL=$1
 
 RELNAME=${REL%*.tgz}
@@ -49,7 +56,6 @@ $TDIR/bin/check_version
 if [ $? -ne 0 ]; then
 	echo "WARNING: you have a patched image."
 	echo "Are you sure you want to continue \?"
-	yn="x"
 	while [ "x$yn" != "xy" -a "x$yn" != "xn" ]; do
 		echo -n "enter y/n:"
 		read yn
