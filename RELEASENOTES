@@ -1,3 +1,5 @@
+-- RELEASE acq400-295-20201103150827 --
+BUG fixes: restore ACQ482 cmap, make sync_role query no side effect
 -- RELEASE acq400-294-20201102160312 --
 new buildroot with gpiolib
 -- RELEASE acq400-293-20201031191721 --
