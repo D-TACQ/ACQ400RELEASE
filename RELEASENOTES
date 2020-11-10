@@ -1,3 +1,5 @@
+-- RELEASE acq400-296-20201110200857 --
+ELFX-SC32
 -- RELEASE acq400-295-20201103150827 --
 BUG fixes: restore ACQ482 cmap, make sync_role query no side effect
 -- RELEASE acq400-294-20201102160312 --
