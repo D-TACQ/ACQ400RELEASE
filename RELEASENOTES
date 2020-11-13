@@ -1,3 +1,5 @@
+-- RELEASE acq400-300-20201113112038 --
+300 up : clean kernel tag
 -- RELEASE acq400-299-20201113110704 --
 fix BUG from from October 29: MUST replace all of 289+
 BUG: DMA_TIMEOUT. FIXED.
