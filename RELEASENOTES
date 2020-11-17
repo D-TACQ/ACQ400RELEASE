@@ -1,3 +1,5 @@
+-- RELEASE acq400-302-20201117174456 --
+fix botched acq420 build in 301 .. "make clean" is your friend
 -- RELEASE acq400-301-20201117160220 --
 FLARE release: corrected mr_offload, dhcp retry timeout adjust
 -- RELEASE acq400-300-20201113112038 --
