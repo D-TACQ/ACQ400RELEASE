@@ -1,3 +1,5 @@
+-- RELEASE acq400-301-20201117160220 --
+FLARE release: corrected mr_offload, dhcp retry timeout adjust
 -- RELEASE acq400-300-20201113112038 --
 300 up : clean kernel tag
 -- RELEASE acq400-299-20201113110704 --
