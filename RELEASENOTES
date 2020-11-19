@@ -1,3 +1,5 @@
+-- RELEASE acq400-308-20201119141257 --
+better instrumentation axi64_dual_data_loop()
 -- RELEASE acq400-307-20201119093837 --
 -- RELEASE acq400-306-20201118214000 --
 fixing
