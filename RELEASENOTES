@@ -1,3 +1,5 @@
+-- RELEASE acq400-313-20201121144908 --
+FLARE: better diags, E4 blob cal, SFP LEDs
 -- RELEASE acq400-312-20201119173024 --
 instrument dual buffer arrival with axi64_dual_poison_udelay
 -- RELEASE acq400-311-20201119152213 --
