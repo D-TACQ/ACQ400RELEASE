@@ -1,3 +1,5 @@
+-- RELEASE acq400-341-20201129181251 --
+TRAIN_CTRL does NOT belong in CR cache!
 -- RELEASE acq400-340-20201129175054 --
 CR cache implemented 
 -- RELEASE acq400-339-20201129124258 --
