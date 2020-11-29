@@ -1,3 +1,5 @@
+-- RELEASE acq400-340-20201129175054 --
+CR cache implemented 
 -- RELEASE acq400-339-20201129124258 --
 TRANS_OPTS=--live-instance=0 : disable live waveforms during shot
 -- RELEASE acq400-338-20201129120822 --
