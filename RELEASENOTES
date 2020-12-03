@@ -1,3 +1,5 @@
+-- RELEASE acq400-347-20201203170148 --
+new knobs special_sites, ability to read MGT FRU from site 12 or 13..
 -- RELEASE acq400-346-20201202160255 --
 include fix for dual DMA
 -- RELEASE acq400-345-20201130164328 --
