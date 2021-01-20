@@ -1,3 +1,5 @@
+-- RELEASE acq400-363-20210120173209 --
+Inaugural judgement with real time stamp, masks in volts
 -- RELEASE acq400-362-20210113212632 --
 export SHOTBUSY_OK=n in /mnt/local/sysconfig/epics.sh with D37 FP
 -- RELEASE acq400-361-20210112190028 --
