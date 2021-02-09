@@ -1,3 +1,5 @@
+-- RELEASE acq400-365-20210209205101 --
+sodTimer works, fixed BZ142
 -- RELEASE acq400-364-20210209184911 --
 fixed BZ141, sodTimer for Thomson.
 -- RELEASE acq400-363-20210120173209 --
