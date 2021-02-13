@@ -1,3 +1,5 @@
+-- RELEASE acq400-367-20210213130934 --
+SOD timeout is working.
 -- RELEASE acq400-366-20210213113335 --
 new soft_trigger mod, improved sodTimer
 -- RELEASE acq400-365-20210209205101 --
