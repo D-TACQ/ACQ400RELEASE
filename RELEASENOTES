@@ -1,3 +1,6 @@
+-- RELEASE acq400-369-20210222160134 --
+acq2106_04_04_04_04_41_61 proven with AXI32 DMA
+works streaming and LLC
 -- RELEASE acq400-368-20210219190709 --
 awg_stream
 -- RELEASE acq400-367-20210213130934 --
