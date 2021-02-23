@@ -1,3 +1,5 @@
+-- RELEASE acq400-370-20210223092327 --
+change acq2106.init to zero navp, vanp pots BEFORE touching 15VA_EN
 -- RELEASE acq400-369-20210222160134 --
 acq2106_04_04_04_04_41_61 proven with AXI32 DMA
 works streaming and LLC
