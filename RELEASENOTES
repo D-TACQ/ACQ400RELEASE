@@ -1,3 +1,9 @@
+-- RELEASE acq400-371-20210226115051 --
+restore static fallback ip behaviour, bust since 
+commit 31273bfeab682601165acfa995231196be857a46 (acq400_v2020.03)
+Author: Peter Milne <peter.milne@d-tacq.com>
+Date:   Tue Nov 17 15:58:20 2020 +0000
+
 -- RELEASE acq400-370-20210223092327 --
 change acq2106.init to zero navp, vanp pots BEFORE touching 15VA_EN
 -- RELEASE acq400-369-20210222160134 --
