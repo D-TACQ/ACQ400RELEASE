@@ -1,3 +1,5 @@
+-- RELEASE acq400-372-20210302192233 --
+handles switch from DC AWG automatically, improved UI signaling
 -- RELEASE acq400-371-20210226115051 --
 restore static fallback ip behaviour, bust since 
 commit 31273bfeab682601165acfa995231196be857a46 (acq400_v2020.03)
