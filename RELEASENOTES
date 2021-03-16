@@ -1,3 +1,5 @@
+-- RELEASE acq400-374-20210316163041 --
+include many fpgas. ANSTO release
 -- RELEASE acq400-373-20210306165524 --
 awg_stream, local stream, remote stream, auto-soft-trigger, recover from stall
 -- RELEASE acq400-372-20210302192233 --
