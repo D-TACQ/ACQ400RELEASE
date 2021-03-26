@@ -1,3 +1,7 @@
+-- RELEASE acq400-375-20210326110256 --
+fix ANSTO first stream includes unwanted ascii message
+also release reliable for 6xACQ424 AXI32
+DO NOT USE with BOLO
 -- RELEASE acq400-374-20210316163041 --
 include many fpgas. ANSTO release
 -- RELEASE acq400-373-20210306165524 --
