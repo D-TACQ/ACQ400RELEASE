@@ -1,3 +1,5 @@
+-- RELEASE acq400-378-20210404160428 --
+CUSTOM_LLC_CALLBACKS .. LLC automation without networking
 -- RELEASE acq400-377-20210401162201 --
 fix bolo power up issue
 -- RELEASE acq400-376-20210326165410 --
