@@ -1,3 +1,7 @@
+-- RELEASE acq400-381-20210415170500 --
+Adds new FPGA's and Si5326 plans
+Fixed BOLODSP I&V display for high channel count
+introduces diagsdump service
 -- RELEASE acq400-380-20210414172029 --
 Judgement: JFG:UPDATE UPDATE_ON_FAIL, UPDATE_ON_SUCCESS, UPDATE_ALWAYS
 ACQ480: PV access to PCOMP
