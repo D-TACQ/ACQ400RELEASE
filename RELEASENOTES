@@ -1,3 +1,5 @@
+-- RELEASE acq400-382-20210418140259 --
+SC32 WR and latch fixups
 -- RELEASE acq400-381-20210415170500 --
 Adds new FPGA's and Si5326 plans
 Fixed BOLODSP I&V display for high channel count
