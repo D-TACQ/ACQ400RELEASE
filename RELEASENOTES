@@ -1,3 +1,6 @@
+-- RELEASE acq400-383-20210422085131 --
+sync knob offered for all modules
+HS256 threshold raised to 52kHz both modes
 -- RELEASE acq400-382-20210418140259 --
 SC32 WR and latch fixups
 -- RELEASE acq400-381-20210415170500 --
