@@ -1,3 +1,5 @@
+-- RELEASE acq400-387-20210518212149 --
+fixes WR+DS clocking, multi-site AWG from boot
 -- RELEASE acq400-386-20210517175531 --
 windowed stats for UUT:s:AI:WF:cc:V, control with UUT:S:AI:WF:W1, UUT:S:AI:WF:W2
 -- RELEASE acq400-385-20210510191443 --
