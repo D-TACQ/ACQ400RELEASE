@@ -1,3 +1,5 @@
+-- RELEASE acq400-393-20210611162819 --
+update frequency plan for ACQ43x under WR.
 -- RELEASE acq400-392-20210611151652 --
 update frequency plan for ACQ43x under WR.
 Fs options: 10k, 20k, 40k, 80k, 128k all EXACT
