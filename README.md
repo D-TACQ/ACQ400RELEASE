@@ -97,5 +97,17 @@ done
 
 ```
  
+ # Additional instructions for upgrading acq4xx- firmware (pre March 1, 2019) :
+ 
+ 1. edit /mnt/local/sysconfig/acq400.sh and set
+NBUF=10
+
+2. sync;sync;reboot
+
+The unit no comes up with sufficient free memory to do the upgrade, proceed as above
+
+3. On rebooting after upgrade, remove the NBUF=10 statement from ACQ400.sh
+
+Firmware beginning acq400- rather than acq4xx- from March 1 2019 automatically reclaims the memory on upgrade.
   
   
