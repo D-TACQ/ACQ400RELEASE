@@ -1,3 +1,5 @@
+-- RELEASE acq400-394-20210625162625 --
+acq423 gets acq196_emulation; improved AO424 AWG; RADCELF with dump S device supported
 -- RELEASE acq400-393-20210611162819 --
 update frequency plan for ACQ43x under WR.
 -- RELEASE acq400-392-20210611151652 --
