@@ -1,3 +1,6 @@
+-- RELEASE acq400-397-20210728220246 --
+new FPGA AXI32 versions
+new buildroot with SSH-2.0-OpenSSH_8.6 and nginx for higher web security
 -- RELEASE acq400-396-20210712122757 --
 Judgement Final: 16b, 24b, local windows, global window clear
 DIO482 PG updates clkdiv, bypass_trg
