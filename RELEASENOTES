@@ -1,3 +1,5 @@
+-- RELEASE acq400-398-20210729103530 --
+acq2106 CS2 VAN adjust
 -- RELEASE acq400-397-20210728220246 --
 new FPGA AXI32 versions
 new buildroot with SSH-2.0-OpenSSH_8.6 and nginx for higher web security
