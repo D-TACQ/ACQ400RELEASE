@@ -29,6 +29,16 @@ cleanup_old_stragglers() {
 	rm -f /mnt/dtb.d/acq1001d.dtb
 }
 
+unpack_rootfs() {
+        echo "+++ first time extract /mnt/rootfs.ext2.gz boot .."
+        (while [ 1 ]; do
+                sleep 1; ls -l /mnt/rootfs.ext2.new | awk '{ print $9" "$5 }';
+        done) & MON=$!
+        (gunzip -c /mnt/rootfs.ext2.gz >/mnt/rootfs.ext2.new & wait)
+        kill -9 $MON; wait
+	mv /mnt/rootfs.ext2.new /mnt/rootfs.ext2
+}
+
 echo processing release $RELNAME
 
 mkdir $TDIR
@@ -86,6 +96,7 @@ if [ $? -eq 0 ]; then
 		echo ALL GOOD;
 		echo "sync;sync;reboot"
 	else
+		unpack_rootfs
 		echo "your system is patched please review and proceed with caution"	
 		echo "sync;sync;reboot"
 	fi
