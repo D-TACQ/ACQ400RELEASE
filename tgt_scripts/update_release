@@ -37,6 +37,8 @@ unpack_rootfs() {
         (gunzip -c /mnt/rootfs.ext2.gz >/mnt/rootfs.ext2.new & wait)
         kill -9 $MON; wait
 	mv /mnt/rootfs.ext2.new /mnt/rootfs.ext2
+        rm /mnt/rootfs.ext2.gz
+        ls -l /mnt/rootfs*
 }
 
 echo processing release $RELNAME
