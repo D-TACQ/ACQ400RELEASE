@@ -1,3 +1,6 @@
+-- RELEASE acq400-401-20210805152629 --
+gem change for z7io backplane network
+fix for memory starve on first reboot
 -- RELEASE acq400-400-20210805152204 --
 -- RELEASE acq400-399-20210803194237 --
 WR clock counting, unique to ACQ2106_TOP_09_09_09_09_09_6B_9011_32B_WR
