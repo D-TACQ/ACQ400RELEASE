@@ -1,3 +1,5 @@
+-- RELEASE acq400-403-20210807215239 --
+introduce z7io
 -- RELEASE acq400-402-20210805155806 --
 update_release improvments. unzup rootfs.ext2.gz during program, rather than lazy defer
 -- RELEASE acq400-401-20210805152629 --
