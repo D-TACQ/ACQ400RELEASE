@@ -1,3 +1,5 @@
+-- RELEASE acq400-407-20210810145634 --
+restored ntp.orig, new version to rootfs. MUST unpack on boot
 -- RELEASE acq400-406-20210810132409 --
 RAD model 70 delayed start good
 -- RELEASE acq400-405-20210808101522 --
