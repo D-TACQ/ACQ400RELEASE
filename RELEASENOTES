@@ -1,3 +1,5 @@
+-- RELEASE acq400-410-20210902090015 --
+release includes updated personalities for AO42x SPI fix, AXI
 -- RELEASE acq400-409-20210818153957 --
 ZAP release ready
 -- RELEASE acq400-408-20210810145834 --
