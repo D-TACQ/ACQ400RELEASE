@@ -96,11 +96,10 @@ if [ $? -eq 0 ]; then
 	/mnt/bin/check_version
 	if [ $? -eq 0 ]; then
 		echo ALL GOOD;
-		echo "sync;sync;reboot"
 	else
-		unpack_rootfs
 		echo "your system is patched please review and proceed with caution"	
-		echo "sync;sync;reboot"
 	fi
+	unpack_rootfs
+	echo "sync;sync;reboot"
 fi
 
