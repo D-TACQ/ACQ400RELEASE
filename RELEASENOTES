@@ -1,3 +1,6 @@
+-- RELEASE acq400-412-20210904171722 --
+ACQ2106_TOP_08_08_08_08_08_08_9511_64B_2DMA.bit.gz
+Dual DMA to ZDRAM is go!
 -- RELEASE acq400-411-20210902101420 --
 ensure upodate  time unpack all cases. SYNC_ROLE as a PV
 -- RELEASE acq400-410-20210902090015 --
