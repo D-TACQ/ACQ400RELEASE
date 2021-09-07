@@ -1,3 +1,5 @@
+-- RELEASE acq400-413-20210907154522 --
+MODEL70 dual delayed, fractional chirp works
 -- RELEASE acq400-412-20210904171722 --
 ACQ2106_TOP_08_08_08_08_08_08_9511_64B_2DMA.bit.gz
 Dual DMA to ZDRAM is go!
