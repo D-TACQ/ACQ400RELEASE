@@ -1,3 +1,5 @@
+-- RELEASE acq400-415-20210908111505 --
+AO424 allow set_spans in ODDS
 -- RELEASE acq400-414-20210907210003 --
 reset distributor between awg_continuous runs, avoid channel swap
 -- RELEASE acq400-413-20210907154522 --
