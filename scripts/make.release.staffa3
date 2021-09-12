@@ -120,5 +120,5 @@ echo scp REL/$RELNAME.tar dt100@eigg:/home/dt100/PROJECTS/ACQ400/RELEASE/REL
 echo scp REL/fpga-$VER-$DC.img dt100@eigg:/home/dt100/PROJECTS/ACQ400/RELEASE/REL
 echo ssh dt100@eigg /home/dt100/bin/set.acq4xx.current $RELNAME.tgz
 echo publish
-(cd REL; sha1sum $RELNAME.tgz )
+(cd REL; sha1sum $RELNAME.tar fpga-$VER-$DC.img )
 echo scp REL/$RELNAME.tgz dtacq@margum.pair.com:public_html/swrel
