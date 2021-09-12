@@ -1,3 +1,7 @@
+-- RELEASE acq400-416-20210912181508 --
+first release with split images to save memory
+updated FPGA:
+    ACQ1001_02_70 - Update IO Direction Control for either A or B DDS in conjunction with software change to ensure only one is set
 -- RELEASE acq400-415-20210908111505 --
 AO424 allow set_spans in ODDS
 -- RELEASE acq400-414-20210907210003 --
