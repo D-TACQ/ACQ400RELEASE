@@ -110,13 +110,14 @@ mkdir -p REL
 tar cvf REL/$RELNAME.tar -C MNT --exclude=*.bit.gz .
 tar tvf REL/$RELNAME.tar > acq400.manifest
 tar f REL/$RELNAME.tar --delete ./ko/fpga-$RELCORE.img
+cp MNT/ko/fpga-$VER-$DC.img REL
 
 git commit -m $VER acq400.manifest
 [ "$GIT" = "y" ] && git tag V$VER
 
 (cd REL;rm -f acq4xx-current; ln -s $RELNAME.tgz acq4xx-current)
-echo scp REL/$RELNAME.tgz dt100@eigg:/home/dt100/PROJECTS/ACQ400/RELEASE/REL
-echo scp MNT/ko/fpga-$VER-$DC.img dt100@eigg:/home/dt100/PROJECTS/ACQ400/RELEASE/REL
+echo scp REL/$RELNAME.tar dt100@eigg:/home/dt100/PROJECTS/ACQ400/RELEASE/REL
+echo scp REL/fpga-$VER-$DC.img dt100@eigg:/home/dt100/PROJECTS/ACQ400/RELEASE/REL
 echo ssh dt100@eigg /home/dt100/bin/set.acq4xx.current $RELNAME.tgz
 echo publish
 (cd REL; sha1sum $RELNAME.tgz )
