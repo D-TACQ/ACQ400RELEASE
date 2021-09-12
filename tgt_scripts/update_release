@@ -9,8 +9,9 @@ fi
 
 REL=$1
 
-RELNAME=${REL%*.tgz}
-RELNAME=$(basename $RELNAME)
+RELNAME=${REL%*.tar}
+export RELNAME=$(basename $RELNAME)
+export RELCORE=${RELNAME#acq400-*}
 TDIR=/tmp/$RELNAME
 
 remove_patches() 
@@ -25,7 +26,7 @@ remove_patches()
 }
 
 cleanup_old_stragglers() {
-	rm -f /mnt/bin/memtester
+	rm -f /mnt/bin/memtester /mnt/bin/update_release_acq400
 	rm -f /mnt/dtb.d/acq1001d.dtb
 }
 
@@ -62,7 +63,7 @@ fi
 grep MemFree /proc/meminfo
 echo DO NOT ATTEMPT DATACAPTURE WITHOUT REBOOT
 
-tar xvzf $REL -C $TDIR
+tar xvf $REL -C $TDIR
 
 $TDIR/bin/check_version
 if [ $? -ne 0 ]; then
@@ -87,7 +88,15 @@ if [ $? -eq 0 ]; then
 	rm /mnt/packages.opt/*
 	remove_patches /mnt/local/acq420fmc.ko /mnt/local/acq400_stream
 	grep -q fpga.d /proc/mounts && umount /mnt/fpga.d
-	rm /mnt/ko/*
+	rm -f /mnt/ko/packageko*
+	for file in /mnt/ko/*.img; do
+        	fn=$(basename $file)
+                echo compare $fn fpga-$RELCORE.img
+                if [ $fn != fpga-$RELCORE.img ]; then
+			echo "removing $file"
+			rm $file
+		fi
+	done
 	cleanup_old_stragglers
 	touch /tmp/exclude
 	tar xvzf $REL -X /tmp/exclude -C /mnt

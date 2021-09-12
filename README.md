@@ -9,17 +9,25 @@
    
     - scp -r root@UUT/mnt/local MYPC/UUT
     
-   # Online method: recommended
+   # Online method: recommended new from R416: release comprises two images
+    - acq400-416-yyymmddhhmmss.tar
+    - fpga-416-yyymmddhhmmss.img
+
   1. Download the release to a PC. Use a browser, wget won't work with https://
   
-    - eg The 129 release:
+    - eg The 416 release:
      https://github.com/D-TACQ/ACQ400RELEASE/releases/download/v129/acq400-129-20191025111814.tgz
+
   2. Free memory on the UUT
   
     - ssh root@UUT 'set.sys /dev/acq400.0.knobs/jettison_buffers_from 20'  
   3. copy the file to /tmp eg
   
     - scp acq400*tgz root@UUT:/tmp
+    - scp fpga*img root@UUT:/mnt/ko
+    - sha1sum /tmp/acq400*tgz
+    - compare sha1 result with value posted on the RELEASE page on github and only proceed if it's the same..
+
   4. run the upgrade
   
     - ssh root@UUT '/mnt/bin/update_release /tmp/acq400*tgz'

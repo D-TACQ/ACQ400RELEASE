@@ -82,7 +82,8 @@ sleep 1
 vi RELEASENOTES
 mv RELEASENOTES RELEASENOTES.bak
 
-RELNAME=acq400-$VER-$DC
+RELCORE=$VER-$DC
+RELNAME=acq400-$RELCORE
 
 echo "-- RELEASE $RELNAME --" > RELEASENOTES
 cat RELEASENOTES.bak >> RELEASENOTES
@@ -106,14 +107,16 @@ EOF
 
 
 mkdir -p REL
-tar cvzf REL/$RELNAME.tgz -C MNT --exclude=*.bit.gz .
-tar tvzf REL/$RELNAME.tgz > acq400.manifest
+tar cvf REL/$RELNAME.tar -C MNT --exclude=*.bit.gz .
+tar tvf REL/$RELNAME.tar > acq400.manifest
+tar --delete ./ko/fpga-$RELCORE.img
 
 git commit -m $VER acq400.manifest
 [ "$GIT" = "y" ] && git tag V$VER
 
 (cd REL;rm -f acq4xx-current; ln -s $RELNAME.tgz acq4xx-current)
 echo scp REL/$RELNAME.tgz dt100@eigg:/home/dt100/PROJECTS/ACQ400/RELEASE/REL
+echo scp MNT/ko/fpga-$VER-$DC.img dt100@eigg:/home/dt100/PROJECTS/ACQ400/RELEASE/REL
 echo ssh dt100@eigg /home/dt100/bin/set.acq4xx.current $RELNAME.tgz
 echo publish
 (cd REL; sha1sum $RELNAME.tgz )

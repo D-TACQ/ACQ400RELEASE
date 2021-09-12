@@ -49,6 +49,16 @@ else
 		echo VALID RELEASE
 		exit 0
 	else
+		if [ -e /mnt/ko/fpga-$RELCORE.img ]; then
+			(cd /mnt; md5sum ./ko/fpga-$RELCORE.img >>/tmp/current.md5)
+			sort -t\  -k2 /tmp/current.md5 >/tmp/current.md5.2
+			sort -t\  -k2 /tmp/release.md5 >/tmp/release.md5.2
+			diff -uU 0 /tmp/release.md5.2 /tmp/current.md5.2 >/dev/null
+			if [ $? -eq 0 ]; then
+				echo WITH /mnt/ko/fpga-$RELCORE.img included, RELEASES MATCH
+				exit 0
+			fi
+		fi		
 		echo ERROR release invalid
 		exit 1
 	fi
