@@ -9,35 +9,43 @@
    
     - scp -r root@UUT/mnt/local MYPC/UUT
     
-   # Online method: recommended new from R416: release comprises two images
-    - acq400-416-yyymmddhhmmss.tar
-    - fpga-416-yyymmddhhmmss.img
+   # Online method: recommended new from R418: release comprises two images
+    - acq400-418-yyymmddhhmmss.tar
+    - fpga-418-yyymmddhhmmss.img
 
   1. Download the release to a PC. Use a browser, wget won't work with https://
   
     - eg The 416 release:
-     https://github.com/D-TACQ/ACQ400RELEASE/releases/download/v129/acq400-129-20191025111814.tgz
+     https://github.com/D-TACQ/ACQ400RELEASE/releases/download/v418/acq400-418-20210912185848.tar
+     https://github.com/D-TACQ/ACQ400RELEASE/releases/download/v418/fpga-418-20210912185848.img
 
   2. Free memory on the UUT
   
     - ssh root@UUT 'set.sys /dev/acq400.0.knobs/jettison_buffers_from 20'  
+
   3. copy the file to /tmp eg
   
-    - scp acq400*tgz root@UUT:/tmp
+    - scp acq400*tar root@UUT:/tmp
     - scp fpga*img root@UUT:/mnt/ko
-    - sha1sum /tmp/acq400*tgz
+
+  4. log in to the UUT
+    - ssh root@UUT
+
+  5. Validate
+    - sha1sum /mnt/ko/fpga*img /tmp/acq400*tar
     - compare sha1 result with value posted on the RELEASE page on github and only proceed if it's the same..
 
   4. run the upgrade
-  
-    - ssh root@UUT '/mnt/bin/update_release /tmp/acq400*tgz'
-  5. restore any custom packages that were previously  activated from the current stock.
+    - tar xvf /tmp/acq400*tar -C /mnt ./bin
+    - /mnt/bin/update_release /tmp/acq400*tar
+
+  6. restore any custom packages that were previously  activated from the current stock.
   
   eg
   
     - ssh root@UUT 'mv /mnt/packages.opt/35-custom_multievent-1909021107.tgz /mnt/packages'
   
-  6. reboot  # sync ensures that data is flushed to SD.
+  7. reboot  # sync ensures that data is flushed to SD.
   
     - ssh root@UUT 'sync;sync;reboot'
   
