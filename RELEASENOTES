@@ -1,5 +1,7 @@
+-- RELEASE acq400-422-20210915155503 --
+trigger_at --delay_ticks TODAY 14:50 works on MODEL70
 -- RELEASE acq400-421-20210915140417 --
-bug fix and pretty up for radcelf-tune-pps --fine, trigger_at --delay (experimental)
+bug fix and pretty up for radcelf-tune-pps --fine, trigger_at --delay_ticks (experimental)
 -- RELEASE acq400-420-20210915135837 --
 -- RELEASE acq400-419-20210915124200 --
 -- RELEASE acq400-418-20210912185848 --
