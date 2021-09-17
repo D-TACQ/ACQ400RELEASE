@@ -1,3 +1,5 @@
+-- RELEASE acq400-423-20210917105942 --
+AXI_ONCE automation for fast ACQ48x transient, ACQ480 FPGA refresh
 -- RELEASE acq400-422-20210915155503 --
 trigger_at --delay_ticks TODAY 14:50 works on MODEL70
 -- RELEASE acq400-421-20210915140417 --
