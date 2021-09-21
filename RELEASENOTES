@@ -1,3 +1,7 @@
+-- RELEASE acq400-424-20210921115936 --
+re-instate ctrl_cache, tested to 2K shots at 1600MB/s. 
+make sure voltsmon cleans up after itself.
+reduce BQ_get EMPTY warning impact
 -- RELEASE acq400-423-20210917105942 --
 AXI_ONCE automation for fast ACQ48x transient, ACQ480 FPGA refresh
 -- RELEASE acq400-422-20210915155503 --
