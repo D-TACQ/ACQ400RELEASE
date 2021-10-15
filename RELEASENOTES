@@ -1,3 +1,7 @@
+-- RELEASE acq400-436-20211015130258 --
+correct operation ACQ2106_09_09*32B*WR
+COUNTER_LATCH automated .. if PPS, get exact latch
+AXI32 DMA operation restored..
 -- RELEASE acq400-435-20211012223438 --
 -- RELEASE acq400-434-20211012222011 --
 -- RELEASE acq400-433-20211012133251 --
