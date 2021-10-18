@@ -1,3 +1,9 @@
+-- RELEASE acq400-437-20211018133119 --
+WRTD TXQ - available non-tiga only 08_08_08_08_7B_7B_9011_64B_2DMA_WR-PG to begin with
+acq2106_310> set.site 11 wrtd_txq --tx_mask=2 acq2106_310
+mode wrtd_rx
+acq2106_310> set.site 11 wrtd_txq --tx_mask=3 acq2106_310
+
 -- RELEASE acq400-436-20211015130258 --
 correct operation ACQ2106_09_09*32B*WR
 COUNTER_LATCH automated .. if PPS, get exact latch
