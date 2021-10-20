@@ -22,22 +22,22 @@
 
   2. Free memory on the UUT
   
-    - ssh root@UUT 'set.sys /dev/acq400.0.knobs/jettison_buffers_from 20'  
+    ssh root@UUT 'set.sys /dev/acq400.0.knobs/jettison_buffers_from 20'  
 
   3. copy the file to /tmp eg
   
-    - scp acq400*tar root@UUT:/tmp
-    - scp fpga*img root@UUT:/mnt/ko
+    scp acq400*tar root@UUT:/tmp
+    scp fpga*img root@UUT:/mnt/ko
 
   4. log in to the UUT
 
-    - ssh root@UUT
+    ssh root@UUT
 
   5. Validate
 
-    - sha1sum /mnt/ko/fpga*img /tmp/acq400*tar
+    sha1sum /mnt/ko/fpga*img /tmp/acq400*tar
 
-    - compare sha1 result with value posted on the RELEASE page on github and only proceed if it's the same..
+    compare sha1 result with value posted on the RELEASE page on github and only proceed if it's the same..
 
   4. run the upgrade
 
@@ -48,11 +48,11 @@
   
   eg
   
-    - ssh root@UUT 'mv /mnt/packages.opt/35-custom_multievent-1909021107.tgz /mnt/packages'
+    ssh root@UUT 'mv /mnt/packages.opt/35-custom_multievent-1909021107.tgz /mnt/packages'
   
   7. reboot  # sync ensures that data is flushed to SD.
   
-    - ssh root@UUT 'sync;sync;reboot'
+    ssh root@UUT 'sync;sync;reboot'
   
    # For a fresh SD card
 
