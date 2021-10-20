@@ -33,10 +33,13 @@
     - ssh root@UUT
 
   5. Validate
+
     - sha1sum /mnt/ko/fpga*img /tmp/acq400*tar
+
     - compare sha1 result with value posted on the RELEASE page on github and only proceed if it's the same..
 
   4. run the upgrade
+
     - tar xvf /tmp/acq400*tar -C /mnt ./bin
     - /mnt/bin/update_release /tmp/acq400*tar
 
