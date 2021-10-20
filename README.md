@@ -30,6 +30,7 @@
     - scp fpga*img root@UUT:/mnt/ko
 
   4. log in to the UUT
+
     - ssh root@UUT
 
   5. Validate
