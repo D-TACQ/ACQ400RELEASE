@@ -41,10 +41,10 @@
 
   4. run the upgrade
 
-    ```
-    tar xvf /tmp/acq400*tar -C /mnt ./bin
-    /mnt/bin/update_release /tmp/acq400*tar
-   ```
+        ```bash
+        tar xvf /tmp/acq400*tar -C /mnt ./bin
+        /mnt/bin/update_release /tmp/acq400*tar
+        ```
 
   6. restore any custom packages that were previously  activated from the current stock.
   
