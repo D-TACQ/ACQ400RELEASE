@@ -41,7 +41,7 @@
 
   4. run the upgrade
 
-    ```bash
+    ```
     tar xvf /tmp/acq400*tar -C /mnt ./bin
     /mnt/bin/update_release /tmp/acq400*tar
    ```
