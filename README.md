@@ -45,22 +45,20 @@
 
     compare sha1 result with value posted on the RELEASE page on github and only proceed if it's the same..
 
-  4. run the upgrade
+  6. run the upgrade
 
         ```bash
         tar xvf /tmp/acq400*tar -C /mnt ./bin
         /mnt/bin/update_release /tmp/acq400*tar
         ```
 
-  6. restore any custom packages that were previously  activated from the current stock.
-  
-  eg
-  
+  7. restore any custom packages that were previously  activated from the current stock.  eg
+
         ```bash
         ssh root@UUT 'mv /mnt/packages.opt/35-custom_multievent-1909021107.tgz /mnt/packages'
         ```
   
-  7. reboot  # sync ensures that data is flushed to SD.
+  8. reboot  # sync ensures that data is flushed to SD.
  
         ```bash 
         ssh root@UUT 'sync;sync;reboot'
