@@ -1,3 +1,4 @@
+-- RELEASE acq400-439-20211021110044 --
 -- RELEASE acq400-438-20211021102136 --
 revisit wrtd_txi and wrtd_txq, include DOUBLE_TAP capability with txq
 now works correctly. in the absence of WR, wrtd_txq continues to work
