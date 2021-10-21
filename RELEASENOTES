@@ -1,3 +1,6 @@
+-- RELEASE acq400-438-20211021102136 --
+revisit wrtd_txi and wrtd_txq, include DOUBLE_TAP capability with txq
+now works correctly. in the absence of WR, wrtd_txq continues to work
 -- RELEASE acq400-437-20211018133119 --
 WRTD TXQ - available non-tiga only 08_08_08_08_7B_7B_9011_64B_2DMA_WR-PG to begin with
 acq2106_310> set.site 11 wrtd_txq --tx_mask=2 acq2106_310
