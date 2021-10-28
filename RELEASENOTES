@@ -1,3 +1,7 @@
+-- RELEASE acq400-440-20211028171611 --
+adds SOD timeout final snap, DMATIMEOUT param. 
+fixes BYPASS:TRG_DEBOUNCE for PG5
+
 -- RELEASE acq400-439-20211021110044 --
 -- RELEASE acq400-438-20211021102136 --
 revisit wrtd_txi and wrtd_txq, include DOUBLE_TAP capability with txq
