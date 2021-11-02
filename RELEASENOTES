@@ -1,3 +1,5 @@
+-- RELEASE acq400-443-20211102152734 --
+repair awg_continuous, tested with ACQ427-03
 -- RELEASE acq400-442-20211102122139 --
 ACQ465 clock and filter automation
 -- RELEASE acq400-441-20211102121823 --
