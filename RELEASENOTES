@@ -1,3 +1,5 @@
+-- RELEASE acq400-444-20211102201356 --
+acq427 DAC range control good
 -- RELEASE acq400-443-20211102152734 --
 repair awg_continuous, tested with ACQ427-03
 -- RELEASE acq400-442-20211102122139 --
