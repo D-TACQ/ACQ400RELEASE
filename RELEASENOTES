@@ -1,3 +1,5 @@
+-- RELEASE acq400-442-20211102122139 --
+ACQ465 clock and filter automation
 -- RELEASE acq400-441-20211102121823 --
 -- RELEASE acq400-440-20211028171611 --
 adds SOD timeout final snap, DMATIMEOUT param. 
