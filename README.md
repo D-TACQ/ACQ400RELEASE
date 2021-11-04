@@ -79,6 +79,11 @@
 
   3. restore the "local" subdirectory from backup.
 
+  4. restore any custom packages that were previously  activated from the current stock, by moving or copying from subdirectory packages.opt to packages, eg:
+
+        ```bash
+        mv /mnt/packages.opt/35-custom_multievent-1909021107.tgz /mnt/packages
+        ```
  
    # Initialization files in /mnt/local
   
