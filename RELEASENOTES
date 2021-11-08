@@ -1,3 +1,7 @@
+-- RELEASE acq400-445-20211108142908 --
+wrtd_txa txa --at=TIMSPEC : trigger at either:
+   --at [+TU]sss[.:]rrr   +:relative T:TAI, U:UTC   s:ns or s.fractional
+also soft_wrtd, runs on a regular NTP pc
 -- RELEASE acq400-444-20211102201356 --
 acq427 DAC range control good
 -- RELEASE acq400-443-20211102152734 --
