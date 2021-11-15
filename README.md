@@ -142,7 +142,7 @@ done
  
  # Additional instructions for upgrading acq4xx- firmware (pre March 1, 2019) :
  
- 1. edit /mnt/local/sysconfig/acq400.sh and set
+ 1. edit /mnt/local/sysconfig/acq400.sh and set this as the final line (to temporarily supercede any other NBUF= lines)
 NBUF=10
 
 2. sync;sync;reboot
