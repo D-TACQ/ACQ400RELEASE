@@ -1,3 +1,5 @@
+-- RELEASE acq400-449-20211117094532 --
+opts to increase epics resources. fix minor boot time MGT count error
 -- RELEASE acq400-448-20211111122849 --
 test release hoy5 only
 -- RELEASE acq400-447-20211108175058 --
