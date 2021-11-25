@@ -1,3 +1,6 @@
+-- RELEASE acq400-450-20211125164440 --
+fixes to AD9512
+
 -- RELEASE acq400-449-20211117094532 --
 opts to increase epics resources. fix minor boot time MGT count error
 -- RELEASE acq400-448-20211111122849 --
