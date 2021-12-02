@@ -6,6 +6,7 @@
  # INSTRUCTIONS
    # Backup!
   0. Note any custom packages you have activated (FIRMWARE web page) 
+  
   - The update won't touch any customization you have in /mnt/local/, but if you haven't already backed up /mnt/local, now would be a good time
    
     - scp -r root@UUT/mnt/local MYPC/UUT
@@ -16,7 +17,7 @@
 
   1. Download the release to a PC. Use a browser, wget won't work with https://
   
-    - eg The 416 release:
+    - eg The 418 release:
      https://github.com/D-TACQ/ACQ400RELEASE/releases/download/v418/acq400-418-20210912185848.tar
      https://github.com/D-TACQ/ACQ400RELEASE/releases/download/v418/fpga-418-20210912185848.img
 
@@ -65,13 +66,24 @@
         ```
   
    # For a fresh SD card
+  release now comprises two images
+  
+    - acq400-418-yyymmddhhmmss.tar
+    - fpga-418-yyymmddhhmmss.img   
 
   0. Make sure the SD card is completely blank. DO NOT write on top of an existing SD image.
   
-  1. untar the release to the toplevel of the SD card
+  1. untar the release image acq400-NNN-yyymmddhhmmss.tar to the toplevel of the SD card
+ 
+  2. copy the release image fpga-NNN-yyymmddhhmmss.img to newly created subdirectory "ko" on the SD card
 
-  2. restore the "local" subdirectory from backup.
+  3. restore the "local" subdirectory from backup.
 
+  4. restore any custom packages that were previously  activated from the current stock, by moving or copying from subdirectory packages.opt to packages, eg:
+
+        ```bash
+        mv /mnt/packages.opt/35-custom_multievent-1909021107.tgz /mnt/packages
+        ```
  
    # Initialization files in /mnt/local
   
@@ -130,8 +142,10 @@ done
  
  # Additional instructions for upgrading acq4xx- firmware (pre March 1, 2019) :
  
- 1. edit /mnt/local/sysconfig/acq400.sh and set
+ 1. edit /mnt/local/sysconfig/acq400.sh and append this as the final line (to temporarily supercede any other NBUF= lines)
+```
 NBUF=10
+```
 
 2. sync;sync;reboot
 
