@@ -1,3 +1,5 @@
+-- RELEASE acq400-459-20220119112603 --
+include latest 02_41 FPGA with FFC compatibility
 -- RELEASE acq400-458-20220117140836 --
 QEN updates msb_direct, es_enable
 -- RELEASE acq400-457-20220114105435 --
