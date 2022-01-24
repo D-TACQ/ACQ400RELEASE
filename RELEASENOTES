@@ -1,5 +1,6 @@
+-- RELEASE acq400-462-20220124124718 --
+D32 personality for HYL
 -- RELEASE acq400-461-20220123122057 --
-HYL final
 -- RELEASE acq400-460-20220121145124 --
 -- RELEASE acq400-459-20220119112603 --
 include latest 02_41 FPGA with FFC compatibility
