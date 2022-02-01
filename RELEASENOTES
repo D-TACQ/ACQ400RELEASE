@@ -1,3 +1,5 @@
+-- RELEASE acq400-464-20220201153343 --
+auto setting bufferlen between CONTINUOUS and BURST, and different RTM_TRANSLEN
 -- RELEASE acq400-463-20220125141611 --
 D32 personality for HYL
 -- RELEASE acq400-462-20220124124718 --
