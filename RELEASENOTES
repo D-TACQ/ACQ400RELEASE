@@ -1,3 +1,5 @@
+-- RELEASE acq400-466-20220203101608 --
+acq1001+acq427 with DAC. special case now working well
 -- RELEASE acq400-465-20220201194112 --
 auto setting bufferlen between CONTINUOUS and BURST, and different RTM_TRANSLEN
 prove alias works.
