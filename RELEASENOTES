@@ -1,3 +1,5 @@
+-- RELEASE acq400-469-20220208161940 --
+bug fixes: restore si5326_tunephase, fix bogus PG5 output (was PG4/CLK)
 -- RELEASE acq400-468-20220207171428 --
 fixups for turnkey z7io
 -- RELEASE acq400-467-20220207171134 --
