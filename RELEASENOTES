@@ -1,3 +1,6 @@
+-- RELEASE acq400-470-20220210135051 --
+FSA: FIR Subrate Append feature.
+Bug159: allow ACQ2106 to accept FPCLK FIN < 1MHz new limit 10kHz
 -- RELEASE acq400-469-20220208161940 --
 bug fixes: restore si5326_tunephase, fix bogus PG5 output (was PG4/CLK)
 -- RELEASE acq400-468-20220207171428 --
