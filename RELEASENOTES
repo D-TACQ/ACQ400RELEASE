@@ -1,3 +1,7 @@
+-- RELEASE acq400-471-20220215155045 --
+awg_continuous works again, and efficiently
+load.static goes into the release
+system works with AWG in S1 and ADC in S2,3,4,5..
 -- RELEASE acq400-470-20220210135051 --
 FSA: FIR Subrate Append feature.
 Bug159: allow ACQ2106 to accept FPCLK FIN < 1MHz new limit 10kHz
