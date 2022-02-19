@@ -1,3 +1,5 @@
+-- RELEASE acq400-472-20220219171600 --
+add cgi handling for nginx: FCGIWRAP also add cherrypy, flask, bottle for eval
 -- RELEASE acq400-471-20220215155045 --
 awg_continuous works again, and efficiently
 load.static goes into the release
