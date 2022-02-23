@@ -1,3 +1,5 @@
+-- RELEASE acq400-473-20220223153355 --
+better EPICS doc of aggregator, distributor settings
 -- RELEASE acq400-472-20220219171600 --
 add cgi handling for nginx: FCGIWRAP also add cherrypy, flask, bottle for eval
 -- RELEASE acq400-471-20220215155045 --
