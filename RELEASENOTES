@@ -1,3 +1,5 @@
+-- RELEASE acq400-474-20220301083529 --
+AGGREGATOR:S1 : clean UI with master site 2
 -- RELEASE acq400-473-20220223153355 --
 better EPICS doc of aggregator, distributor settings
 -- RELEASE acq400-472-20220219171600 --
