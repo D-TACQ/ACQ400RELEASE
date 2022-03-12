@@ -1,3 +1,5 @@
+-- RELEASE acq400-477-20220312112751 --
+new rootfs with machosts capability
 -- RELEASE acq400-476-20220309153206 --
 EMERGENCY BUG FIX: WR clocking was wrong
 -- RELEASE acq400-475-20220308141342 --
