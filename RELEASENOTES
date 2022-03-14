@@ -1,3 +1,5 @@
+-- RELEASE acq400-480-20220314152256 --
+revised dt for z7io
 -- RELEASE acq400-479-20220312124723 --
 -- RELEASE acq400-478-20220312121330 --
 finally, new rootfs with machosts capability
