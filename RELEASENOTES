@@ -1,3 +1,5 @@
+-- RELEASE acq400-485-20220317165411 --
+z7io clean boot with calibration and no pmod fakery
 -- RELEASE acq400-484-20220316172242 --
 acq465 clean boot again .. now with MINIMAL rc.user
 -- RELEASE acq400-483-20220314172344 --
