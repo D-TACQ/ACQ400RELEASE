@@ -1,3 +1,5 @@
+-- RELEASE acq400-490-20220329210515 --
+bring along the FPGA personalities as well
 -- RELEASE acq400-489-20220329202603 --
 slowmon/subrate is good with programmable software nacc
 -- RELEASE acq400-488-20220328200711 --
