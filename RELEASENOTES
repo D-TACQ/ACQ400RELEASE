@@ -1,3 +1,5 @@
+-- RELEASE acq400-493-20220411175915 --
+improved release for z7io does not depend in z7io residual state
 -- RELEASE acq400-492-20220408171914 --
 Aprile ship try again fixes acq400io fixes bugs in calibration, slowmon
 -- RELEASE acq400-491-20220408113559 --
