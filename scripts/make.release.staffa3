@@ -53,7 +53,6 @@ pull_sources()
 rm -Rf MNT
 for dir in $MNTDIRS; do mkdir -p MNT/$dir; done
 cpwarn $ARB/uImage 				MNT
-(cd MNT; ln -s uImage uImage.acq400)
 cpwarn $BROI/uramdisk.image.gz 			MNT
 cpwarn $BROI/rootfs.ext2.gz			MNT
 
