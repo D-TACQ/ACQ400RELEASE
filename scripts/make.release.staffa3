@@ -99,6 +99,7 @@ fi
 chmod a+rx make_links
 ./make_links
 mksquashfs MNT/fpga.d/* MNT/ko/fpga-$VER-$DC.img 2>&1 >squashfs.log
+mksquashfs MNT/fpga.d/Z7IO_TOP* MNT/ko/z7io_fpga-$VER-$DC.img 2>&1 >squashfs.log
 
 cp RELEASENOTES MNT/RELEASENOTES
 (cd MNT; find -L . -type f -exec md5sum {} \; ) >acq400.sums
