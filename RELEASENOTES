@@ -1,3 +1,15 @@
+-- RELEASE acq400-507-20220513095258 --
+z7io trigger routing
+    acq400_z7io_trg_sel --route=%{OFF|FP|BP|FP2BP}
+    
+    BE consistent with names!
+    FP : Front Panel (MDR50)
+    BP : Back Plane (MLVDS)
+    FP2BP : FP routed to BP Master, ONE UNIT ONLY!
+    
+    Not implemented
+    RP : Rear Panel : possible option on RTM
+
 -- RELEASE acq400-506-20220510140931 --
 -- RELEASE acq400-505-20220510130304 --
 -- RELEASE acq400-504-20220510125244 --
