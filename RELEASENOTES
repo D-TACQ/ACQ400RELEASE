@@ -1,3 +1,5 @@
+-- RELEASE acq400-508-20220515102527 --
+DIO432 pre-trigger debug regs
 -- RELEASE acq400-507-20220513095258 --
 z7io trigger routing
     acq400_z7io_trg_sel --route=%{OFF|FP|BP|FP2BP}
