@@ -1,3 +1,5 @@
+-- RELEASE acq400-516-20220704091205 --
+ACQ494 with live status, handles TAI
 -- RELEASE acq400-515-20220623184606 --
 Updated PG and ACQ494 support
 -- RELEASE acq400-514-20220620150546 --
