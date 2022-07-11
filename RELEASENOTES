@@ -1,3 +1,5 @@
+-- RELEASE acq400-520-20220711141550 --
+HIL fix
 -- RELEASE acq400-519-20220709192048 --
 HUDP with revised reg defs. spp is samples_per_packet, 1=1
 -- RELEASE acq400-518-20220709171719 --
