@@ -1,3 +1,5 @@
+-- RELEASE acq400-522-20220801164559 --
+bugfixes for power-on init multiple ACQ48x and ELFX32
 -- RELEASE acq400-521-20220723133016 --
 canonical debugs for acq400_stream, dramcat service at 53999
 -- RELEASE acq400-520-20220711141550 --
