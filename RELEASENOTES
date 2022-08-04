@@ -1,3 +1,5 @@
+-- RELEASE acq400-523-20220804131631 --
+bugfixes: support all i2c for fullhouse ACQ425 _and_ LEDFP, fix acq465/494 crossover
 -- RELEASE acq400-522-20220801164559 --
 bugfixes for power-on init multiple ACQ48x and ELFX32
 -- RELEASE acq400-521-20220723133016 --
