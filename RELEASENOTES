@@ -1,3 +1,5 @@
+-- RELEASE acq400-524-20220815105449 --
+fresh FPGA personalities for ACQ2106/ACQ48x ES handling
 -- RELEASE acq400-523-20220804131631 --
 bugfixes: support all i2c for fullhouse ACQ425 _and_ LEDFP, fix acq465/494 crossover
 -- RELEASE acq400-522-20220801164559 --
