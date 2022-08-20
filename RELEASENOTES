@@ -1,3 +1,15 @@
+-- RELEASE acq400-526-20220820110641 --
+add diags for shot_success
+uut.s1.shot                    # current shot number, incremented on ARM  you could observe this increment while the shot is in progress
+uut.s0.shot_complete   # shows last completed shot number, but it's set whether the shot succeeds or whether it's aborted.
+uut.s0.shot                   #  *NEW* shots last successful shot
+uut.s0.raw_data_size       # returns amount of raw data available (transient DEMUX=0)   (I don't think you use this one)
+uut.s1.ch_data_size         # retruns amount of channelized data available (transient DEMUX=1)
+
+BUG FIX: load.static AWG works correctly with no boot-time reserve work-around
+
+Update CLKTREE for WR, no MUX on CLK.d1
+
 -- RELEASE acq400-525-20220818124829 --
 UI tweaks for data flow
 -- RELEASE acq400-524-20220815105449 --
