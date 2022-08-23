@@ -1,3 +1,7 @@
+-- RELEASE acq400-527-20220823164015 --
+HFBRPANEL guaranteed no power glitch, global enhancment for all DO active low..
+WDT for DIO482 PG
+updated ttytools for PL90PANEL
 -- RELEASE acq400-526-20220820110641 --
 add diags for shot_success
 uut.s1.shot                    # current shot number, incremented on ARM  you could observe this increment while the shot is in progress
