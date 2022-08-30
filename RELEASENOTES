@@ -1,3 +1,6 @@
+-- RELEASE acq400-528-20220830162943 --
+PL90PANEL: export DIO_WDT=N to set WDT BEFORE enabling DIO
+introduce MT_DIO482TD=7A (vanilla DIO version of TD)
 -- RELEASE acq400-527-20220823164015 --
 HFBRPANEL guaranteed no power glitch, global enhancment for all DO active low..
 WDT for DIO482 PG
