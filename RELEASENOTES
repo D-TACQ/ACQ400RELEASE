@@ -1,3 +1,5 @@
+-- RELEASE acq400-529-20220928165035 --
+make usb interface non-default
 -- RELEASE acq400-528-20220830162943 --
 PL90PANEL: export DIO_WDT=N to set WDT BEFORE enabling DIO
 introduce MT_DIO482TD=7A (vanilla DIO version of TD)
