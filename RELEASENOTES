@@ -1,3 +1,6 @@
+-- RELEASE acq400-533-20221019165334 --
+stock personalities for: ACQ2106_TOP_04_04_04_04_40_61_9011
+ADD _WR DROP PL330
 -- RELEASE acq400-532-20221017100315 --
 revisted judgement32, new personalities, new acq400_stream start/stop
 -- RELEASE acq400-531-20220930112639 --
