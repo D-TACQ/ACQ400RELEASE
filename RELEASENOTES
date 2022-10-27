@@ -1,3 +1,5 @@
+-- RELEASE acq400-536-20221027140752 --
+acq1002p final
 -- RELEASE acq400-535-20221024203254 --
 handles acq1002p correctly, better acq465 reset
 -- RELEASE acq400-534-20221023164131 --
