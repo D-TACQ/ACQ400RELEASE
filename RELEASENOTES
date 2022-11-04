@@ -1,3 +1,5 @@
+-- RELEASE acq400-538-20221104180159 --
+better support for PG on acq1002
 -- RELEASE acq400-537-20221031140310 --
 improves TRANSIENT cycle under EPICS control
 -- RELEASE acq400-536-20221027140752 --
