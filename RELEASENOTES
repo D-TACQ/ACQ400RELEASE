@@ -1,3 +1,5 @@
+-- RELEASE acq400-541-20221124181346 --
+new PG FPGA's for clean HFBR PG boot, restore LLC DIO
 -- RELEASE acq400-540-20221124125641 --
 defer PG output enables until after dio_en
 -- RELEASE acq400-539-20221117155237 --
