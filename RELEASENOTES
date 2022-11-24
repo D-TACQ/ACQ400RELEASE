@@ -1,3 +1,5 @@
+-- RELEASE acq400-540-20221124125641 --
+defer PG output enables until after dio_en
 -- RELEASE acq400-539-20221117155237 --
 fixes stream state issues left over from -536-
 -- RELEASE acq400-538-20221104180159 --
