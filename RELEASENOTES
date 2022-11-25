@@ -1,3 +1,5 @@
+-- RELEASE acq400-544-20221125174126 --
+acq400.sh WHITE_RABBIT=-1 : disable WR, enable regular sync_role
 -- RELEASE acq400-543-20221125122136 --
 clean run on DPG
 -- RELEASE acq400-542-20221124184436 --
