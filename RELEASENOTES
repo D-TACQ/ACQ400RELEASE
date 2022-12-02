@@ -1,5 +1,5 @@
 -- RELEASE acq400-546-20221202090102 --
-new personalities
+new personalities, repair BOLO ops
 -- RELEASE acq400-545-20221125174851 --
 -- RELEASE acq400-544-20221125174126 --
 acq400.sh WHITE_RABBIT=-1 : disable WR, enable regular sync_role
