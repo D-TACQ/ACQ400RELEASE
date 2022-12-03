@@ -1,3 +1,15 @@
+-- RELEASE acq400-548-20221203090837 --
+1. RFC952_HN=y   :: force full compliance with RFC952 DNS hostname
+    
+    Some DDNS systems enforce RFC952 pedantically, rejecting acq1001_123
+    Set RFC952_HN=y in /mnt/local/sysconfig/acq400.sh to request acq1001-123
+    
+    Please note, the local linux name remains acq1001_123 since many scripts depend on it
+
+2. 10-acq420 supports ACQ435 defaults -5V, -2V5
+
+3. 40-acq400ioc Judgement 32bit works with non-standard voltage
+
 -- RELEASE acq400-547-20221202152538 --
 -- RELEASE acq400-546-20221202090102 --
 new personalities, repair BOLO ops
