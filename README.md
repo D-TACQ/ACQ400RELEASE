@@ -23,6 +23,7 @@
 
   2. Free memory on the UUT
   
+    first reboot the UUT so that there's no unwanted state.
     ssh root@UUT 'set.sys /dev/acq400.0.knobs/jettison_buffers_from 20'  
 
   3. copy the file to /tmp eg
