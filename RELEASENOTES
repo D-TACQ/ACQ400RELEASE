@@ -1,3 +1,7 @@
+-- RELEASE acq400-549-20221222181338 --
+support for MULTIEVENT on ACQ482, with FTP transport
+support for SLOWMON on ACQ482 .. and any module without slowmon_hw assist
+support for DIO482TD_PPW, DIO482TD_DI6
 -- RELEASE acq400-548-20221203090837 --
 1. RFC952_HN=y   :: force full compliance with RFC952 DNS hostname
     
