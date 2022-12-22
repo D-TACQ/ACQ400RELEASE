@@ -1,3 +1,4 @@
+-- RELEASE acq400-551-20221222195412 --
 -- RELEASE acq400-550-20221222193232 --
 support for MULTIEVENT on ACQ482, with FTP transport
 support for SLOWMON on ACQ482 .. and any module without slowmon_hw assist
