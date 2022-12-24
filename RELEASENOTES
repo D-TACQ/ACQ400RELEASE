@@ -1,3 +1,6 @@
+-- RELEASE acq400-552-20221224133020 --
+MultiEvent with automated ES removal
+cho "export MultiEventServerSuppressEvent=1" >> /etc/sysconfig/acq400_streamd.conf
 -- RELEASE acq400-551-20221222195412 --
 -- RELEASE acq400-550-20221222193232 --
 support for MULTIEVENT on ACQ482, with FTP transport
