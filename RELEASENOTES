@@ -1,3 +1,5 @@
+-- RELEASE acq400-554-20230105121603 --
+fix acq425 gain stickiness when full-house
 -- RELEASE acq400-553-20221224135024 --
 -- RELEASE acq400-552-20221224133020 --
 MultiEvent with automated ES removal
