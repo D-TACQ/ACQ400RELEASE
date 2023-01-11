@@ -1,3 +1,5 @@
+-- RELEASE acq400-555-20230111105536 --
+improvements for multi ACQ425
 -- RELEASE acq400-554-20230105121603 --
 fix acq425 gain stickiness when full-house
 -- RELEASE acq400-553-20221224135024 --
