@@ -1,3 +1,7 @@
+-- RELEASE acq400-556-20230118205954 --
+on the fly gpg_scaling on all PG's : set.site S gpg_timescaler
+status web page and status.xml monitor
+multiple window status possibility for EPICS WF
 -- RELEASE acq400-555-20230111105536 --
 improvements for multi ACQ425
 -- RELEASE acq400-554-20230105121603 --
