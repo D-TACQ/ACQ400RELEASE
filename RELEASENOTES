@@ -1,3 +1,5 @@
+-- RELEASE acq400-558-20230130202437 --
+acq2206 first release
 -- RELEASE acq400-557-20230125131906 --
 -- RELEASE acq400-556-20230118205954 --
 on the fly gpg_scaling on all PG's : set.site S gpg_timescaler
