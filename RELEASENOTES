@@ -1,3 +1,9 @@
+-- RELEASE acq400-561-20230202094320 --
+More general voltage range set on load, should avoid need for custom /mnt/local/power file:
+# Setting VRANGE:5 detected VSPEC:3 from ACQ482ELF-16-2V5-F1
+VAP=5
+VAN=-5
+
 -- RELEASE acq400-560-20230131202739 --
 acq2206 clean boot with pot
 -- RELEASE acq400-559-20230130202830 --
