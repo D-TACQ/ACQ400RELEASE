@@ -1,3 +1,5 @@
+-- RELEASE acq400-562-20230203112949 --
+includes LIA 2023
 -- RELEASE acq400-561-20230202094320 --
 More general voltage range set on load, should avoid need for custom /mnt/local/power file:
 # Setting VRANGE:5 detected VSPEC:3 from ACQ482ELF-16-2V5-F1
