@@ -1,3 +1,6 @@
+-- RELEASE acq400-566-20230213175508 --
+PPW set DELAY and WIDTH, auto scaled by CLKDIV
+ACQ2206 clean analog power enable
 -- RELEASE acq400-565-20230208174216 --
 -- RELEASE acq400-564-20230208173144 --
 sfp hotplug spd detect, 
