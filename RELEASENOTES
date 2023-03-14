@@ -1,3 +1,5 @@
+-- RELEASE acq400-570-20230314124228 --
+reject bad updates in segment waveforms support
 -- RELEASE acq400-569-20230313194048 --
 segment waveforms support
 -- RELEASE acq400-568-20230309132127 --
