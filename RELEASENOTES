@@ -1,3 +1,6 @@
+-- RELEASE acq400-573-20230323142638 --
+clean release for AMX 12 units, one HOST or bust
+/usr/local/CARE/amx-start-demo
 -- RELEASE acq400-572-20230322100938 --
 new images for ACQ2106+ACQ48x. 
 final release for ECEI 48ch x 10MSPS, FIR, programmble FIR
