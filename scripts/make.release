@@ -1,21 +1,36 @@
 #!/bin/bash
 
 
-echo Running local release. scripts/make.release.staffa3 preferred.
-echo Are you sure \?
-read yn
-[ "x$yn" != 'xy' ] && [ "x$yn" != "xY" ] && exit 1
+PWD=$(pwd)
+echo $PWD | grep -q ACQ400_ESW_TOP
+if [ $? -eq 0 ]; then
+	BROI=../acq400_buildroot/output/images/
+	if [ -e $BROI ]; then
+		echo ACQ400_ESW_TOP build with buildroot at $BROI
+		ARB=../acq400_kernel/arch/arm/boot
+		RELCORE_SFX=-$(hostname)
+	else
+		echo ERROR $BROI not found
+		exit 1
+	fi
+else
+	echo Running local release. scripts/make.release.staffa3 preferred.
+	echo Are you sure \?
+	read yn
+	[ "x$yn" != 'xy' ] && [ "x$yn" != "xY" ] && exit 1
+	BROI=./DEFIMAGES
+	if [ -e $BROI ]; then
+		ARB=../linux-xlnx/arch/arm/boot
+		echo build with DEFIMAGES
+	else
+		echo ERROR DEFIMAGES not found
+		exit 1
+	fi
+fi
 
 DC=$(date +%Y%m%d%H%M%S)
 
-# buildroot images
-BROI=../../buildroot/output/images/
-BROI=./DEFIMAGES
-
 echo "FETCHING IMAGES FROM BROI $BROI"
-
-# linux kernel images
-ARB=../linux-xlnx/arch/arm/boot
 
 CP="cp -v"
 GIT=${GIT:-y}
@@ -91,7 +106,7 @@ sleep 1
 vi RELEASENOTES
 mv RELEASENOTES RELEASENOTES.bak
 
-RELCORE=$VER-$DC
+RELCORE=$VER-$DC$RELCORE_SFX
 RELNAME=acq400-$RELCORE
 
 echo "-- RELEASE $RELNAME --" > RELEASENOTES
