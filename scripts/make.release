@@ -84,7 +84,7 @@ cpwarn $BROI/uramdisk.image.gz 			MNT
 cpwarn $BROI/rootfs.ext2.gz			MNT
 
 
-cpwarn ../$ACQ400DRV/packageko*img		MNT/ko
+cpwarn $ACQ400DRV/packageko*img			MNT/ko
 
 $CP ../PACKAGES/* MNT/packages
 $CP ../PACKAGES.OPT/* MNT/packages.opt
