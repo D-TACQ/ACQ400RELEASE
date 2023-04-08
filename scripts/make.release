@@ -8,6 +8,9 @@ if [ $? -eq 0 ]; then
 	if [ -e $BROI ]; then
 		echo ACQ400_ESW_TOP build with buildroot at $BROI
 		ARB=../acq400_kernel/arch/arm/boot
+		[ -e $ARB/uImage ] || (echo ERROR $ARB/uImage not found; exit 1)
+		ACQ400DRV=../ACQ400DRV
+		[ -e $ACQ400DRV ] || (echo ERROR $ACQ400DRV not found; exit 1)
 		RELCORE_SFX=-$(hostname)
 	else
 		echo ERROR $BROI not found
@@ -21,6 +24,7 @@ else
 	BROI=./DEFIMAGES
 	if [ -e $BROI ]; then
 		ARB=../linux-xlnx/arch/arm/boot
+		ACQ400DRV=../ACQ420FMC
 		echo build with DEFIMAGES
 	else
 		echo ERROR DEFIMAGES not found
@@ -80,7 +84,7 @@ cpwarn $BROI/uramdisk.image.gz 			MNT
 cpwarn $BROI/rootfs.ext2.gz			MNT
 
 
-cpwarn ../ACQ420FMC/packageko*img		MNT/ko
+cpwarn ../$ACQ400DRV/packageko*img		MNT/ko
 
 $CP ../PACKAGES/* MNT/packages
 $CP ../PACKAGES.OPT/* MNT/packages.opt
