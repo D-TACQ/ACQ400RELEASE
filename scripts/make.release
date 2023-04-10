@@ -123,8 +123,19 @@ else
 		fi
 	done
 	if [ "$found_img" = "none" ]; then
-		echo "ERROR FPGA image not found. Please download suitable image from RELEASE"
-		echo "eg from https://github.com/D-TACQ/ACQ400RELEASE/releases/tag/v$VER"
+		cat - <<EOF
+ERROR FPGA image not found. Please download suitable image from RELEASE
+
+eg from https://github.com/D-TACQ/ACQ400RELEASE/releases/tag/v$VER
+
+if building for a specific carrier (z7io, acq100x, acq2x06):
+eg acq2x06_fpga-584-20230405215151.img
+
+if building a universal image:
+eg https://github.com/D-TACQ/ACQ400RELEASE/releases/download/v579/fpga-579-20230330215814.img
+
+store in ./OPT/ko, after removing any previous images
+EOF
 		exit 1
 	fi
 fi
