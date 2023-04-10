@@ -97,69 +97,95 @@ for arch in $ARCHDTB; do cpwarn $ARB/dts/$arch.dtb MNT/dtb.d; done
 [ "$(whoami)" = "root" ] && die "do not run as root"
 
 
-pull_sources
-./scripts/copy-fpga-from-git >/dev/null
 
 VER=1
-if [ -e .master_version_host ] && [ "x$(cat .master_version_host) = $(hostname) ]; then
+
+if [ -e .master_version_host ] && [ "x$(cat .master_version_host)" = "$(hostname)" ]; then
 	[ -e .version ] && VER=$(($(cat .version)+1))
 	echo $VER >.version
 	VER=$(printf %03d $VER)
-	echo This host $(hostname) IS master_version_host INCREMENT VER to $VER"
+	echo "This host $(hostname) IS master_version_host INCREMENT VER to $VER"
+	MVHOST=1
+	pull_sources
+	./scripts/copy-fpga-from-git >/dev/null
 else
 	[ -e .version ] && VER=$(($(cat .version)))
 	VER=$(printf %03d $VER)
-	echo This host $(hostname) IS NOT master_version_host VER set  $VER"
+	echo "This host $(hostname) IS NOT master_version_host VER set  $VER"
+	MVHOST=0
+	ls -l OPT/ko
+	found_img=none
+	for img in OPT/ko/*.img; do
+		_found=$(echo $img | grep $VER)  && found_img=$_found
+		if [ $found_img != none ]; then
+			echo "FOUND IMAGE: $found_img"
+			break
+		fi
+	done
+	if [ "$found_img" = "none" ]; then
+		echo "ERROR FPGA image not found. Please download suitable image from RELEASE"
+		echo "eg from https://github.com/D-TACQ/ACQ400RELEASE/releases/tag/v$VER"
+		exit 1
+	fi
 fi
 
 
 
-echo Enter comment for version $VER
-sleep 1
-vi RELEASENOTES
-mv RELEASENOTES RELEASENOTES.bak
 
 RELCORE=$VER-$DC$RELCORE_SFX
 RELNAME=acq400-$RELCORE
+SERVAC=dt100@eigg:/home/dt100/PROJECTS/ACQ400/RELEASE/REL
 
-echo "-- RELEASE $RELNAME --" > RELEASENOTES
-cat RELEASENOTES.bak >> RELEASENOTES
-rm RELEASENOTES.bak
-if [ "$GIT" = "y" ]; then
-       git commit -m $VER .version RELEASENOTES
-fi
+if [ $MVHOST -eq 1 ]; then
+	echo Enter comment for version $VER
+	sleep 1
+	vi RELEASENOTES
+	mv RELEASENOTES RELEASENOTES.bak
 
-./scripts/make_compatible_fpga_links.py >make_links
-chmod a+rx make_links
-./make_links
-mksquashfs MNT/fpga.d/* MNT/ko/fpga-$VER-$DC.img 2>&1 >squashfs.log
-mkdir -p OPT/ko; rm -Rf OPT/ko/*
-mksquashfs MNT/fpga.d/Z7IO_TOP* OPT/ko/z7io_fpga-$VER-$DC.img 2>&1 >>squashfs.log
-mksquashfs MNT/fpga.d/ACQ10??_TOP* OPT/ko/acq10xx_fpga-$VER-$DC.img 2>&1 >>squashfs.log
-mksquashfs MNT/fpga.d/ACQ2?06_TOP* OPT/ko/acq2x06_fpga-$VER-$DC.img 2>&1 >>squashfs.log
+	echo "-- RELEASE $RELNAME --" > RELEASENOTES
+	cat RELEASENOTES.bak >> RELEASENOTES
+	rm RELEASENOTES.bak
+	if [ "$GIT" = "y" ]; then
+	       git commit -m $VER .version RELEASENOTES
+	fi
 
+	./scripts/make_compatible_fpga_links.py >make_links
+	chmod a+rx make_links
+	./make_links
+	mksquashfs MNT/fpga.d/* MNT/ko/fpga-$VER-$DC.img 2>&1 >squashfs.log
+	mkdir -p OPT/ko; rm -Rf OPT/ko/*
+	mksquashfs MNT/fpga.d/Z7IO_TOP* OPT/ko/z7io_fpga-$VER-$DC.img 2>&1 >>squashfs.log
+	mksquashfs MNT/fpga.d/ACQ10??_TOP* OPT/ko/acq10xx_fpga-$VER-$DC.img 2>&1 >>squashfs.log
+	mksquashfs MNT/fpga.d/ACQ2?06_TOP* OPT/ko/acq2x06_fpga-$VER-$DC.img 2>&1 >>squashfs.log
 
-cp RELEASENOTES MNT/RELEASENOTES
-(cd MNT; find -L . -type f -exec md5sum {} \; ) >acq400.sums
-cat - >MNT/VERSION <<EOF
+	cp RELEASENOTES MNT/RELEASENOTES
+	(cd MNT; find -L . -type f -exec md5sum {} \; ) >acq400.sums
+	cat - >MNT/VERSION <<EOF
 RELEASE $RELNAME
 RELHOST $(whoami)@$(hostname)
 $(sort -k 2 acq400.sums)
 EOF
 
+fi
 
 mkdir -p REL
 tar cvf REL/$RELNAME.tar -C MNT --exclude=*.bit.gz .
 tar tvf REL/$RELNAME.tar > acq400.manifest
-tar f REL/$RELNAME.tar --delete ./ko/fpga-$RELCORE.img
-cp MNT/ko/fpga-$VER-$DC.img REL
 
-git commit -m $VER acq400.manifest
-[ "$GIT" = "y" ] && git tag V$VER
+if [ $MVHOST -eq 1 ]; then
+	tar f REL/$RELNAME.tar --delete ./ko/fpga-$RELCORE.img
+	cp MNT/ko/fpga-$VER-$DC.img REL
+	git commit -m $VER acq400.manifest
+	[ "$GIT" = "y" ] && git tag V$VER
 
-(cd REL;rm -f acq4xx-current; ln -s $RELNAME.tgz acq4xx-current)
-echo scp REL/$RELNAME.tar REL/fpga-$VER-$DC.img dt100@eigg:/home/dt100/PROJECTS/ACQ400/RELEASE/REL
-echo ssh dt100@eigg /home/dt100/bin/set.acq4xx.current $RELNAME.tar
-echo publish
-(cd REL; sha1sum $RELNAME.tar fpga-$VER-$DC.img )
-echo scp REL/$RELNAME.tgz dtacq@margum.pair.com:public_html/swrel
+	(cd REL;rm -f acq4xx-current; ln -s $RELNAME.tgz acq4xx-current)
+	echo scp REL/$RELNAME.tar REL/fpga-$VER-$DC.img $SERVAC
+	echo ssh dt100@eigg /home/dt100/bin/set.acq4xx.current $RELNAME.tar
+	echo publish
+	(cd REL; sha1sum $RELNAME.tar fpga-$VER-$DC.img )
+	echo scp REL/$RELNAME.tgz dtacq@margum.pair.com:public_html/swrel
+else
+	cp $found_img REL
+	echo RELEASE COMPLETE:
+	ls -l REL/*$VER-$DC* REL/$(basename $found_img)
+fi
