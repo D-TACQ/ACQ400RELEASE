@@ -100,7 +100,7 @@ for arch in $ARCHDTB; do cpwarn $ARB/dts/$arch.dtb MNT/dtb.d; done
 
 VER=1
 
-if [ -e .master_version_host ] && [ "x$(cat .master_version_host)" = "$(hostname)" ]; then
+if [ -e .master_version_host ] && [ "x$(cat .master_version_host)" = "x$(hostname)" ]; then
 	[ -e .version ] && VER=$(($(cat .version)+1))
 	echo $VER >.version
 	VER=$(printf %03d $VER)
@@ -169,16 +169,15 @@ if [ $MVHOST -eq 1 ]; then
 	mksquashfs MNT/fpga.d/Z7IO_TOP* OPT/ko/z7io_fpga-$VER-$DC.img 2>&1 >>squashfs.log
 	mksquashfs MNT/fpga.d/ACQ10??_TOP* OPT/ko/acq10xx_fpga-$VER-$DC.img 2>&1 >>squashfs.log
 	mksquashfs MNT/fpga.d/ACQ2?06_TOP* OPT/ko/acq2x06_fpga-$VER-$DC.img 2>&1 >>squashfs.log
+fi
 
-	cp RELEASENOTES MNT/RELEASENOTES
-	(cd MNT; find -L . -type f -exec md5sum {} \; ) >acq400.sums
-	cat - >MNT/VERSION <<EOF
+cp RELEASENOTES MNT/RELEASENOTES
+(cd MNT; find -L . -type f -exec md5sum {} \; ) >acq400.sums
+cat - >MNT/VERSION <<EOF
 RELEASE $RELNAME
 RELHOST $(whoami)@$(hostname)
 $(sort -k 2 acq400.sums)
 EOF
-
-fi
 
 mkdir -p REL
 tar cvf REL/$RELNAME.tar -C MNT --exclude=*.bit.gz .
