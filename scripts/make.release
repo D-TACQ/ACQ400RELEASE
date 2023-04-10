@@ -101,9 +101,18 @@ pull_sources
 ./scripts/copy-fpga-from-git >/dev/null
 
 VER=1
-[ -e .version ] && VER=$(($(cat .version)+1))
-echo $VER >.version
-VER=$(printf %03d $VER)
+if [ -e .master_version_host ] && [ "x$(cat .master_version_host) = $(hostname) ]; then
+	[ -e .version ] && VER=$(($(cat .version)+1))
+	echo $VER >.version
+	VER=$(printf %03d $VER)
+	echo This host $(hostname) IS master_version_host INCREMENT VER to $VER"
+else
+	[ -e .version ] && VER=$(($(cat .version)))
+	VER=$(printf %03d $VER)
+	echo This host $(hostname) IS NOT master_version_host VER set  $VER"
+fi
+
+
 
 echo Enter comment for version $VER
 sleep 1
