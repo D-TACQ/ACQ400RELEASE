@@ -113,6 +113,7 @@ else
 	VER=$(printf %03d $VER)
 	echo "This host $(hostname) IS NOT master_version_host VER set  $VER"
 	MVHOST=0
+	pull_sources
 	ls -l OPT/ko
 	found_img=none
 	for img in OPT/ko/*.img; do
