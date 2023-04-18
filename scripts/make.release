@@ -100,6 +100,8 @@ for arch in $ARCHDTB; do cpwarn $ARB/dts/$arch.dtb MNT/dtb.d; done
 
 VER=1
 
+mkdir -p OPT/ko
+
 if [ -e .master_version_host ] && [ "x$(cat .master_version_host)" = "x$(hostname)" ]; then
 	[ -e .version ] && VER=$(($(cat .version)+1))
 	echo $VER >.version
@@ -133,9 +135,15 @@ if building for a specific carrier (z7io, acq100x, acq2x06):
 eg acq2x06_fpga-584-20230405215151.img
 
 if building a universal image:
-eg https://github.com/D-TACQ/ACQ400RELEASE/releases/download/v579/fpga-579-20230330215814.img
+eg https://github.com/D-TACQ/ACQ400RELEASE/releases/download/v584/fpga-584-20230405215151.img
 
 store in ./OPT/ko, after removing any previous images
+eg 
+(
+	DT=https://github.com/D-TACQ/
+	FPGA=$DT/ACQ400RELEASE/releases/download/v584/fpga-584-20230405215151.img
+	cd ./OPT/ko; 
+	wget $FPGA
 EOF
 		exit 1
 	fi
