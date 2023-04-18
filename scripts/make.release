@@ -153,10 +153,10 @@ fi
 
 
 RELCORE=$VER-$DC$RELCORE_SFX
-RELNAME=acq400-$RELCORE
 SERVAC=dt100@eigg:/home/dt100/PROJECTS/ACQ400/RELEASE/REL
 
 if [ $MVHOST -eq 1 ]; then
+	RELNAME=acq400-$VER-$DC
 	echo Enter comment for version $VER
 	sleep 1
 	vi RELEASENOTES
@@ -172,11 +172,14 @@ if [ $MVHOST -eq 1 ]; then
 	./scripts/make_compatible_fpga_links.py >make_links
 	chmod a+rx make_links
 	./make_links
-	mksquashfs MNT/fpga.d/* MNT/ko/fpga-$VER-$DC.img 2>&1 >squashfs.log
 	mkdir -p OPT/ko; rm -Rf OPT/ko/*
+	mksquashfs MNT/fpga.d/* OPT/ko/fpga-$VER-$DC.img 2>&1 >squashfs.log
 	mksquashfs MNT/fpga.d/Z7IO_TOP* OPT/ko/z7io_fpga-$VER-$DC.img 2>&1 >>squashfs.log
 	mksquashfs MNT/fpga.d/ACQ10??_TOP* OPT/ko/acq10xx_fpga-$VER-$DC.img 2>&1 >>squashfs.log
 	mksquashfs MNT/fpga.d/ACQ2?06_TOP* OPT/ko/acq2x06_fpga-$VER-$DC.img 2>&1 >>squashfs.log
+	(cd OPT/ko; find -L . -type f -exec md5sum {} \; ) > fpga.sums
+else
+	RELNAME=acq400-$RELCORE
 fi
 
 cp RELEASENOTES MNT/RELEASENOTES
@@ -187,13 +190,21 @@ RELHOST $(whoami)@$(hostname)
 $(sort -k 2 acq400.sums)
 EOF
 
+[ -e fpga.sums ] && cat - >MNT/FPGA_VER <<EOF
+RELEASE $RELNAME
+RELHOST $(whoami)@$(hostname)
+$(sort -k 2 fpga.sums)
+EOF
+
 mkdir -p REL
+for img in OPT/ko/*.img; do
+	[ -e $img ] && mv $img REL
+done
+
 tar cvf REL/$RELNAME.tar -C MNT --exclude=*.bit.gz .
 tar tvf REL/$RELNAME.tar > acq400.manifest
 
 if [ $MVHOST -eq 1 ]; then
-	tar f REL/$RELNAME.tar --delete ./ko/fpga-$RELCORE.img
-	cp MNT/ko/fpga-$VER-$DC.img REL
 	git commit -m $VER acq400.manifest
 	[ "$GIT" = "y" ] && git tag V$VER
 
