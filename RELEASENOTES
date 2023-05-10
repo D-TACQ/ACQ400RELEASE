@@ -1,3 +1,5 @@
+-- RELEASE acq400-592-20230510180010.tgz
+bug fix for ACQ425BLF gain, slowmon_sw, new custom packages
 -- RELEASE acq400-591-20230424171525 --
 updates for ACQ465, GPG and PPW with 32bit controls
 -- RELEASE acq400-590-20230418185714 --
