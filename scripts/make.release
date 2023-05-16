@@ -206,7 +206,11 @@ tar tvf REL/$RELNAME.tar > acq400.manifest
 
 if [ $MVHOST -eq 1 ]; then
 	git commit -m $VER acq400.manifest
-	[ "$GIT" = "y" ] && git tag V$VER
+	if [ "$GIT" = "y" ]; then
+		git tag V$VER
+		git push origin
+		git push --tags
+	fi
 
 	(cd REL;rm -f acq4xx-current; ln -s $RELNAME.tgz acq4xx-current)
 	echo scp REL/$RELNAME.tar REL/fpga-$VER-$DC.img $SERVAC
