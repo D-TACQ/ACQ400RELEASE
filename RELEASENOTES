@@ -1,5 +1,8 @@
+-- RELEASE acq400-601-20230530211006 --
+includes BOLODSP with SN>60 scaling, bolo CAL V is signed
+dio432 bitwise EPICS support
 -- RELEASE acq400-600-20230517210457 --
-z7io first ship
+z7io second ship
 -- RELEASE acq400-599-20230516075805 --
 update to latest z7io mgt-aware 10-acq420
 -- RELEASE acq400-598-20230516073321 --
