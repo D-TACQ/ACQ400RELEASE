@@ -1,7 +1,8 @@
+-- RELEASE acq400-603-20230608165226 --
+scaler first release
 -- RELEASE acq400-602-20230608154202 --
 handles dio432pmod, and all DIO32 GPIO
 ppw with minimum ICOUNT set
-scaler first release
 
 -- RELEASE acq400-601-20230530211006 --
 includes BOLODSP with SN>60 scaling, bolo CAL V is signed
