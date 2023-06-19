@@ -1,3 +1,5 @@
+-- RELEASE acq400-607-20230619143155 --
+pickup new EPICS7 missing in 606
 -- RELEASE acq400-606-20230619134635 --
 judgement restore with asyn fix
 -- RELEASE acq400-605-20230612112143 --
