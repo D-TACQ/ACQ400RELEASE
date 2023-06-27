@@ -1,3 +1,6 @@
+-- RELEASE acq400-610-20230627171003 --
+instant RTM on demand supported.
+ACQ2206 can use ACQ2106 personalities
 -- RELEASE acq400-609-20230623192815 --
 38d4194 2023-06-23 Scott Robson (HEAD -> master, origin/master) ACQ1001_A7_40_32B-REAL40 - Improvements to Aggregator to better support instant RTM on demand
 better Judgement. New asyn fixes bug from last October.
