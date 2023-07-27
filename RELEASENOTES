@@ -1,3 +1,5 @@
+-- RELEASE acq400-614-20230727184321 --
+support acq427 in acq2206
 -- RELEASE acq400-613-20230724212109 --
 -- RELEASE acq400-612-20230724160739 --
 fix RTM start error. More BOLO goodness
