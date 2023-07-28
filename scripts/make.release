@@ -53,6 +53,7 @@ acq2206 acq2206sfp
 acq400dsp1_overlay acq400dsp2_overlay
 acq1014 kmcu kmcuz30 kmcuz30_bpe z7io z7io_cpld_overlay
 mgt482_sfp1_overlay mgt482_sfp2_overlay mgt482_sfp3_overlay mgt482_sfp4_overlay
+acq2x06_di460_overlay
 acq2006 acq2006b acq2006bEU"
 
 
