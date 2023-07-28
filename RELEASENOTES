@@ -1,3 +1,5 @@
+-- RELEASE acq400-616-20230728160508 --
+ensure acq2206d37.dtb is available, fix scaler opi error
 -- RELEASE acq400-615-20230728122814 --
 di460 overlay included
 -- RELEASE acq400-614-20230727184321 --
