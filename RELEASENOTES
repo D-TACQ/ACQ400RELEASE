@@ -1,3 +1,38 @@
+-- RELEASE acq400-614-20230727184321 --
+support acq427 in acq2206
+-- RELEASE acq400-613-20230724212109 --
+-- RELEASE acq400-612-20230724160739 --
+fix RTM start error. More BOLO goodness
+-- RELEASE acq400-611-20230704201945 --
+BOLO fixes
+-- RELEASE acq400-610-20230627171003 --
+instant RTM on demand supported.
+ACQ2206 can use ACQ2106 personalities
+-- RELEASE acq400-609-20230623192815 --
+38d4194 2023-06-23 Scott Robson (HEAD -> master, origin/master) ACQ1001_A7_40_32B-REAL40 - Improvements to Aggregator to better support instant RTM on demand
+better Judgement. New asyn fixes bug from last October.
+-- RELEASE acq400-608-20230622173205 --
+blacklisted old redundant FPGAs
+-- RELEASE acq400-607-20230619143155 --
+pickup new EPICS7 missing in 606
+-- RELEASE acq400-606-20230619134635 --
+judgement restore with asyn fix
+-- RELEASE acq400-605-20230612112143 --
+scaler final
+-- RELEASE acq400-604-20230612092545 --
+-- RELEASE acq400-603-20230608165226 --
+scaler first release
+-- RELEASE acq400-602-20230608154202 --
+handles dio432pmod, and all DIO32 GPIO
+ppw with minimum ICOUNT set
+
+-- RELEASE acq400-601-20230530211006 --
+includes BOLODSP with SN>60 scaling, bolo CAL V is signed
+dio432 bitwise EPICS support
+-- RELEASE acq400-600-20230517210457 --
+z7io second ship
+-- RELEASE acq400-599-20230516075805 --
+update to latest z7io mgt-aware 10-acq420
 -- RELEASE acq400-598-20230516073321 --
 -- RELEASE acq400-597-20230516072625 --
 attempting master build again. see SNAGLIST#20220516
