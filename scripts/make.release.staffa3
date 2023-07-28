@@ -76,7 +76,9 @@ for arch in $ARCHDTB; do cpwarn $ARB/dts/$arch.dtb MNT/dtb.d; done
 
 pull_sources
 ./scripts/copy-fpga-from-git >/dev/null
-
+for old in $(cat redundant_fpgas); do
+	rm -v MNT/fpga.d/$old
+done
 VER=1
 [ -e .version ] && VER=$(($(cat .version)+1))
 echo $VER >.version
