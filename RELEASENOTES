@@ -1,3 +1,5 @@
+-- RELEASE acq400-617-20230912140331 --
+FP addition
 -- RELEASE acq400-616-20230728160508 --
 ensure acq2206d37.dtb is available, fix scaler opi error
 -- RELEASE acq400-615-20230728122814 --
