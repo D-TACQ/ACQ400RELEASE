@@ -1,3 +1,5 @@
+-- RELEASE acq400-619-20230915183138 --
+fix WR sync_role bug breaking acq425
 -- RELEASE acq400-618-20230913163951 --
 FP addition
 -- RELEASE acq400-617-20230912140331 --
