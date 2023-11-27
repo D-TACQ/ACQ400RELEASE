@@ -1,3 +1,7 @@
+-- RELEASE acq400-622-20231127151519 --
+supports comms module 9080 as well as 9011
+9080: UDPX only
+9011: PCIe and possibly UDP
 -- RELEASE acq400-621-20231116200401 --
 restores ACQ1014 and JUDGEMENT good on ACQ48x
 -- RELEASE acq400-620-20230927085314 --
