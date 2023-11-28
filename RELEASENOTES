@@ -1,3 +1,6 @@
+-- RELEASE acq400-624-20231128144419 --
+acq400ioc gains PVA thanks to qsrv
+includes .dtb to make 622 work correctly
 -- RELEASE acq400-622-20231127151519 --
 supports comms module 9080 as well as 9011
 9080: UDPX only
