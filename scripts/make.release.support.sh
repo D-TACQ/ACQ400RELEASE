@@ -29,5 +29,5 @@ mgt482_sfp1_overlay
 mgt482_sfp2_overlay
 mgt482_sfp3_overlay
 mgt482_sfp4_overlay
-acq2x06_enable_mgtAB.dtb
+acq2x06_enable_mgtAB
 acq2x06_di460_overlay"
