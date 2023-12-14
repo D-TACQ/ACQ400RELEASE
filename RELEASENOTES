@@ -1,3 +1,5 @@
+-- RELEASE acq400-627-20231214203022 --
+new gpsd 3.25
 -- RELEASE acq400-626-20231214201349 --
 -- RELEASE acq400-625-20231214200915 --
 segmented AWG with concurrent AI
