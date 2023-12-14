@@ -1,3 +1,6 @@
+-- RELEASE acq400-625-20231214200915 --
+segmented AWG with concurrent AI
+10G UDPX
 -- RELEASE acq400-624-20231128144419 --
 acq400ioc gains PVA thanks to qsrv
 includes .dtb to make 622 work correctly
