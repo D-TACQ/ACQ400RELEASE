@@ -30,4 +30,6 @@ mgt482_sfp2_overlay
 mgt482_sfp3_overlay
 mgt482_sfp4_overlay
 acq2x06_enable_mgtAB
+mgt48x_clk_overlay
+mgt48x_clk_overlay_156M25
 acq2x06_di460_overlay"
