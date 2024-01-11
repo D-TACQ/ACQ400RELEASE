@@ -1,6 +1,19 @@
 #!/usr/bin/bash
-(cd ACQ400_FPGA; git pull origin master)
-echo Hello .. clearing target to be sure
-rm -Rf MNT/fpga.d/*
-rsync -ir --delete --update ACQ400_FPGA/*TOP* MNT/fpga.d/
+
+if [ -e ACQ400_FPGA/.git/config ]; then
+	(cd ACQ400_FPGA; git pull origin master)
+else
+	echo WARNING: no ACQ400_FPGA git archive
+fi
+if [ -e ACQ400_FPGA/README ]; then
+	echo Hello .. clearing target to be sure
+	rm -Rf MNT/fpga.d/*
+	rsync -ir --delete --update ACQ400_FPGA/*TOP* MNT/fpga.d/
+	for old in $(cat redundant_fpgas); do
+       		rm -v MNT/fpga.d/$old
+	done
+else
+	echo WARNING: no source FPGA archive
+fi
+
 
