@@ -46,7 +46,7 @@ acq400_usb_peripheral_overlay
 acq400dsp1_overlay
 acq400dsp2_overlay
 acq1102_sfp1_overlay
-acq1102_sfp1_overlay
+acq1102_sfp2_overlay
 acq2106_1000X_overlay
 acq2106_sc_overlay
 acq2106_acq435elfx_sc_overlay
