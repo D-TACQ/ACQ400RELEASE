@@ -26,7 +26,7 @@
     first reboot the UUT so that there's no unwanted state.
     ssh root@UUT 'set.sys /dev/acq400.0.knobs/jettison_buffers_from 20'  
 
-  3. copy the file to /tmp eg
+  3. copy the files to the UUT. nb: only the .tar file goes to /tmp..
 
         ```bash
         scp acq400*tar root@UUT:/tmp
