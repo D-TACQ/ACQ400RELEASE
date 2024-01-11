@@ -95,9 +95,6 @@ if [ -e .master_version_host ] && [ "x$(cat .master_version_host)" = "x$(hostnam
 	MVHOST=1
 	pull_sources
 	./scripts/copy-fpga-from-git >/dev/null
-	for old in $(cat redundant_fpgas); do
-		rm -v MNT/fpga.d/$old
-	done
 else
 	[ -e .version ] && VER=$(($(cat .version)))
 	VER=$(printf %03d $VER)
