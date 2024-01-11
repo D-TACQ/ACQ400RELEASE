@@ -6,30 +6,59 @@ MNTDIRS="bin boot.d dtb.d fpga.d local packages packages.opt ko"
 
 
 # list of .dtb names to include
-ARCHDTB="\
-acq1001 acq1002 acq1002p acq1002r acq1002w acq400_uart0
-acq2006 acq2006b acq2006bEU
-acq2106d37 acq2106 acq2106sfp acq2106d37sfp acq210612
-acq1014
-acq1102
-kmcu kmcuz30 kmcuz30_bpe
-acq2206
-acq2206sfp
-acq2106_quadcomms_overlay
-acq2106_hudp_overlay
-acq2106_1000X_overlay
-acq2106_sc_overlay
-acq400_usb_host_overlay
-acq400_usb_otg_overlay
-acq400_usb_peripheral_overlay
-acq2106_acq435elfx_sc_overlay
-acq400dsp1_overlay acq400dsp2_overlay
-z7io z7io_cpld_overlay z7io_rtmi2c_overlay
-mgt482_sfp1_overlay
-mgt482_sfp2_overlay
-mgt482_sfp3_overlay
-mgt482_sfp4_overlay
-acq2x06_enable_mgtAB
-mgt48x_clk_overlay
-mgt48x_clk_overlay_156M25
-acq2x06_di460_overlay"
+# pull from acq400_kernel/arch/arm/boot/dts/Makefile
+# :.,$s/ \\/
+# :.,$s/^TAB//
+# :.,$s///g
+
+ARCHDTB="
+acq2006.dtb
+acq2006b.dtb
+acq2006bEU.dtb
+acq1001.dtb
+acq1002.dtb
+acq1002p.dtb
+acq1002r.dtb
+acq1002w.dtb
+acq1014.dtb
+acq1102.dtb
+acq2106.dtb
+acq2106sfp.dtb
+acq210612.dtb
+acq2106sfp2.dtb
+acq2106d37.dtb
+acq2106d37sfp.dtb
+acq2206.dtb
+acq2206sfp.dtb
+acq2206d37.dtb
+acq2206d37sfp.dtb
+kmcu.dtb
+kmcuz30.dtb
+kmcuz30_bpe.dtb
+z7io.dtb
+z7io_cpld_overlay.dtb
+z7io_rtmi2c_overlay.dtb
+acq400_uart0.dtb
+acq400_2D_overlay.dtb
+acq400_usb_host_overlay.dtb
+acq400_usb_otg_overlay.dtb
+acq400_usb_peripheral_overlay.dtb
+acq400dsp1_overlay.dtb
+acq400dsp2_overlay.dtb
+acq1102_sfp1_overlay.dtb
+acq1102_sfp1_overlay.dtb
+acq2106_1000X_overlay.dtb
+acq2106_sc_overlay.dtb
+acq2106_acq435elfx_sc_overlay.dtb
+acq2106_quadcomms_overlay.dtb
+acq2106_hudp_overlay.dtb
+acq2x06_enable_mgtAB.dtb
+acq2x06_di460_overlay.dtb
+mgt482_sfp1_overlay.dtb
+mgt482_sfp2_overlay.dtb
+mgt482_sfp3_overlay.dtb
+mgt482_sfp4_overlay.dtb
+mgt48x_clk_overlay.dtb
+mgt48x_clk_overlay_156M25.dtb
+"
+
