@@ -35,18 +35,35 @@ diff -uU 0 /tmp/release.md5 /tmp/current.md5 | grep -v @@
 diff -uU 0 /tmp/release.md5 /tmp/current.md5 >/dev/null
 OK=$?
 
+
 if [ "x$TOP" = "x/mnt" ]; then
+	VERHEAD=$(head -n1 /mnt/VERSION)
 	if [ $OK -eq 0 ]; then
-		head -n1 /mnt/VERSION
-		echo Clean Release Installed
-		exit 0
+		echo $VERHEAD
+		echo "Clean Release Installed"
+		RC=0
 	else
-		echo Warning, patching detected
+		echo "Warning, patching detected"
+		RC=1
+	fi
+	ls /mnt/ko/*fpga*
+	if [ $(ls /mnt/ko/*fpga* | wc -l) -eq 1 ]; then
+		ESW_DC=$(echo $VERHEAD | sed -e 's/-/ /g' | awk '{ print $4 }')
+		GW_DC=$(ls /mnt/ko/*fpga* | tr .- ' ' | awk '{ print $3 }')
+		if [ "$ESW_DC" = "$GW_DC" ]; then
+			echo "ESW and GW DATECODES $ESW_DC MATCH: GOOD"
+			exit $RC
+		else
+			echo "Warning: ESW DATECODE $ESW_DC does not match GW $GW_DC"
+			exit 1
+		fi
+	else
+		echo "ERROR: multiple FPGA archives NOT RECOMMENDED"
 		exit 1
 	fi
 else
 	if [ $OK -eq 0 ]; then
-		echo VALID RELEASE
+		echo "VALID RELEASE"
 		exit 0
 	else
 		if [ -e /mnt/ko/fpga-$RELCORE.img ]; then
@@ -55,11 +72,11 @@ else
 			sort -t\  -k2 /tmp/release.md5 >/tmp/release.md5.2
 			diff -uU 0 /tmp/release.md5.2 /tmp/current.md5.2 >/dev/null
 			if [ $? -eq 0 ]; then
-				echo WITH /mnt/ko/fpga-$RELCORE.img included, RELEASES MATCH
+				echo "WITH /mnt/ko/fpga-$RELCORE.img included, RELEASES MATCH"
 				exit 0
 			fi
 		fi		
-		echo ERROR release invalid
+		echo "ERROR release invalid"
 		exit 1
 	fi
 fi
