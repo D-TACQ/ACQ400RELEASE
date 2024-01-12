@@ -8,7 +8,7 @@ grep '^[0-9a-f]\{32\}  ./' $TOP/VERSION | grep -v rootfs.ext2 | grep -v fpga.d >
 	cd $TOP
 	md5sum ./RELEASENOTES ./bin/* 
 	md5sum ./boot.d/* ./dtb.d/* 
-	md5sum ./ko/*
+	md5sum ./ko/package*
 	md5sum ./packages/* 
 	md5sum ./packages.opt/* 
 	md5sum ./uImage ./uramdisk.image.gz 
