@@ -1,3 +1,5 @@
+-- RELEASE acq400-644-20240204212022 --
+finally, updated acq400_kernel p171 with i2c-xiic.ko
 -- RELEASE acq400-643-20240204210714 --
 -- RELEASE acq400-642-20240204202631 --
 z7io dynamic detect FMC
