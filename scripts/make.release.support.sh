@@ -38,6 +38,7 @@ kmcuz30_bpe
 z7io
 z7io_cpld_overlay
 z7io_rtmi2c_overlay
+z7io_mbox_overlay
 acq400_uart0
 acq400_2D_overlay
 acq400_usb_host_overlay
@@ -45,6 +46,7 @@ acq400_usb_otg_overlay
 acq400_usb_peripheral_overlay
 acq400dsp1_overlay
 acq400dsp2_overlay
+acq1102_mmc1_overlay
 acq1102_sfp1_overlay
 acq1102_sfp2_overlay
 acq2106_1000X_overlay
