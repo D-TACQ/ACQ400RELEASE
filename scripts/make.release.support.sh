@@ -55,6 +55,7 @@ acq2106_acq435elfx_sc_overlay
 acq2106_quadcomms_overlay
 acq2106_hudp_overlay
 acq2x06_enable_mgtAB
+mgtC_overlay
 acq2x06_di460_overlay
 mgt482_sfp1_overlay
 mgt482_sfp2_overlay
