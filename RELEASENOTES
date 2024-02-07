@@ -1,3 +1,6 @@
+-- RELEASE acq400-647-20240207215511 --
+z7io double FPGA boot with mmcinfo at both stages is good, depending on FPGA not in release
+adjusted RTM_TRANSLEN back to 20230414
 -- RELEASE acq400-646-20240206095033 --
 z7io system status good
 -- RELEASE acq400-645-20240205165805 --
