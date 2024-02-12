@@ -1,3 +1,6 @@
+-- RELEASE acq400-648-20240212200942 --
+z7io ACQify steps .. include z7io/uboot.env, z7io/BARE
+judgement automate ES_SPREAD skip
 -- RELEASE acq400-647-20240207215511 --
 z7io double FPGA boot with mmcinfo at both stages is good, depending on FPGA not in release
 adjusted RTM_TRANSLEN back to 20230414
