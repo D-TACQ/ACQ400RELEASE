@@ -2,7 +2,7 @@
 # source me. common support for make.release.*
 
 # subdirectories on target
-MNTDIRS="bin boot.d dtb.d fpga.d local packages packages.opt ko"
+MNTDIRS="bin boot.d dtb.d fpga.d local packages packages.opt ko z7io"
 
 
 # list of .dtb names to include

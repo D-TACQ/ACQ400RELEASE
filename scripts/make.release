@@ -190,6 +190,7 @@ for img in OPT/ko/*.img; do
 done
 
 tar cvf REL/$RELNAME.tar -C MNT --exclude=*.bit.gz .
+tar --append --file REL/$RELNAME.tar -C MNT z7io/Z7IO_TOP_BARE.bit.gz
 tar tvf REL/$RELNAME.tar > acq400.manifest
 
 if [ $MVHOST -eq 1 ]; then
