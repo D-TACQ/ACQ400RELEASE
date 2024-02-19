@@ -189,7 +189,7 @@ for img in OPT/ko/*.img; do
 done
 
 tar cvf REL/$RELNAME.tar -C MNT --exclude=*.bit.gz .
-$(CP) MNT/fpga.d/Z7IO_TOP_BARE.bit.gz MNT/z7io
+$CP MNT/fpga.d/Z7IO_TOP_BARE.bit.gz MNT/z7io
 tar --append --file REL/$RELNAME.tar -C MNT z7io/Z7IO_TOP_BARE.bit.gz
 tar tvf REL/$RELNAME.tar > acq400.manifest
 
