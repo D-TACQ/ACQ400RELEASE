@@ -77,7 +77,6 @@ mv MNT/packages/*custom* MNT/packages.opt
 $CP tgt_scripts/* MNT/bin
 $CP boot.d/* MNT/boot.d
 $CP z7io/* MNT/z7io
-$CP ACQ400_FPGA/Z7IO_TOP_BARE.bit.gz MNT/z7io
 $CP ../Z7IO/uboot.env MNT/z7io
 for arch in $ARCHDTB; do cpwarn $ARB/dts/$arch.dtb MNT/dtb.d; done
 }
@@ -190,7 +189,6 @@ for img in OPT/ko/*.img; do
 done
 
 tar cvf REL/$RELNAME.tar -C MNT --exclude=*.bit.gz .
-tar --append --file REL/$RELNAME.tar -C MNT z7io/Z7IO_TOP_BARE.bit.gz
 tar tvf REL/$RELNAME.tar > acq400.manifest
 
 if [ $MVHOST -eq 1 ]; then
