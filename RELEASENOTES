@@ -1,3 +1,6 @@
+-- RELEASE acq400-674-20240301084444 --
+tidy fallout from reverse site-list. 
+default SLOWMON_NACC because it interferes with sync_role (ok to enable later).
 -- RELEASE acq400-673-20240228120707 --
 acq1102, two sites, 2 is master
 -- RELEASE acq400-672-20240220104302 --
