@@ -1,3 +1,5 @@
+-- RELEASE acq400-682-20240322211037 --
+z7io, auto detects geo/nongeo i2c address
 -- RELEASE acq400-681-20240321163915 --
 judgement again, optimised ES saves 4%
 -- RELEASE acq400-680-20240320205745 --
