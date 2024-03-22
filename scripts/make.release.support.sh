@@ -39,6 +39,10 @@ z7io
 z7io_cpld_overlay
 z7io_rtmi2c_overlay
 z7io_mbox_overlay
+z7io_rtm_elf1_geo_overlay
+z7io_rtm_elf1_overlay
+z7io_rtm_elf2_geo_overlay
+z7io_rtm_elf2_overlay
 acq400_uart0
 acq400_2D_overlay
 acq400_usb_host_overlay
