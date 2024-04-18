@@ -1,3 +1,6 @@
+-- RELEASE acq400-693-20240418120238 --
+fix HUDP regression ACQ2x06 from ACQ1102 devel.
+restore PG32
 -- RELEASE acq400-692-20240418115742 --
 -- RELEASE acq400-691-20240416210439 --
 DOC-235740-01 release candidate
