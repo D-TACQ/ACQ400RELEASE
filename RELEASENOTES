@@ -1,3 +1,5 @@
+-- RELEASE acq400-706-20240724123227 --
+fpga purge complete
 -- RELEASE acq400-704-20240724115859 --
 -- RELEASE acq400-703-20240708113756 --
 clean for MGT508 channel map
