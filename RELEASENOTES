@@ -1,3 +1,7 @@
+-- RELEASE acq400-709-20240813161913 --
+new z7io images 09_09 and A5_A5
+supports https certificates
+works with AO422
 -- RELEASE acq400-708-20240807100458 --
 FPGA: bolo8 works with 6 sites, SPAD and Aurora
 stream_subset control
