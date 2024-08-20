@@ -1,3 +1,5 @@
+-- RELEASE acq400-710-20240820205947 --
+support Z7IO35, allow WRTD TXA adjust
 -- RELEASE acq400-709-20240813161913 --
 new z7io images 09_09 and A5_A5
 supports https certificates
