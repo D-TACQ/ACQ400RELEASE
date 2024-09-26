@@ -1,3 +1,10 @@
+-- RELEASE acq400-713-20240926142545 --
+BOLODSP with HUDP
+HTTPD with auth
+acq1102_A_B mgt instantiation,
+fix run0 mixed channels case
+z7io gets 3 sites worth of counters
+
 -- RELEASE acq400-712-20240925153818 --
 new FPGAs for BOLO/UDP, FILTERS/425, clean ACQ1102 DSP
 -- RELEASE acq400-711-20240820212909 --
