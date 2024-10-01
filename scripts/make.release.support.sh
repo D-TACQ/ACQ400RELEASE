@@ -50,8 +50,8 @@ acq400_usb_otg_overlay
 acq400_usb_peripheral_overlay
 acq400dsp1_overlay
 acq400dsp2_overlay
-acq1102_hudpA_overlay
-acq1102_hudpB_overlay
+acq1102_commsA_overlay
+acq1102_commsB_overlay
 acq1102_mmc1_overlay
 acq1102_sfp1_overlay
 acq1102_sfp2_overlay
