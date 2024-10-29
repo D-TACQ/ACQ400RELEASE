@@ -3,6 +3,11 @@
 - If your starting release predates March 1, 2019 do not go ahead, please follow special instructions:
 - https://github.com/D-TACQ/ACQ400RELEASE/blob/master/README.md#additional-instructions-for-upgrading-acq4xx--firmware-pre-march-1-2019-
 
+# Note on SD card
+- All firmware is held on SD card, regular FAT32 format, no need to format a shop-bought card.
+- The SD card is mounted on the running Linux system as /mnt/ and this is the "top-level" of the file system in the examples below. 
+- If you were to mount the same card on Windows, it would likely be at something like "E:\\" and on a regular Linux desktop perhaps /run/media/user/xxx
+
  # INSTRUCTIONS
    # Backup!
   0. Note any custom packages you have activated (FIRMWARE web page) 
@@ -115,31 +120,8 @@ We try to avoid patch files on shipment, but sometimes it's necessary. in partic
 All other files in /mnt/local "belong to the user" and are untouched by upgrade.
 
   # EPICS4
-  1. In addition to the base release, we present the "EPICS tarball", this has a full release of EPICS7 (3+4). This is of interest to customers who want to use "PV Access". 
-  2. To install
-    1. Extract the tarball on a HOST PC
-    2. Use this script to deploy. NB replaces existing 10-acq420 package
-```
-#!/bin/sh
-# deploy UUT - deploy EPICS4 release to UUT
-# nb: this script runs on a HOST
-
-UUT=$1
-if [ "$1" = "" ]; then
-        echo "USAGE: deploy UUT"
-        exit 1
-fi
-
-for pkf in *.tgz *.ovl; do
-	IFS='-_' read -r -a pka <<< "$pkf"
-	pk="${pka[0]}-${pka[1]}"
-	echo "copy file $pkf to the target, replacing any existing $pk"
-	ssh root@$UUT 'mv /mnt/packages/'$pk'* /mnt/packages.opt'
-	scp $pkf root@$UUT:/mnt/packages/
-done
-
-
-```
+The standard release runs EPICS7. Normal EPICS4 utilities like "pvinfo" are available as default.
+The embedded IOC is linked to "qsrv" to provide access to all records using pva as well as the default ca
  
  # Additional instructions for upgrading acq4xx- firmware (pre March 1, 2019) :
  
