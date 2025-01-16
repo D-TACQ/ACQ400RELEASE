@@ -69,5 +69,11 @@ mgt482_sfp3_overlay
 mgt482_sfp4_overlay
 mgt48x_clk_overlay
 mgt48x_clk_overlay_156M25
+acq426_c32_s1_overlay
+acq426_c32_s2_overlay
+acq426_c32_s3_overlay
+acq426_c32_s4_overlay
+acq426_c32_s5_overlay
+acq426_c32_s6_overlay
 "
 
