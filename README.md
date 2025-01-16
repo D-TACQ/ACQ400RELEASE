@@ -4,7 +4,8 @@
 - https://github.com/D-TACQ/ACQ400RELEASE/blob/master/README.md#additional-instructions-for-upgrading-acq4xx--firmware-pre-march-1-2019-
 
 # Note on SD card
-- All firmware is held on SD card, regular FAT32 format, no need to format a shop-bought card.
+- All firmware is held on SD card, regular FAT32 format, no need to format a shop-bought card, 32GB or smaller.
+- SD cards larger than 64GB may be used, provided they are preformatted so that the first partition is 32GB.
 - The SD card is mounted on the running Linux system as /mnt/ and this is the "top-level" of the file system in the examples below. 
 - If you were to mount the same card on Windows, it would likely be at something like "E:\\" and on a regular Linux desktop perhaps /run/media/user/xxx
 
