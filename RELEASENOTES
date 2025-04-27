@@ -1,3 +1,5 @@
+-- RELEASE acq400-746-20250427131541 --
+gain_all_x : set unique gains all channels one posted command
 -- RELEASE acq400-745-20250422082552 --
 restore CUSTOM_KEYS. AWG SEG 2 sites
 -- RELEASE acq400-744-20250417162652 --
