@@ -1,3 +1,6 @@
+-- RELEASE acq400-759-20250626121349 --
+acq400_model, acq400_compatible_model available at early boot.
+fixed peter's bug in BK's fix..
 -- RELEASE acq400-758-20250612190306 --
 BK's fix for BZ 236"
 -- RELEASE acq400-757-20250608193531 --
