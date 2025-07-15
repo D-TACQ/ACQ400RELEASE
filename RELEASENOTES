@@ -1,3 +1,5 @@
+-- RELEASE acq400-761-20250715203825 --
+now includes redis
 -- RELEASE acq400-760-20250627171618 --
 acq426 works on z7io - site 1 at least.
 -- RELEASE acq400-759-20250626121349 --
