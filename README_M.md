@@ -51,4 +51,7 @@ PROJECTS/ACQ400_ESW_TOP/.git/config:	url = https://github.com/D-TACQ/ACQ400_ESW_
 PROJECTS/ACQ400_ESW_TOP/ACQ400RELEASE.M/.git/config:	url = git@github.com:D-TACQ/ACQ400RELEASE.git
 ```
 
+## Developer notes
 
+New dtb? Be sure to update
+scripts/make.release.support.sh
