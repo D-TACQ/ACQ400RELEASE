@@ -76,6 +76,8 @@ $CP ../PACKAGES.OPT/* MNT/packages.opt
 mv MNT/packages/*custom* MNT/packages.opt
 $CP tgt_scripts/* MNT/bin
 $CP boot.d/* MNT/boot.d
+$CP z7io/* MNT/z7io
+$CP ../Z7IO/uboot.env MNT/z7io
 for arch in $ARCHDTB; do cpwarn $ARB/dts/$arch.dtb MNT/dtb.d; done
 }
 

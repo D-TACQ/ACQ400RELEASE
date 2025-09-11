@@ -10,7 +10,10 @@ if [ -e ACQ400_FPGA/README ]; then
 	rm -Rf MNT/fpga.d/*
 	rsync -ir --delete --update ACQ400_FPGA/*TOP* MNT/fpga.d/
 	for old in $(cat redundant_fpgas); do
-       		rm -v MNT/fpga.d/$old
+		if [ -e $old ]; then
+			echo remove redundant fpga $old
+       			rm -v MNT/fpga.d/$old
+		fi
 	done
 else
 	echo WARNING: no source FPGA archive

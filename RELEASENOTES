@@ -1,3 +1,217 @@
+-- RELEASE acq400-768-20250909214559 --
+dynamic awg_seg
+-- RELEASE acq400-767-20250908145137 --
+HUDP RELAY long packets
+-- RELEASE acq400-766-20250828205215 --
+First release with OCTOBEE
+-- RELEASE acq400-765-20250820204721 --
+changes for HUDP RELAY
+-- RELEASE acq400-764-20250813173259 --
+acq400ioc uses pvxs by default
+-- RELEASE acq400-763-20250812151420 --
+-- RELEASE acq400-762-20250812114702 --
+BOLO updated, SENSIS support
+-- RELEASE acq400-761-20250715203825 --
+now includes redis
+-- RELEASE acq400-760-20250627171618 --
+acq426 works on z7io - site 1 at least.
+-- RELEASE acq400-759-20250626121349 --
+acq400_model, acq400_compatible_model available at early boot.
+fixed peter's bug in BK's fix..
+-- RELEASE acq400-758-20250612190306 --
+BK's fix for BZ 236"
+-- RELEASE acq400-757-20250608193531 --
+-- RELEASE acq400-756-20250605211109 --
+-- RELEASE acq400-755-20250603094546 --
+release for big FAULTMON/SLOWMON
+-- RELEASE acq400-754-20250521200407 --
+static AWG now works with AO422
+-- RELEASE acq400-753-20250519112428 --
+closest match to DOC-255450-01 shipment
+-- RELEASE acq400-752-20250507172030 --
+fix calmon regression for acq424
+-- RELEASE acq400-751-20250506184010 --
+-- RELEASE acq400-750-20250506170520 --
+acq426, all sites with link-cal
+-- RELEASE acq400-749-20250429185034 --
+-- RELEASE acq400-748-20250429152837 --
+-- RELEASE acq400-747-20250429125704 --
+747 jumbo update for clean AWG_SEG
+-- RELEASE acq400-746-20250427131541 --
+gain_all_x : set unique gains all channels one posted command
+-- RELEASE acq400-745-20250422082552 --
+restore CUSTOM_KEYS. AWG SEG 2 sites
+-- RELEASE acq400-744-20250417162652 --
+-- RELEASE acq400-743-20250415120333 --
+ACQ465 sync ship
+-- RELEASE acq400-742-20250414171356 --
+Z7IO update for DESY AMC, TS CALMON_DISABLE, ACQ465 reduced voltage
+-- RELEASE acq400-741-20250401141837 --
+DI460 AqB final, TS knobs and fsck
+-- RELEASE acq400-740-20250326144930 --
+AO422 release
+-- RELEASE acq400-739-20250324200349 --
+WRS and DI460 AqB
+-- RELEASE acq400-738-20250311185044 --
+slowmon release
+-- RELEASE acq400-737-20250303140007 --
+-- RELEASE acq400-736-20250227211714 --
+slowmon epics update
+-- RELEASE acq400-735-20250221082852 --
+identity changes .. test widely
+-- RELEASE acq400-734-20250212153936 --
+acq1102 wr updates, acq1xxx CLK LED becomes like acq2106 CLK LED
+-- RELEASE acq400-733-20250211153122 --
+deferred update for AO420FMC
+-- RELEASE acq400-732-20250127085946 --
+support for AO420FMC-CS3, unipolar 0-3.3V
+-- RELEASE acq400-731-20250123083040 --
+AWG short WF, WRS low level
+-- RELEASE acq400-730-20250114115929 --
+Allison Scanner release
+-- RELEASE acq400-729-20250114095437 --
+-- RELEASE acq400-728-20241216191943 --
+kerberized openssh
+-- RELEASE acq400-727-20241216134837 --
+-- RELEASE acq400-726-20241205163459 --
+restore ACQ43x full power
+-- RELEASE acq400-725-20241130191533 --
+ATD final
+-- RELEASE acq400-724-20241129090545 --
+acq426 turnkey
+-- RELEASE acq400-723-20241114084940 --
+AWG segments A-Z enabled, updated 426 support
+-- RELEASE acq400-722-20241107201146 --
+better SLOW_AO
+-- RELEASE acq400-721-20241104083101 --
+acq426 spi driver update with knobs on
+-- RELEASE acq400-720-20241025083838 --
+anatrg group controls good
+-- RELEASE acq400-719-20241020181734 --
+first cut plumbing acq426
+-- RELEASE acq400-718-20241018215416 --
+dsp_atd_9802 : Generic Analog Threshold Trigger
+-- RELEASE acq400-717-20241018091239 --
+-- RELEASE acq400-716-20241018084212 --
+-- RELEASE acq400-715-20241003140315 --
+ACQ1102 commsAB shipping
+-- RELEASE acq400-714-20241001155855 --
+tidy ACQ1102 commsAB
+-- RELEASE acq400-713-20240926142545 --
+BOLODSP with HUDP
+HTTPD with auth
+acq1102_A_B mgt instantiation,
+fix run0 mixed channels case
+z7io gets 3 sites worth of counters
+
+-- RELEASE acq400-712-20240925153818 --
+new FPGAs for BOLO/UDP, FILTERS/425, clean ACQ1102 DSP
+-- RELEASE acq400-711-20240820212909 --
+-- RELEASE acq400-710-20240820205947 --
+support Z7IO35, allow WRTD TXA adjust
+-- RELEASE acq400-709-20240813161913 --
+new z7io images 09_09 and A5_A5
+supports https certificates
+works with AO422
+-- RELEASE acq400-708-20240807100458 --
+FPGA: bolo8 works with 6 sites, SPAD and Aurora
+stream_subset control
+-- RELEASE acq400-707-20240805111218 --
+nginx supports SSL
+-- RELEASE acq400-706-20240724123227 --
+fpga purge complete
+-- RELEASE acq400-704-20240724115859 --
+-- RELEASE acq400-703-20240708113756 --
+clean for MGT508 channel map
+-- RELEASE acq400-702-20240704153358 --
+acq2206+mgt508 official FPGA
+-- RELEASE acq400-701-20240530174641 --
+-- RELEASE acq400-700-20240529183001 --
+acq465 PACK24 support
+-- RELEASE acq400-699-20240520205803 --
+mgt508 intro
+-- RELEASE acq400-698-20240510105018 --
+fix BZ 204, spad_update svc
+-- RELEASE acq400-697-20240422181421 --
+-- RELEASE acq400-696-20240422172044 --
+-- RELEASE acq400-695-20240422161427 --
+DLO-245860-01
+-- RELEASE acq400-694-20240419111926 --
+-- RELEASE acq400-693-20240418120238 --
+fix HUDP regression ACQ2x06 from ACQ1102 devel.
+restore PG32
+-- RELEASE acq400-692-20240418115742 --
+-- RELEASE acq400-691-20240416210439 --
+DOC-235740-01 release candidate
+-- RELEASE acq400-690-20240415162820 --
+-- RELEASE acq400-689-20240415134552 --
+-- RELEASE acq400-688-20240412190100 --
+-- RELEASE acq400-687-20240411212713 --
+-- RELEASE acq400-686-20240411175154 --
+ready for acq1102
+-- RELEASE acq400-684-20240325134854 --
+corrects Z7IO site temperature reporting
+-- RELEASE acq400-683-20240322211115 --
+-- RELEASE acq400-682-20240322211037 --
+z7io, auto detects geo/nongeo i2c address
+-- RELEASE acq400-681-20240321163915 --
+judgement again, optimised ES saves 4%
+-- RELEASE acq400-680-20240320205745 --
+judgement multi-site version, clean SC from ES
+-- RELEASE acq400-679-20240320122043 --
+z7io+acq48x
+-- RELEASE acq400-678-20240319120545 --
+-- RELEASE acq400-677-20240318125033 --
+-- RELEASE acq400-676-20240305180047 --
+676 includes latest Z7IO images
+-- RELEASE acq400-675-20240301093845 --
+-- RELEASE acq400-674-20240301084444 --
+tidy fallout from reverse site-list. 
+default SLOWMON_NACC because it interferes with sync_role (ok to enable later).
+-- RELEASE acq400-673-20240228120707 --
+acq1102, two sites, 2 is master
+-- RELEASE acq400-672-20240220104302 --
+z7io sources BARE from fpga stock
+-- RELEASE acq400-671-20240219202706 --
+static awg ONESHOT_WAIT_FOR_DONE runs 10Hz
+-- RELEASE acq400-670-20240219153449 --
+jump to 670 for clean break
+-- RELEASE acq400-661-20240219151659 --
+-- RELEASE acq400-660-20240219145429 --
+-- RELEASE acq400-659-20240219144930 --
+new BARE for z7io PCIe
+-- RELEASE acq400-658-20240215222355 --
+judgement WF clean tail
+-- RELEASE acq400-657-20240215210437 --
+clean boot updates for z7io in case of missing RTM
+-- RELEASE acq400-656-20240214215812 --
+-- RELEASE acq400-655-20240214170955 --
+drop old Z7IO personalities now incompatible
+-- RELEASE acq400-654-20240214093805 --
+-- RELEASE acq400-653-20240212221231 --
+-- RELEASE acq400-652-2024021222#0321 --
+-- RELEASE acq400-651-20240212215637 --
+-- RELEASE acq400-650-20240212215515 --
+-- RELEASE acq400-649-20240212204450 --
+-- RELEASE acq400-648-20240212200942 --
+z7io ACQify steps .. include z7io/uboot.env, z7io/BARE
+judgement automate ES_SPREAD skip
+-- RELEASE acq400-647-20240207215511 --
+z7io double FPGA boot with mmcinfo at both stages is good, depending on FPGA not in release
+adjusted RTM_TRANSLEN back to 20230414
+-- RELEASE acq400-646-20240206095033 --
+z7io system status good
+-- RELEASE acq400-645-20240205165805 --
+should be full function on z7io, including MGT and CPLD
+-- RELEASE acq400-644-20240204212022 --
+finally, updated acq400_kernel p171 with i2c-xiic.ko
+-- RELEASE acq400-643-20240204210714 --
+-- RELEASE acq400-642-20240204202631 --
+z7io dynamic detect FMC
+-- RELEASE acq400-641-20240117164236 --
+dual-burst
+-- RELEASE acq400-640-20240112183900 --
+now with clean release check version and clean buildroot
 -- RELEASE acq400-639-20240112121645 --
 
 -- RELEASE acq400-638-20240112120948 --
