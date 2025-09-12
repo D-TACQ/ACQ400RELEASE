@@ -22,6 +22,7 @@ acq1002r
 acq1002w
 acq1014
 acq1102
+acq1102d
 acq2106
 acq2106sfp
 acq210612
