@@ -1,3 +1,6 @@
+-- RELEASE acq400-773-20251009075155 --
+    DISTRIBUTOR:S1 set on boot.
+    TRANSIENT:PRAMS set instantly without need for COMMIT
 -- RELEASE acq400-772-20251008164450 --
 correct gain / scaling on ACQ426, diffs vanilla and ER 
 -- RELEASE acq400-771-20251006120842 --
