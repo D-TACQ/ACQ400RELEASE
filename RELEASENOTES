@@ -1,3 +1,5 @@
+-- RELEASE acq400-774-20251010105355 --
+ioc fixes for ACQ426 gains, non-standard Judgement site
 -- RELEASE acq400-773-20251009075155 --
     DISTRIBUTOR:S1 set on boot.
     TRANSIENT:PRAMS set instantly without need for COMMIT
