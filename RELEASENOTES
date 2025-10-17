@@ -1,3 +1,5 @@
+-- RELEASE acq400-775-20251017145020 --
+pdmean application: acq1102+acq427 in S2
 -- RELEASE acq400-774-20251010105355 --
 ioc fixes for ACQ426 gains, non-standard Judgement site
 -- RELEASE acq400-773-20251009075155 --
