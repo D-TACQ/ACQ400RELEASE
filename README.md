@@ -5,7 +5,7 @@
 
 # Note on SD card
 - All firmware is held on SD card, regular FAT32 format, no need to format a shop-bought card, 32GB or smaller.
-- SD cards larger than 64GB may be used, provided they are preformatted so that the first partition is 32GB.
+- SD cards 64GB or larger may be used, provided they are preformatted so that the first partition is 32GB.
 - The SD card is mounted on the running Linux system as /mnt/ and this is the "top-level" of the file system in the examples below. 
 - If you were to mount the same card on Windows, it would likely be at something like "E:\\" and on a regular Linux desktop perhaps /run/media/user/xxx
 
@@ -78,7 +78,7 @@
     - acq400-418-yyymmddhhmmss.tar
     - fpga-418-yyymmddhhmmss.img   
 
-  0. Make sure the SD card is completely blank. DO NOT write on top of an existing SD image.
+  0. Make sure the SD card is completely blank. DO NOT write on top of an existing SD image. If SD card is 64GB or larger make sure it has been partitioned so that the first partition is 32GB.
   
   1. untar the release image acq400-NNN-yyymmddhhmmss.tar to the toplevel of the SD card
  
