@@ -1,3 +1,5 @@
+-- RELEASE acq400-783-20251222161415 --
+add dio2stl package (dio_raw2stl executable included)
 -- RELEASE acq400-782-20251211081834 --
 include new FPGA acq423 refresh, acq426
 -- RELEASE acq400-781-20251211080508 --
