@@ -204,7 +204,6 @@ if [ $MVHOST -eq 1 ]; then
 	echo ssh dt100@eigg /home/dt100/bin/set.acq4xx.current $RELNAME.tar
 	echo publish
 	(cd REL; sha1sum $RELNAME.tar fpga-$VER-$DC.img )
-	echo scp REL/$RELNAME.tgz dtacq@margum.pair.com:public_html/swrel
 else
 	cp $found_img REL
 	echo RELEASE COMPLETE:
