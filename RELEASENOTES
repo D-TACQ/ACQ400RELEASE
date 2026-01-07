@@ -1,3 +1,6 @@
+-- RELEASE acq400-784-20260107093651 --
+update awg burst. 
+update bolodsp to have calibration as a knob
 -- RELEASE acq400-783-20251222161415 --
 add dio2stl package (dio_raw2stl executable included)
 -- RELEASE acq400-782-20251211081834 --
