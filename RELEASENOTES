@@ -1,3 +1,5 @@
+-- RELEASE acq400-786-20260109124428 --
+update awg burst with EPICS support
 -- RELEASE acq400-785-20260108195441 --
 rebuild on hoy6, now with epics/recsync
 changes for awg_rgm .. to be tested
