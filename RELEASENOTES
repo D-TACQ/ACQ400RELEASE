@@ -1,3 +1,5 @@
+-- RELEASE acq400-788-20260114163435 --
+ACQ400_TRANSIENT now supports no site 1 in aggregator set
 -- RELEASE acq400-787-20260113103044 --
 -- RELEASE acq400-787-20260113103147 --
 CH testing the release making process
