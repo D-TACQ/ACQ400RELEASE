@@ -1,3 +1,6 @@
+-- RELEASE acq400-790-20260115142947 --
+Fixed NTP error from teething troubles on new build machine
+ACQ400_TRANSIENT now supports no site 1 in aggregator set
 -- RELEASE acq400-789-20260114164615 --
 ACQ400_TRANSIENT now supports no site 1 in aggregator set
 -- RELEASE acq400-788-20260114163435 --
