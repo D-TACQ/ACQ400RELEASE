@@ -1,3 +1,5 @@
+-- RELEASE acq400-791-20260123155837 --
+IOC $UUT:SIG:SOFT_TRIGGER:REPEAT .. allow sub-1Hz operation
 -- RELEASE acq400-790-20260115142947 --
 Fixed NTP error from teething troubles on new build machine
 ACQ400_TRANSIENT now supports no site 1 in aggregator set
