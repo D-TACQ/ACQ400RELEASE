@@ -1,3 +1,17 @@
+-- RELEASE acq400-792-20260127104139 --
+IOC $UUT:SIG:SOFT_TRIGGER:REPEAT .. allow sub-1Hz operation
+-- RELEASE acq400-791-20260123155837 --
+IOC $UUT:SIG:SOFT_TRIGGER:REPEAT .. allow sub-1Hz operation
+-- RELEASE acq400-790-20260115142947 --
+Fixed NTP error from teething troubles on new build machine
+ACQ400_TRANSIENT now supports no site 1 in aggregator set
+-- RELEASE acq400-789-20260114164615 --
+ACQ400_TRANSIENT now supports no site 1 in aggregator set
+-- RELEASE acq400-788-20260114163435 --
+ACQ400_TRANSIENT now supports no site 1 in aggregator set
+-- RELEASE acq400-787-20260113103044 --
+-- RELEASE acq400-787-20260113103147 --
+CH testing the release making process
 -- RELEASE acq400-786-20260109124428 --
 update awg burst with EPICS support
 -- RELEASE acq400-785-20260108195441 --
