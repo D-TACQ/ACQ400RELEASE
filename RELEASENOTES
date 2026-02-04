@@ -1,3 +1,5 @@
+-- RELEASE acq400-794-20260204103027 --
+Add quadrature encoders for octobee to EPICS
 -- RELEASE acq400-793-20260130162429 --
 Add octobee acq1001 device tree
 -- RELEASE acq400-792-20260127104139 --
