@@ -1,3 +1,5 @@
+-- RELEASE acq400-796-20260403151755 --
+Add acq428 support
 -- RELEASE acq400-795-20260325085544 --
 Enable DI32 monitor in CLK (and IMM) modes with di_snoop 
 Bugfix, now creates PV "MODEL" correctly both WITH and WITHOUT hyphens 
