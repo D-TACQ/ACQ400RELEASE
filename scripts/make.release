@@ -164,6 +164,7 @@ if [ $MVHOST -eq 1 ]; then
 	mksquashfs MNT/fpga.d/Z7IO_TOP* OPT/ko/z7io_fpga-$VER-$DC.img 2>&1 >>squashfs.log
 	mksquashfs MNT/fpga.d/ACQ10??_TOP* OPT/ko/acq10xx_fpga-$VER-$DC.img 2>&1 >>squashfs.log
 	mksquashfs MNT/fpga.d/ACQ2?06_TOP* OPT/ko/acq2x06_fpga-$VER-$DC.img 2>&1 >>squashfs.log
+	mksquashfs MNT/fpga.d/*XRM* OPT/ko/xrm_fpga-$VER-$DC.img 2>&1 >>squashfs.log
 	(cd OPT/ko; find -L . -type f -exec md5sum {} \; ) > fpga.sums
 else
 	RELNAME=acq400-$RELCORE
