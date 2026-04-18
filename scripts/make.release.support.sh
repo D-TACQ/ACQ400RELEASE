@@ -76,5 +76,11 @@ acq426_c32_s3_overlay
 acq426_c32_s4_overlay
 acq426_c32_s5_overlay
 acq426_c32_s6_overlay
+acq428_s1_overlay
+acq428_s2_overlay
+acq428_s3_overlay
+acq428_s4_overlay
+acq428_s5_overlay
+acq428_s6_overlay
 "
 

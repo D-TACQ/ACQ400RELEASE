@@ -1,3 +1,14 @@
+-- RELEASE acq400-797-20260416143740 --
+Support for ACQ428
+Support for FLASHELF
+-- RELEASE acq400-795-20260325085544 --
+Enable DI32 monitor in CLK (and IMM) modes with di_snoop 
+Bugfix, now creates PV "MODEL" correctly both WITH and WITHOUT hyphens 
+Add ip_addr_show script
+-- RELEASE acq400-794-20260204103027 --
+Add quadrature encoders for octobee to EPICS
+-- RELEASE acq400-793-20260130162429 --
+Add octobee acq1001 device tree
 -- RELEASE acq400-792-20260127104139 --
 IOC $UUT:SIG:SOFT_TRIGGER:REPEAT .. allow sub-1Hz operation
 -- RELEASE acq400-791-20260123155837 --
