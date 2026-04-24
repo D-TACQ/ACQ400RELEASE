@@ -20,6 +20,7 @@ acq1002
 acq1002p
 acq1002r
 acq1002w
+acq1002octo
 acq1014
 acq1102
 acq1102d
