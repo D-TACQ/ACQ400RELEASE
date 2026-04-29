@@ -1,3 +1,5 @@
+-- RELEASE acq400-798-260429150320 --
+Adds octo dtb file to dtb.d
 -- RELEASE acq400-797-20260416143740 --
 Support for ACQ428
 Support for FLASHELF
