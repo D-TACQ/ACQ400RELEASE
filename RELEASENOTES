@@ -1,3 +1,7 @@
+-- RELEASE acq400-799-260602112129 --
+Update BOLODSP active channels and FPGAs
+Update to ACQ400DRV host buffer mapping functionality
+Update to acq400ioc optimising QEN PVs
 -- RELEASE acq400-798-260429150320 --
 Adds octo dtb file to dtb.d
 -- RELEASE acq400-797-20260416143740 --
