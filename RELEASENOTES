@@ -1,3 +1,7 @@
+-- RELEASE acq400-801-260626080106 --
+Added bolo button functionality
+Updated KMCU functions
+Fix for acq428 retraining above site 1
 -- RELEASE acq400-799-260602112129 --
 Update BOLODSP active channels and FPGAs
 Update to ACQ400DRV host buffer mapping functionality
