@@ -1,3 +1,6 @@
+-- RELEASE acq400-803-20260722095857 --
+Update acq400_stream to use new ChannelMask feature from acqlib
+New addition to acqlib and ACQ400DRV initialization changes
 -- RELEASE acq400-802-20260717135617 --
 Fold in updates to BOLODSP optional package
 Fix gain all EPICS PV for ACQ426ER
