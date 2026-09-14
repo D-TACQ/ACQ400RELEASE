@@ -1,3 +1,9 @@
+-- Rcq400ioc BOLO fixes, soft trigger improvements and ES_ENABLE knob
+Add an invalid placeholder init value to CUSTOM_AWG
+Add permit function support and software side of fix for ACQ428 retrain
+New plans for si5326
+Update /usr/local/CARE/diagsdump recommended usage: /usr/local/CARE/diagsdump HN FILE
+Move forward PVXS submodule of acq400_epics_base to version 1.5.2
 -- RELEASE acq400-803-20260722095857 --
 Update acq400_stream to use new ChannelMask feature from acqlib
 New addition to acqlib and ACQ400DRV initialization changes
