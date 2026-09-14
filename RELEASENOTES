@@ -1,4 +1,5 @@
--- Rcq400ioc BOLO fixes, soft trigger improvements and ES_ENABLE knob
+-- RELEASE acq400-804-20260903094647 --
+cq400ioc BOLO fixes, soft trigger improvements and ES_ENABLE knob
 Add an invalid placeholder init value to CUSTOM_AWG
 Add permit function support and software side of fix for ACQ428 retrain
 New plans for si5326
