@@ -1,3 +1,5 @@
+-- RELEASE acq400-805-20260909083235 --
+Update acq400ioc to stop initialising a particular record
 -- RELEASE acq400-804-20260903094647 --
 cq400ioc BOLO fixes, soft trigger improvements and ES_ENABLE knob
 Add an invalid placeholder init value to CUSTOM_AWG
