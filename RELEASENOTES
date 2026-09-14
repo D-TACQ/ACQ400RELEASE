@@ -1,3 +1,7 @@
+-- RELEASE acq400-802-20260717135617 --
+Fold in updates to BOLODSP optional package
+Fix gain all EPICS PV for ACQ426ER
+Add calibrations for data32 ACQ426 and fix pl330.ko printk bug.
 -- RELEASE acq400-801-260626080106 --
 Added bolo button functionality
 Updated KMCU functions
