@@ -1,3 +1,8 @@
+-- RELEASE acq400-806-20260915143458 --
+Add MGT comms improvements to detect invalid PCIE_CTRL configuration
+Limit cal checks for suffix data32 cal files for acq426 and acq428 only
+Add aggregator backpressure to an EPICS PV to expose on Phoebus GUI
+Bugfix for SFP laser bounce down/up on EPICS IOC reboot
 -- RELEASE acq400-805-20260909083235 --
 Update acq400ioc to stop initialising a particular record
 -- RELEASE acq400-804-20260903094647 --
