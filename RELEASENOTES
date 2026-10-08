@@ -1,3 +1,7 @@
+-- RELEASE acq400-807-20261008135909 --
+Add DIO482-XRM EPICS control
+Add buffer coalescence
+Bugfix data32 calibration loading on acq426 and acq428
 -- RELEASE acq400-806-20260915143458 --
 Add MGT comms improvements to detect invalid PCIE_CTRL configuration
 Limit cal checks for suffix data32 cal files for acq426 and acq428 only
