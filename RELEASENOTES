@@ -1,3 +1,5 @@
+-- RELEASE acq400-808-20261026144335 --
+Add ao420 CS3 fixes
 -- RELEASE acq400-807-20261008135909 --
 Add DIO482-XRM EPICS control
 Add buffer coalescence
