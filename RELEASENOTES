@@ -1,3 +1,6 @@
+-- RELEASE acq400-809-20261102104449 --
+Add EPICS readback for AO DC trigger mode
+Add FPGAs with HUDP updates
 -- RELEASE acq400-808-20261026144335 --
 Add ao420 CS3 fixes
 -- RELEASE acq400-807-20261008135909 --
