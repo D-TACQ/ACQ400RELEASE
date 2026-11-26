@@ -1,3 +1,5 @@
+-- RELEASE acq400-810-20261102104449 --
+Add fix in ESW and FPGA for acq426 ADC conv time
 -- RELEASE acq400-809-20261102104449 --
 Add EPICS readback for AO DC trigger mode
 Add FPGAs with HUDP updates
